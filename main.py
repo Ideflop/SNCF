@@ -35,61 +35,101 @@ file_created = ['Page','Vehicle_journey','Routes','Lines']
 api_request = [disruptions, vehicle_journeys,routes, lignes]
 
 dossier = str(yesterday)
-    
+
+
+def search_string_in_file(file_name, string_to_search,just_lines=False): # return ligne number + ligne
+    line_number = 0
+    global result
+    result = []
+    if string_to_search == 'end_line': # for extract vehicle_journey & Routes
+        return [line_count(file_name)]
+    with open(file_name, 'r') as r:
+        for line in r:
+            line_number += 1
+            if string_to_search in line:
+                if just_lines:
+                    result.append(line_number)
+                else:    
+                    result.append((line_number, line.rstrip()))
+
+    return result
+
+
 def sncf():
-    for i in range(0,4):
-        os.mkdir(dossier + "/" + file_created[i])
+    for i in range(4):
+        os.mkdir(f'{dossier}/{file_created[i]}')
         sousdossier = file_created[i]
 
         response = requests.get(api_request[i],
-                    headers={ 'Authorization': '{}'.format(token) }) # va api avec début + fin en stcok response
+                    headers={ 'Authorization': '{}'.format(token) }) # collect api file
 
 
-        def search_string_in_file(file_name, string_to_search): # renvoie ligne + numéro de la ligne
-            line_number = 0
-            global result
-            result = []
-            with open(file_name, 'r') as r:
-                for line in r:
-                    line_number += 1
-                    if string_to_search in line:
-                        result.append((line_number, line.rstrip()))
-        
-            return result
-
-
-        with open(dossier + "/" + sousdossier + "/" + f'{file_created[i]}0.txt', 'w') as f: # cree fichier et mets data dedans en format json
+        with open(f'{dossier}/{sousdossier}/' + f'{file_created[i]}0.txt', 'w') as f: # create file and store data in json format
             text = json.dumps(response.json(), sort_keys=True, indent=4)
             f.write(text)
             print(f'{file_created[i]}0.txt created')
 
-        with open(dossier + "/" + sousdossier + "/" + f'{file_created[i]}0.txt', 'r') as f: # vérifie si total_result présent
+        with open(f'{dossier}/{sousdossier}/' + f'{file_created[i]}0.txt', 'r') as f: # check if total_result exist
             if f.read().find('total_result'):
                 print('Find : totat_result' )
-                print(search_string_in_file(dossier + "/" + sousdossier + "/" + f'{file_created[i]}0.txt', 'total_result'))
+                print(search_string_in_file(
+                        f'{dossier}/{sousdossier}/'
+                        + f'{file_created[i]}0.txt', 'total_result')
+                    )
+
             else:
                 print(f'No total_result in {file_created[i]}0.txt')
 
-        bef,aft = str(result).split(':')
+        bef,aft = str(result).split(':') # extract number of total_number and deduce number of page
         bef,aft = aft.split('\'')
         print(f'number of {file_created[i]} :',bef)
 
-        max_page = int(int(bef) / 25)
+        max_page = int(bef) // 25
         print('Number of page:',max_page)
 
-        for j in range(1,max_page+1):
+        for j in range(1,max_page+1): 
             response = requests.get(f'https://api.sncf.com/v1/coverage/sncf/{name_api_request[i]}?since={since}&start_page={j}&until={until}'.format(replace=name_api_request[i]),
                     headers={ 'Authorization': '{}'.format(token) })
-            
-            with open(dossier + "/" + sousdossier + "/" + f'{file_created[i]}{j}.txt', 'w') as f: # cree fichier et mets data dedans en format json
+
+            with open(f'{dossier}/{sousdossier}/' + f'{file_created[i]}{j}.txt', 'w') as f: #  create file and store data in json format
                 text = json.dumps(response.json(), sort_keys=True, indent=4)
                 f.write(text)
                 print(f'{file_created[i]}{j}.txt created')
         print('Finish :', j, 'pages created')
 
+string_begin = ['application_periods','calendars','\"direction\"', 'closing_time']
+string_end = ['feed_publishers','end_line','end_line','href']
+
+def line_count(sample): # count line in file
+    file = open(sample, "r")
+    line_count = 0
+    for line in file:
+        if line != "\n":
+            line_count += 1
+    file.close()
+    return line_count
+
+def extract(): 
+    for i in range(0,3):
+
+        initial_count = 0
+        dir = f"{yesterday}/{file_created[i]}"
+        for path in os.listdir(dir):
+            if os.path.isfile(os.path.join(dir, path)):
+                initial_count += 1
+        
+        for j in range(initial_count):
+            value = search_string_in_file(f'{yesterday}/{file_created[i]}/'+ f'{file_created[i]}{j}.txt', string_begin[i],True)
+            value2 = search_string_in_file(f'{yesterday}/{file_created[i]}/'+ f'{file_created[i]}{j}.txt', string_end[i],True)
+            print(file_created[i],j)
+            value.append(value2[0])
+            print(value)
+
+
 try:
     os.mkdir(dossier)
     sncf()
+
 except:
     print('Path exist')
 
