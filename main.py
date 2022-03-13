@@ -125,7 +125,28 @@ def extract():
             value.append(value2[0])
             print(value)
 
+def split_file(file_name,lines):
+    jsp = []
 
+    with open(file_name + '.txt', 'r') as r:
+        a = len(lines)
+        for i in range(a):
+            jsp = []
+            line_number = 0
+            for line in r:
+                line_number +=1
+                if lines[i] <= line_number <= lines[i+1] :
+                    print(i)
+                    jsp.append(line.rstrip())
+
+            with open(f'{file_name}-{i}.txt','w') as w:
+                for line in jsp:
+                    w.write(line)
+                    w.write('\n')
+            
+            if i+1 >= a:
+                i += 5
+              
 try:
     os.mkdir(dossier)
     sncf()
