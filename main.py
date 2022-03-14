@@ -126,31 +126,26 @@ def extract():
             print(value)
 
 def split_file(file_name,lines):
+    count_line = 0
     jsp = []
-
-    with open(file_name + '.txt', 'r') as r:
-        a = len(lines)
-        for i in range(a):
-            jsp = []
-            line_number = 0
-            for line in r:
-                line_number +=1
-                if lines[i] <= line_number <= lines[i+1] :
+    with open(f'{file_name}.txt', 'r') as r:
+        for line in r:
+            count_line +=1
+            for i in range(len(lines)-1):
+                if lines[i] <= count_line <= lines[i+1] :
                     print(i)
                     jsp.append(line.rstrip())
-
-            with open(f'{file_name}-{i}.txt','w') as w:
-                for line in jsp:
-                    w.write(line)
-                    w.write('\n')
-            
-            if i+1 >= a:
-                i += 5
+                if count_line == lines[i+1]:
+                    with open(f'{file_name}-{i}.txt','w') as w:
+                        for line in jsp:
+                            w.write(line)
+                            w.write('\n')
+                        jsp = []
               
 try:
     os.mkdir(dossier)
     sncf()
-
+    extract()
 except:
     print('Path exist')
 
