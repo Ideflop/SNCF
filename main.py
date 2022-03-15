@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#! /usr/bin/python3
 
 import requests
 import json
@@ -28,11 +28,10 @@ print(until)
 disruptions = f'https://api.sncf.com/v1/coverage/sncf/disruptions?since={since}&start_page=0&until={until}'
 vehicle_journeys = f'https://api.sncf.com/v1/coverage/sncf/vehicle_journeys?since={since}&start_page=0&until={until}'
 routes = f'https://api.sncf.com/v1/coverage/sncf/routes?since={since}&start_page=0&until={until}'
-lignes =  f'https://api.sncf.com/v1/coverage/sncf/lines?since={since}&start_page=0&until={until}'
 
-name_api_request = ['disruptions', 'vehicle_journeys','routes', 'lines']
-file_created = ['Page','Vehicle_journey','Routes','Lines']
-api_request = [disruptions, vehicle_journeys,routes, lignes]
+name_api_request = ['disruptions', 'vehicle_journeys','routes']
+file_created = ['Page','Vehicle_journey','Routes']
+api_request = [disruptions, vehicle_journeys,routes]
 
 dossier = str(yesterday)
 
@@ -56,7 +55,7 @@ def search_string_in_file(file_name, string_to_search,just_lines=False): # retur
 
 
 def sncf():
-    for i in range(4):
+    for i in range(3):
         os.mkdir(f'{dossier}/{file_created[i]}')
         sousdossier = file_created[i]
 
@@ -97,8 +96,8 @@ def sncf():
                 print(f'{file_created[i]}{j}.txt created')
         print('Finish :', j, 'pages created')
 
-string_begin = ['application_periods','calendars','\"direction\"', 'closing_time']
-string_end = ['feed_publishers','end_line','end_line','href']
+string_begin = ['application_periods','calendars','\"direction\"']
+string_end = ['feed_publishers','end_line','end_line']
 
 def line_count(sample): # count line in file
     file = open(sample, "r")
@@ -110,7 +109,7 @@ def line_count(sample): # count line in file
     return line_count
 
 def extract(): 
-    for i in range(0,3):
+    for i in range(3):
 
         initial_count = 0
         dir = f"{yesterday}/{file_created[i]}"
@@ -121,9 +120,11 @@ def extract():
         for j in range(initial_count):
             value = search_string_in_file(f'{yesterday}/{file_created[i]}/'+ f'{file_created[i]}{j}.txt', string_begin[i],True)
             value2 = search_string_in_file(f'{yesterday}/{file_created[i]}/'+ f'{file_created[i]}{j}.txt', string_end[i],True)
-            print(file_created[i],j)
+            #print(file_created[i],j)
             value.append(value2[0])
-            print(value)
+            #print(value)
+            #print(len(value))
+            split_file(f'{yesterday}/{file_created[i]}/'+ f'{file_created[i]}{j}', value)
 
 def split_file(file_name,lines):
     count_line = 0
@@ -133,7 +134,7 @@ def split_file(file_name,lines):
             count_line +=1
             for i in range(len(lines)-1):
                 if lines[i] <= count_line <= lines[i+1] :
-                    print(i)
+                    #print(i)
                     jsp.append(line.rstrip())
                 if count_line == lines[i+1]:
                     with open(f'{file_name}-{i}.txt','w') as w:
@@ -141,18 +142,14 @@ def split_file(file_name,lines):
                             w.write(line)
                             w.write('\n')
                         jsp = []
-              
-try:
-    os.mkdir(dossier)
+
+def run():
     sncf()
     extract()
+
+try:
+    os.mkdir(dossier)
+    run()
 except:
     print('Path exist')
 
-
-'''
-
-https://www.avisia.fr/news/tribune-expert/tutoriel-visualiser-la-position-des-trains-de-la-sncf-en-temps-reel/
-https://www.avisia.fr/news/tribune-expert/tutoriel-visualiser-la-position-des-trains-de-la-sncf-en-temps-reel/
-
-'''
