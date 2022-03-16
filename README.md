@@ -12,5 +12,5 @@ File that download the data
 
 ## Todo ##
 
--[] remove unnecessary documents - done
--[] Find information in documents and print it - todo
+-[x] remove unnecessary documents
+-[] Find information in documents and print it
