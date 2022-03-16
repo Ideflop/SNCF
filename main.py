@@ -29,9 +29,9 @@ disruptions = f'https://api.sncf.com/v1/coverage/sncf/disruptions?since={since}&
 vehicle_journeys = f'https://api.sncf.com/v1/coverage/sncf/vehicle_journeys?since={since}&start_page=0&until={until}'
 routes = f'https://api.sncf.com/v1/coverage/sncf/routes?since={since}&start_page=0&until={until}'
 
-name_api_request = ['disruptions', 'vehicle_journeys','routes']
-file_created = ['Page','Vehicle_journey','Routes']
-api_request = [disruptions, vehicle_journeys,routes]
+name_api_request = ['disruptions', 'vehicle_journeys', 'routes']
+file_created = ['Page','Vehicle_journey', 'Routes']
+api_request = [disruptions, vehicle_journeys, routes]
 
 dossier = str(yesterday)
 
