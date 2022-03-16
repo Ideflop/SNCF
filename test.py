@@ -27,7 +27,8 @@ print(data["disruptions"][0]['messages'][0]['text'])
 print(data["disruptions"][0]['severity']['effect'])
 print(data["disruptions"][0]['severity']['name'])
 
-
+print('')
+print('-----------------------------')
 '''
 label ?
 '''
@@ -58,6 +59,8 @@ print(data2['vehicle_journeys'][0]['stop_times'][0]['utc_departure_time'])
 print(data2['vehicle_journeys'][0]['trip']['id'])
 print(data2['vehicle_journeys'][0]['trip']['name'])
 
+print('')
+print('-----------------------------')
 '''
 prendre quelque chose pour les codes ?
 label ?
@@ -77,7 +80,19 @@ print(data3['routes'][0]['direction']['stop_area']['id'])
 print(data3['routes'][0]['direction']['stop_area']['name'])
 print(data3['routes'][0]['direction_type'])
 print(data3['routes'][0]['id'])
+print(data3['routes'][0]['is_frequence'])
+print(data3['routes'][0]['line']['id'])
+print(data3['routes'][0]['line']['name'])
+print(data3['routes'][0]['line']['opening_time'])
+print(data3['routes'][0]['line']['physical_modes'][0]['id'])
+print(data3['routes'][0]['line']['physical_modes'][0]['name'])
+print(data3['routes'][0]['name'])
+
+
+print('')
+print('-----------------------------')
 
 '''
 label ?
+closing time ?
 '''
