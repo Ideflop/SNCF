@@ -1,9 +1,16 @@
 # SNCF
 
+Markup :  - - - -
 
--------------
+## Structure ##
 
+### Main.py ### 
 
-## remove unnecessary documents - done
+File that download the data
 
-## find information in documents and print it - todo
+Markup :  - - - -
+
+## Todo ##
+
+Markup : -[] remove unnecessary documents - done
+         -[] Find information in documents and print it - todo
