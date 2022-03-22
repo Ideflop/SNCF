@@ -6,10 +6,10 @@
 
 ### Description of each file ### 
 
-download.py : File that download the data
+download.py : Download the data from an api
 
-extract.py : give the data thah sql.py needs
+extract.py : Give the data that sql.py needs
 
-sql.py : execute all the sql code 
+sql.py : Execute all the sql code 
 
  - - - -
