@@ -4,13 +4,10 @@
 
 ## Structure ##
 
-### Main.py ### 
+### Description of each file ### 
 
-File that download the data
+download.py : File that download the data
+extract.py : give the data thah sql.py needs
+sql.py : execute all the sql code 
 
  - - - -
-
-## Todo ##
-
-- [x] remove unnecessary documents
-- [ ] Find information in documents and print it
