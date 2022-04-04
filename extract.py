@@ -8,8 +8,8 @@ class Sort():
     
     def __init__(self): # constructor
         self.today = today = datetime.date.today()
-        #self.yesterday = self.today - datetime.timedelta(days = 1)
-        self.yesterday = '2022-03-24'
+        self.yesterday = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-03-24'
         self.file_created = ['Page','Vehicle_journey','Routes']
         self.NULL = 'zzz'
         self.number = '00'
@@ -23,13 +23,11 @@ class Sort():
 
         return count_file
 
-    def which_data(self,z,i): # i = 0,1,2
-        with open(f'{self.yesterday}/{self.file_created[i]}/{self.file_created[i]}{z}.txt') as json_file:
+    def which_data(self,z,q): # i = 0,1,2
+        with open(f'{self.yesterday}/{self.file_created[q]}/{self.file_created[q]}{z}.txt') as json_file:
             return json.load(json_file)
 
-        
     def disruptions(self,z,i,j): 
-
         with open(f'{self.yesterday}/Page/Page{z}.txt') as json_file:
             data = json.load(json_file)
 
@@ -69,64 +67,63 @@ class Sort():
             except:
                 trip_name = self.NULL
             try:
-                amended_arrival_time = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['amended_arrival_time']
+                amended_arrival_time = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['amended_arrival_time']
             except:
                 amended_arrival_time = self.number
             try:
-                amended_departure_time = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['amended_departure_time']
+                amended_departure_time = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['amended_departure_time']
             except:
                 amended_departure_time = self.number
             try:    
-                departure_status = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['departure_status']
+                departure_status = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['departure_status']
             except:
                 departure_status = self.NULL
             try:    
-                base_arrival_time = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['base_arrival_time']
+                base_arrival_time = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['base_arrival_time']
             except:
                 base_arrival_time = self.number
             try:    
-                base_departure_time = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['base_departure_time']
+                base_departure_time = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['base_departure_time']
             except:
                 base_departure_time = self.number
             try:    
-                arrival_status = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['arrival_status']
+                arrival_status = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['arrival_status']
             except:
                 arrival_status = self.NULL
             try:    
-                cause = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['cause']
+                cause = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['cause']
             except:
                 cause = self.NULL
             try:    
-                is_detour = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['is_detour']
+                is_detour = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['is_detour']
             except:
                 is_detour = self.NULL
             try:    
-                lat = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_point']['coord']['lat']
+                lat = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['coord']['lat']
             except:
                 lat = self.number
             try:    
-                lon = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_point']['coord']['lon']
+                lon = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['coord']['lon']
             except:
                 lon = self.number
             try:    
-                id_impacted_stop = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_point']['id']
+                id_impacted_stop = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['id']
             except:
                 id_impacted_stop = self.NULL
             try:    
-                label_impacted_stop = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_point']['label']
+                label_impacted_stop = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['label']
             except:
                 label_impacted_stop = self.NULL
             try:    
-                name_impacted_stop = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_point']['name']
+                name_impacted_stop = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['name']
             except:
                 name_impacted_stop = self.NULL
             try:    
-                stop_time_effect = data["disruptions"][i]['impacted_objects'][j]['impacted_stops'][0]['stop_time_effect']
+                stop_time_effect = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_time_effect']
             except:
                 stop_time_effect = self.NULL
             
             return [value, date, begin, end, id, message, severity_effect, severity_name, trip_id, trip_name],[ date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect]
-
 
     def vehicle_journey(self,z,i,j):
 
