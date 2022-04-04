@@ -51,15 +51,15 @@ class Insert():
 
     def __init__(self):
         self.mycursor = mydb.cursor()
-
+        self.mycursor.execute("USE {}".format("SNCF"))
+    
     def disruptions(self): # insert disruptions
         result = extract.Sort().how_many_files(0)
         
         for z in range(result):
             i = 0
-            data = extract.Sort().which_data(z,1)
+            data = extract.Sort().which_data(z,0)
             for x in data['disruptions']:
-
                 for y in data['disruptions'][i]['impacted_objects']:
                     j=0
                     disruption, impacted_object = extract.Sort().disruptions(z,i,j)
@@ -73,21 +73,23 @@ class Insert():
                     val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16])
                     self.mycursor.execute(sql,val)
                     mydb.commit()
+                    
                     try:
                         f = 1
                         for w in data['disruptions'][i]['impacted_objects'][0]['impacted_stops'][f]:
-                            disruption, impacted_object = extract.Sort().disruptions(z,i,j)
+                            disruption, impacted_object = extract.Sort().disruptions(z,i,f)
                             sql = "INSERT INTO impacted_object (date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
                             val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16])
                             self.mycursor.execute(sql,val)
                             mydb.commit()
+                            print(data['disruptions'][1]['impacted_objects'][0]['impacted_stops'][f])
                             f += 1
                     except:
                         pass
                     j+=1
                 i += 1
         print("Disruptions and impacted_stop inserted successfully")
-        
+
     def vehicle_journey(self): # insert vehicle_journey
         result = extract.Sort().how_many_files(1)
 
