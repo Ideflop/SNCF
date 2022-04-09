@@ -55,7 +55,7 @@ else
     echo "Database SNCF exists"
 fi
 
- Shutdown mysql server if it is running
+# Shutdown mysql server if it is running
 UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
 if [ "$UP" -eq 1 ];
 then
