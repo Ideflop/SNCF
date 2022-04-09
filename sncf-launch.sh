@@ -5,7 +5,7 @@
 # and the create a cronjob to launch it every time the computer is turned on
 
 yesterday=$(date -d "yesterday" +"%Y-%m-%d")
-# Path to the folder where the data will be downloaded to change for your own
+# Path to the folder where the data will be downloaded to change for your own 
 cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet 
 
 # check if folder exists else download data
@@ -29,4 +29,39 @@ else
     rm -rf $yesterday
     echo "Downloading data"
     python3 download.py
+fi
+
+# setup mysql server and datbase to store data
+# try to start mysql server else error message
+
+
+UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
+if [ "$UP" -ne 1 ];
+then
+    echo "MySQL is down.";
+    echo "MySql is starting..."
+    echo "Password" | sudo -S service mysql start
+    echo "MySQL is up"
+else
+    echo "MySQL is running.";
+fi
+
+# check if SNCF database exists else create it else exit
+if [ -d "/var/lib/mysql/SNCF" ]; then
+    echo "Database SNCF does not exist"
+    echo "Creating database SNCF"
+    mysql -u root -e "CREATE DATABASE SNCF"
+else
+    echo "Database SNCF exists"
+fi
+
+ Shutdown mysql server if it is running
+UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
+if [ "$UP" -eq 1 ];
+then
+    echo "Shutdown MySQL.";
+    echo "Password" | sudo -S service mysql stop
+    echo "MySQL is down.";
+else
+    echo "MySQL is still running.";
 fi
