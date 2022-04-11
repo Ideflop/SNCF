@@ -55,6 +55,17 @@ else
     echo "Database SNCF exists"
 fi
 
+# check if files disruption_${yesterday} exist in sncf else download data
+if [ -f "/var/lib/mysql/SNCF/disruption_${yesterday}.idb" ]; then
+    echo "File disruption_${yesterday} exists"
+    echo "The data might be already in the database"
+else
+    echo "Data from ${yesterday} non in database SNCF"
+    echo "Transferring data to database SNCF"
+    cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet
+    python3 sql.py
+fi
+
 # Shutdown mysql server if it is running
 UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
 if [ "$UP" -eq 1 ];
