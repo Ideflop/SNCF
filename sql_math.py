@@ -2,7 +2,8 @@
 
 import mysql.connector
 import datetime
-
+import json
+import os
 
 mydb = mysql.connector.connect( # connect to database
     host="127.0.0.1",
@@ -16,8 +17,7 @@ class clean:
         self.mycursor = mydb.cursor()
         
         self.today = datetime.date.today()
-        #self.yesterday = self.today - datetime.timedelta(days = 1)
-        self.yesterday = '2022-03-24'
+        self.yesterday = self.today - datetime.timedelta(days = 1)
         self.yesterday = str(self.yesterday).replace('-', '_')
         
         self.disruption_list = ['value', 'date', 'begin', 'end', 'id', 'message', 'severity_effect', 'severity_name', 'trip_id', 'trip_name']
@@ -78,11 +78,51 @@ class clean:
         self.mydb.commit()
 
 
+class write:
+    def __init__(self):
+        self.today = datetime.date.today()
+        self.yesterday = self.today - datetime.timedelta(days = 1)
+        self.mydb = mydb
+        self.mycursor = mydb.cursor()
+        if not os.path.exists(f"calculus/{self.yesterday}.txt"):
+            open(f'calculus/{self.yesterday}', 'w').close()
+
+    def write_to_file(self, data): # data must be dict
+        with open(f'calculus/{self.yesterday}.txt', 'a') as f:
+            json.dump(data, f)
+        
 
 
+class search:
+    def __init__(self):
+        self.mydb = mydb
+        self.mycursor = mydb.cursor()
+        self.today = datetime.date.today()
+        self.yesterday = self.today - datetime.timedelta(days = 1)
+        self.yesterday = str(self.yesterday).replace('-', '_')
 
+    def how_many(self):
+        result = []
+        # total disruption
+        self.mycursor.execute(f"SELECT COUNT(*) FROM disruptions_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # total impacted object
+        self.mycursor.execute(f"SELECT COUNT(*) FROM impacted_object_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # total vehicle journey
+        self.mycursor.execute(f"SELECT COUNT(*) FROM vehicle_journeys_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # total stop times
+        self.mycursor.execute(f"SELECT COUNT(*) FROM stop_times_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # total routes
+        self.mycursor.execute(f"SELECT COUNT(*) FROM routes_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
 
-
+        return result
+ 
 
 
 clean().clean_data()
+
+#print(search().how_many())
