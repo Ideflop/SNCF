@@ -16,6 +16,7 @@ print(mydb)
 
 class Init():
     def __init__(self):
+        self.mydb = mydb
         self.mycursor = mydb.cursor()
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
@@ -89,7 +90,7 @@ class Insert(Init):
                         pass
                     j+=1
                 i += 1
-        mydb.commit()
+        self.mydb.commit()
         print("Disruptions and impacted_stop inserted successfully")
 
     def vehicle_journey(self): # insert vehicle_journey
@@ -122,7 +123,7 @@ class Insert(Init):
                 except:
                     pass
                 i += 1
-        mydb.commit()
+        self.mydb.commit()
         print("Vehicle_journey and stop_times inserted successfully")
 
     def routes(self): # insert routes
@@ -137,7 +138,7 @@ class Insert(Init):
                 val = (routes[0], routes[1], routes[2], routes[3], routes[4], routes[5], routes[6], routes[7], routes[8], routes[9], routes[10], routes[11], routes[12], routes[13], routes[14], routes[15], routes[16], routes[17], routes[18], routes[19], routes[20], routes[21], routes[22])
                 self.mycursor.execute(sql,val)
                 i += 1
-        mydb.commit()
+        self.mydb.commit()
         print("Routes inserted successfully")
 
 if '__main__' == __name__:
