@@ -19,8 +19,8 @@ class Init():
         self.mydb = mydb
         self.mycursor = mydb.cursor()
         self.today = datetime.date.today()
-        #self.yesterday = self.today - datetime.timedelta(days = 1)
-        self.yesterday = '2022-04-07'
+        self.yesterday = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-04-07'
         self.yesterday = str(self.yesterday).replace('-', '_')
         self.mycursor.execute("USE {}".format("SNCF"))
 
