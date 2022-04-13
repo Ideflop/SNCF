@@ -8,8 +8,8 @@ class Sort():
     
     def __init__(self): # constructor
         self.today = datetime.date.today()
-        #self.yesterday = self.today - datetime.timedelta(days = 1)
-        self.yesterday = '2022-04-07'
+        self.yesterday = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-04-07'
         self.file_created = ['Page','Vehicle_journey','Routes']
         self.dir = f'scnf_data/{self.yesterday}'
         self.NULL = 'zzz'
