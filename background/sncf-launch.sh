@@ -40,7 +40,7 @@ if [ "$UP" -ne 1 ];
 then
     echo "MySQL is down.";
     echo "MySql is starting..."
-    echo "12vi(35" | sudo -S service mysql start
+    echo "Password" | sudo -S service mysql start
     echo "MySQL is up"
 else
     echo "MySQL is running.";
@@ -71,7 +71,8 @@ UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
 if [ "$UP" -eq 1 ];
 then
     echo "Shutdown MySQL.";
-    echo "12vi(35" | sudo -S service mysql stop
+    echo "Password" | sudo -S se
+    vice mysql stop
     echo "MySQL is down.";
 else
     echo "MySQL is still running.";
