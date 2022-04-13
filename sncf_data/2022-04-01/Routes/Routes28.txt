@@ -1,0 +1,1762 @@
+{
+    "context": {
+        "current_datetime": "20220402T200653",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=27&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=29&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 28,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87286005",
+                "name": "Lille Flandres (Lille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87286005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87286005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.636577",
+                        "lon": "3.06987"
+                    },
+                    "id": "stop_area:SNCF:87286005",
+                    "label": "Lille Flandres (Lille)",
+                    "links": [],
+                    "name": "Lille Flandres",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::DB3D31E8-6F41-4A72-8595-6FCD2110ED22:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225500",
+                "code": "K61",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::DB3D31E8-6F41-4A72-8595-6FCD2110ED22:",
+                "links": [],
+                "name": "K61",
+                "opening_time": "050500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "K61"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87281006",
+                "name": "Dunkerque (Dunkerque)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87281006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87281006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.03041",
+                        "lon": "2.368991"
+                    },
+                    "id": "stop_area:SNCF:87281006",
+                    "label": "Dunkerque (Dunkerque)",
+                    "links": [],
+                    "name": "Dunkerque",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::938DCE7E-3A57-443A-B771-92F6F819E7E3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225700",
+                "code": "K70",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::938DCE7E-3A57-443A-B771-92F6F819E7E3:",
+                "links": [],
+                "name": "K70",
+                "opening_time": "051100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "K70"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87286005",
+                "name": "Lille Flandres (Lille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87286005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87286005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.636577",
+                        "lon": "3.06987"
+                    },
+                    "id": "stop_area:SNCF:87286005",
+                    "label": "Lille Flandres (Lille)",
+                    "links": [],
+                    "name": "Lille Flandres",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7DB0420F-470D-4C90-847F-1560F0624F60:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233000",
+                "code": "K71",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7DB0420F-470D-4C90-847F-1560F0624F60:",
+                "links": [],
+                "name": "K71",
+                "opening_time": "052900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "K71"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87276006",
+                "name": "Creil (Creil)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87276006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87276006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.263775",
+                        "lon": "2.469293"
+                    },
+                    "id": "stop_area:SNCF:87276006",
+                    "label": "Creil (Creil)",
+                    "links": [],
+                    "name": "Creil",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E27CA8B0-68E6-43FB-BE1B-B0388CDA1008:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205430",
+                "code": "P10",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E27CA8B0-68E6-43FB-BE1B-B0388CDA1008:",
+                "links": [],
+                "name": "P10",
+                "opening_time": "060800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P10"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87296004",
+                "name": "Saint-Quentin (Saint-Quentin)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87296004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87296004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.840025",
+                        "lon": "3.296958"
+                    },
+                    "id": "stop_area:SNCF:87296004",
+                    "label": "Saint-Quentin (Saint-Quentin)",
+                    "links": [],
+                    "name": "Saint-Quentin",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2DABDC92-9157-469C-951A-FBFE8351C8A5:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "011700",
+                "code": "P14",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2DABDC92-9157-469C-951A-FBFE8351C8A5:",
+                "links": [],
+                "name": "P14",
+                "opening_time": "055200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P14"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271593",
+                "name": "Cr\u00e9py-en-Valois (Cr\u00e9py-en-Valois)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87271593"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271593"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.231252",
+                        "lon": "2.886494"
+                    },
+                    "id": "stop_area:SNCF:87271593",
+                    "label": "Cr\u00e9py-en-Valois (Cr\u00e9py-en-Valois)",
+                    "links": [],
+                    "name": "Cr\u00e9py-en-Valois",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::64CFA44A-8FD1-4AEA-B725-EBD4316DC806:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "072800",
+                "code": "P15",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::64CFA44A-8FD1-4AEA-B725-EBD4316DC806:",
+                "links": [],
+                "name": "P15",
+                "opening_time": "061600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P15"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87296012",
+                "name": "Laon (Laon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87296012"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87296012"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.570578",
+                        "lon": "3.62434"
+                    },
+                    "id": "stop_area:SNCF:87296012",
+                    "label": "Laon (Laon)",
+                    "links": [],
+                    "name": "Laon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8519D738-1A3F-477E-A18B-116B8863F0F8:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222500",
+                "code": "P20",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8519D738-1A3F-477E-A18B-116B8863F0F8:",
+                "links": [],
+                "name": "P20",
+                "opening_time": "045600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P20"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87317362",
+                "name": "Abbeville (Abbeville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87317362"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87317362"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.102175",
+                        "lon": "1.824538"
+                    },
+                    "id": "stop_area:SNCF:87317362",
+                    "label": "Abbeville (Abbeville)",
+                    "links": [],
+                    "name": "Abbeville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D77B2111-D576-48D5-878E-5D6C094D611A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202600",
+                "code": "P21",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D77B2111-D576-48D5-878E-5D6C094D611A:",
+                "links": [],
+                "name": "P21",
+                "opening_time": "043700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P21"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87313874",
+                "name": "Amiens (Amiens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87313874"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87313874"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.890584",
+                        "lon": "2.308277"
+                    },
+                    "id": "stop_area:SNCF:87313874",
+                    "label": "Amiens (Amiens)",
+                    "links": [],
+                    "name": "Amiens",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7BB51D2B-5268-45E9-AEEE-1F1053DE381C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204000",
+                "code": "P22",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7BB51D2B-5268-45E9-AEEE-1F1053DE381C:",
+                "links": [],
+                "name": "P22",
+                "opening_time": "053200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P22"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87313874",
+                "name": "Amiens (Amiens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87313874"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87313874"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.890584",
+                        "lon": "2.308277"
+                    },
+                    "id": "stop_area:SNCF:87313874",
+                    "label": "Amiens (Amiens)",
+                    "links": [],
+                    "name": "Amiens",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9F35A2B3-4B24-4076-A960-83E359C90C1D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215100",
+                "code": "P23",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9F35A2B3-4B24-4076-A960-83E359C90C1D:",
+                "links": [],
+                "name": "P23",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P23"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87313874",
+                "name": "Amiens (Amiens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87313874"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87313874"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.890584",
+                        "lon": "2.308277"
+                    },
+                    "id": "stop_area:SNCF:87313874",
+                    "label": "Amiens (Amiens)",
+                    "links": [],
+                    "name": "Amiens",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C6FA7EBE-4D15-41AC-AAFC-6B62BA46E49E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "193530",
+                "code": "P24",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C6FA7EBE-4D15-41AC-AAFC-6B62BA46E49E:",
+                "links": [],
+                "name": "P24",
+                "opening_time": "062100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P24"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87313510",
+                "name": "Beauvais (Beauvais)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87313510"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87313510"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.426522",
+                        "lon": "2.088609"
+                    },
+                    "id": "stop_area:SNCF:87313510",
+                    "label": "Beauvais (Beauvais)",
+                    "links": [],
+                    "name": "Beauvais",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A16522A1-3A9D-406B-B7AB-12E318E7CC92:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221600",
+                "code": "P30",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A16522A1-3A9D-406B-B7AB-12E318E7CC92:",
+                "links": [],
+                "name": "P30",
+                "opening_time": "055100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P30"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87276006",
+                "name": "Creil (Creil)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87276006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87276006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.263775",
+                        "lon": "2.469293"
+                    },
+                    "id": "stop_area:SNCF:87276006",
+                    "label": "Creil (Creil)",
+                    "links": [],
+                    "name": "Creil",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E0C5BF51-53A3-4542-B417-3AFE4D5EA545:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220700",
+                "code": "P32",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E0C5BF51-53A3-4542-B417-3AFE4D5EA545:",
+                "links": [],
+                "name": "P32",
+                "opening_time": "052900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P32"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87345009",
+                "name": "Douai (Douai)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87345009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87345009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.371673",
+                        "lon": "3.089958"
+                    },
+                    "id": "stop_area:SNCF:87345009",
+                    "label": "Douai (Douai)",
+                    "links": [],
+                    "name": "Douai",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6CDB0462-C560-4D14-8E45-60E1833E0725:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202500",
+                "code": "P40",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6CDB0462-C560-4D14-8E45-60E1833E0725:",
+                "links": [],
+                "name": "P40",
+                "opening_time": "070200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P40"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87345009",
+                "name": "Douai (Douai)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87345009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87345009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.371673",
+                        "lon": "3.089958"
+                    },
+                    "id": "stop_area:SNCF:87345009",
+                    "label": "Douai (Douai)",
+                    "links": [],
+                    "name": "Douai",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0BE00911-1318-4279-8447-F655BFCD02B2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203300",
+                "code": "P41",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0BE00911-1318-4279-8447-F655BFCD02B2:",
+                "links": [],
+                "name": "P41",
+                "opening_time": "060300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P41"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87345009",
+                "name": "Douai (Douai)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87345009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87345009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.371673",
+                        "lon": "3.089958"
+                    },
+                    "id": "stop_area:SNCF:87345009",
+                    "label": "Douai (Douai)",
+                    "links": [],
+                    "name": "Douai",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::83FEE29D-4900-4DEA-A7E0-9F54642B6E1F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "195400",
+                "code": "P42",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::83FEE29D-4900-4DEA-A7E0-9F54642B6E1F:",
+                "links": [],
+                "name": "P42",
+                "opening_time": "060600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P42"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87343004",
+                "name": "Valenciennes (Valenciennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87343004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87343004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.363187",
+                        "lon": "3.517124"
+                    },
+                    "id": "stop_area:SNCF:87343004",
+                    "label": "Valenciennes (Valenciennes)",
+                    "links": [],
+                    "name": "Valenciennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2ED50A80-6E1F-4F0F-8782-4482CAA1A7DA:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212800",
+                "code": "P43",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2ED50A80-6E1F-4F0F-8782-4482CAA1A7DA:",
+                "links": [],
+                "name": "P43",
+                "opening_time": "050100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P43"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87345009",
+                "name": "Douai (Douai)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87345009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87345009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.371673",
+                        "lon": "3.089958"
+                    },
+                    "id": "stop_area:SNCF:87345009",
+                    "label": "Douai (Douai)",
+                    "links": [],
+                    "name": "Douai",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C4C42989-9647-4647-8321-56585C0B3D53:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213900",
+                "code": "P44",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C4C42989-9647-4647-8321-56585C0B3D53:",
+                "links": [],
+                "name": "P44",
+                "opening_time": "061000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P44"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87411017",
+                "name": "Rouen Rive Droite (Rouen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87411017"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87411017"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.448663",
+                        "lon": "1.094103"
+                    },
+                    "id": "stop_area:SNCF:87411017",
+                    "label": "Rouen Rive Droite (Rouen)",
+                    "links": [],
+                    "name": "Rouen Rive Droite",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A8CBE20D-E000-4EEC-A4EE-F928AD249687:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215200",
+                "code": "P45",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A8CBE20D-E000-4EEC-A4EE-F928AD249687:",
+                "links": [],
+                "name": "P45",
+                "opening_time": "055800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P45"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87342337",
+                "name": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87342337"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87342337"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.379156",
+                        "lon": "2.33934"
+                    },
+                    "id": "stop_area:SNCF:87342337",
+                    "label": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                    "links": [],
+                    "name": "Saint-Pol-sur-Ternoise",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::f951fe07-91e4-4c8a-a112-0022ba3725c1:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212530",
+                "code": "P51",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::f951fe07-91e4-4c8a-a112-0022ba3725c1:",
+                "links": [],
+                "name": "P51",
+                "opening_time": "063900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P51"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87342014",
+                "name": "Arras (Arras)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87342014"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87342014"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.286971",
+                        "lon": "2.781314"
+                    },
+                    "id": "stop_area:SNCF:87342014",
+                    "label": "Arras (Arras)",
+                    "links": [],
+                    "name": "Arras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::481FE34B-4FEA-4C35-8ABE-58CB090620CD:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "194000",
+                "code": "P52",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::481FE34B-4FEA-4C35-8ABE-58CB090620CD:",
+                "links": [],
+                "name": "P52",
+                "opening_time": "062300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P52"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87342337",
+                "name": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87342337"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87342337"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.379156",
+                        "lon": "2.33934"
+                    },
+                    "id": "stop_area:SNCF:87342337",
+                    "label": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                    "links": [],
+                    "name": "Saint-Pol-sur-Ternoise",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B3B007B6-E147-4DAB-AD5F-6455AE80CCD6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211900",
+                "code": "P53",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B3B007B6-E147-4DAB-AD5F-6455AE80CCD6:",
+                "links": [],
+                "name": "P53",
+                "opening_time": "051500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P53"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87317263",
+                "name": "Calais Ville (Calais)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87317263"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87317263"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.953466",
+                        "lon": "1.850885"
+                    },
+                    "id": "stop_area:SNCF:87317263",
+                    "label": "Calais Ville (Calais)",
+                    "links": [],
+                    "name": "Calais Ville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D7417ABE-8C4B-480A-8F81-072590BED9EC:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211830",
+                "code": "P54",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D7417ABE-8C4B-480A-8F81-072590BED9EC:",
+                "links": [],
+                "name": "P54",
+                "opening_time": "061300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P54"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87295014",
+                "name": "Jeumont (Jeumont)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87295014"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87295014"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.296149",
+                        "lon": "4.08722"
+                    },
+                    "id": "stop_area:SNCF:87295014",
+                    "label": "Jeumont (Jeumont)",
+                    "links": [],
+                    "name": "Jeumont",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::454E4ABF-BD49-4157-8FE8-BCDD340E2504:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203900",
+                "code": "P60",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::454E4ABF-BD49-4157-8FE8-BCDD340E2504:",
+                "links": [],
+                "name": "P60",
+                "opening_time": "052100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P60"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87295600",
+                "name": "Aulnoye-Aymeries (Aulnoye-Aymeries)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87295600"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87295600"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.197477",
+                        "lon": "3.843333"
+                    },
+                    "id": "stop_area:SNCF:87295600",
+                    "label": "Aulnoye-Aymeries (Aulnoye-Aymeries)",
+                    "links": [],
+                    "name": "Aulnoye-Aymeries",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::11D73E7F-3314-4000-B93A-A4781C56C041:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202200",
+                "code": "P61",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::6dfb1ec4-50b5-42a8-a531-a792b1ea6f2e:",
+                    "name": "TER HDF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::11D73E7F-3314-4000-B93A-A4781C56C041:",
+                "links": [],
+                "name": "P61",
+                "opening_time": "061600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P61"
+        }
+    ]
+}

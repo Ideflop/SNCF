@@ -1,0 +1,1726 @@
+{
+    "context": {
+        "current_datetime": "20220402T200642",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=12&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=14&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 13,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444265",
+                "name": "Lisieux (Lisieux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444265"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444265"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.138299",
+                        "lon": "0.231143"
+                    },
+                    "id": "stop_area:SNCF:87444265",
+                    "label": "Lisieux (Lisieux)",
+                    "links": [],
+                    "name": "Lisieux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::5E25F2B5-D15F-475F-B424-C7ED6748FE50:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::5E25F2B5-D15F-475F-B424-C7ED6748FE50:",
+                "links": [],
+                "name": "Lisieux - Deauville",
+                "opening_time": "055600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lisieux - Deauville"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87620195",
+                "name": "Saint-Sulpice-sur-L\u00e8ze (Saint-Sulpice-sur-L\u00e8ze)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87620195"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87620195"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.329798",
+                        "lon": "1.322298"
+                    },
+                    "id": "stop_area:SNCF:87620195",
+                    "label": "Saint-Sulpice-sur-L\u00e8ze (Saint-Sulpice-sur-L\u00e8ze)",
+                    "links": [],
+                    "name": "Saint-Sulpice-sur-L\u00e8ze",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::510F4231-1345-4CBC-A5B6-D999ABDB2709:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::510F4231-1345-4CBC-A5B6-D999ABDB2709:",
+                "links": [],
+                "name": "Longages Noe - St Sulpice Sur Leze",
+                "opening_time": "055400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Longages Noe - St Sulpice Sur Leze"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87194274",
+                "name": "Longuyon (Longuyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87194274"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87194274"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.444412",
+                        "lon": "5.604551"
+                    },
+                    "id": "stop_area:SNCF:87194274",
+                    "label": "Longuyon (Longuyon)",
+                    "links": [],
+                    "name": "Longuyon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2C3EBBD8-A01D-4270-A4EF-4DE25B46170D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "180000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2C3EBBD8-A01D-4270-A4EF-4DE25B46170D:",
+                "links": [],
+                "name": "Longuyon - Montm\u00e9dy",
+                "opening_time": "071700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Longuyon - Montm\u00e9dy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87194001",
+                "name": "Longwy (Longwy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87194001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87194001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.513004",
+                        "lon": "5.76956"
+                    },
+                    "id": "stop_area:SNCF:87194001",
+                    "label": "Longwy (Longwy)",
+                    "links": [],
+                    "name": "Longwy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::193F093C-62C8-45A2-9CC0-D515308AF463:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::193F093C-62C8-45A2-9CC0-D515308AF463:",
+                "links": [],
+                "name": "Longwy - Longuyon",
+                "opening_time": "053700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Longwy - Longuyon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87194001",
+                "name": "Longwy (Longwy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87194001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87194001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.513004",
+                        "lon": "5.76956"
+                    },
+                    "id": "stop_area:SNCF:87194001",
+                    "label": "Longwy (Longwy)",
+                    "links": [],
+                    "name": "Longwy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8D10DD09-16EC-4CD4-95AA-86221A3B1AD3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8D10DD09-16EC-4CD4-95AA-86221A3B1AD3:",
+                "links": [],
+                "name": "Longwy - Luxembourg",
+                "opening_time": "060200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Longwy - Luxembourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87473009",
+                "name": "Saint-Brieuc (Saint-Brieuc)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87473009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87473009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.50758",
+                        "lon": "-2.765"
+                    },
+                    "id": "stop_area:SNCF:87473009",
+                    "label": "Saint-Brieuc (Saint-Brieuc)",
+                    "links": [],
+                    "name": "Saint-Brieuc",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9F31F8F3-87B1-4F3B-89C0-0B44AE372B1D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9F31F8F3-87B1-4F3B-89C0-0B44AE372B1D:",
+                "links": [],
+                "name": "Lorient -Vannes - Saint-Brieuc",
+                "opening_time": "054000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lorient -Vannes - Saint-Brieuc"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87721423",
+                "name": "Lozanne (Lozanne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87721423"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87721423"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.854174",
+                        "lon": "4.681474"
+                    },
+                    "id": "stop_area:SNCF:87721423",
+                    "label": "Lozanne (Lozanne)",
+                    "links": [],
+                    "name": "Lozanne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4658FBBB-4701-4FB4-B4FC-DB9B015ECAC7:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4658FBBB-4701-4FB4-B4FC-DB9B015ECAC7:",
+                "links": [],
+                "name": "Lozanne - Paray Le Monial",
+                "opening_time": "050100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lozanne - Paray Le Monial"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87721423",
+                "name": "Lozanne (Lozanne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87721423"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87721423"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.854174",
+                        "lon": "4.681474"
+                    },
+                    "id": "stop_area:SNCF:87721423",
+                    "label": "Lozanne (Lozanne)",
+                    "links": [],
+                    "name": "Lozanne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::FAC858B2-B613-40BA-9423-E079D6979A0C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220750",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::FAC858B2-B613-40BA-9423-E079D6979A0C:",
+                "links": [],
+                "name": "Lozanne - Tassin",
+                "opening_time": "063100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lozanne - Tassin"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87175042",
+                "name": "Bar-le-Duc (Bar-le-Duc)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87175042"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87175042"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.773598",
+                        "lon": "5.167053"
+                    },
+                    "id": "stop_area:SNCF:87175042",
+                    "label": "Bar-le-Duc (Bar-le-Duc)",
+                    "links": [],
+                    "name": "Bar-le-Duc",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::f476471e-bbd4-4974-bf95-8c7cb9ca3e4a:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::f476471e-bbd4-4974-bf95-8c7cb9ca3e4a:",
+                "links": [],
+                "name": "Lun\u00e9ville - Bar Le Duc - Epernay - Reims",
+                "opening_time": "055400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lun\u00e9ville - Bar Le Duc - Epernay - Reims"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87184002",
+                "name": "Belfort (Belfort)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87184002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87184002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.633278",
+                        "lon": "6.854053"
+                    },
+                    "id": "stop_area:SNCF:87184002",
+                    "label": "Belfort (Belfort)",
+                    "links": [],
+                    "name": "Belfort",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::27A3C9CC-526E-4121-8CF9-7C00D4652BCC:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "224300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::27A3C9CC-526E-4121-8CF9-7C00D4652BCC:",
+                "links": [],
+                "name": "Lyon - Besan\u00e7on - Belfort (interr\u00e9gional)",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon - Besan\u00e7on - Belfort (interr\u00e9gional)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87746008",
+                "name": "Annecy (Annecy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87746008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87746008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.902047",
+                        "lon": "6.121826"
+                    },
+                    "id": "stop_area:SNCF:87746008",
+                    "label": "Annecy (Annecy)",
+                    "links": [],
+                    "name": "Annecy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6F1D7ABC-B729-498A-B3BD-DE55587C60E2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6F1D7ABC-B729-498A-B3BD-DE55587C60E2:",
+                "links": [],
+                "name": "Lyon Part Dieu - Annecy",
+                "opening_time": "055300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Annecy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::5CE372B6-CE7D-4780-B4F8-F5979FED5405:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::5CE372B6-CE7D-4780-B4F8-F5979FED5405:",
+                "links": [],
+                "name": "Lyon Part Dieu - Avignon",
+                "opening_time": "065200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Avignon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87723197"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87723197"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.760596",
+                        "lon": "4.859409"
+                    },
+                    "id": "stop_area:SNCF:87723197",
+                    "label": "Lyon Part Dieu (Lyon)",
+                    "links": [],
+                    "name": "Lyon Part Dieu",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C333995A-51A2-4A1C-ABC7-55A7460AB17B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C333995A-51A2-4A1C-ABC7-55A7460AB17B:",
+                "links": [],
+                "name": "Lyon Part Dieu - Avignon - Marseille",
+                "opening_time": "061000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Avignon - Marseille"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741793",
+                "name": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741793"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741793"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.619036",
+                        "lon": "6.771273"
+                    },
+                    "id": "stop_area:SNCF:87741793",
+                    "label": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                    "links": [],
+                    "name": "Bourg-Saint-Maurice",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3CA3AA2F-D938-47FC-854D-29CAF6919A16:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3CA3AA2F-D938-47FC-854D-29CAF6919A16:",
+                "links": [],
+                "name": "Lyon Part Dieu - Bourg St-Maurice",
+                "opening_time": "053800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Bourg St-Maurice"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741009",
+                "name": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.571302",
+                        "lon": "5.919547"
+                    },
+                    "id": "stop_area:SNCF:87741009",
+                    "label": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                    "links": [],
+                    "name": "Chamb\u00e9ry - Challes-les-Eaux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2993074B-2B66-490B-B4C2-5593D87237FB:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2993074B-2B66-490B-B4C2-5593D87237FB:",
+                "links": [],
+                "name": "Lyon Part Dieu - Chambery",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Chambery"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741009",
+                "name": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.571302",
+                        "lon": "5.919547"
+                    },
+                    "id": "stop_area:SNCF:87741009",
+                    "label": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                    "links": [],
+                    "name": "Chamb\u00e9ry - Challes-les-Eaux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::872509D5-9DC9-4F24-8BB0-3716CA6C6F27:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::872509D5-9DC9-4F24-8BB0-3716CA6C6F27:",
+                "links": [],
+                "name": "Lyon Part Dieu - Chambery",
+                "opening_time": "061700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Chambery"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:85010082",
+                "name": "Geneve (Gen\u00e8ve)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "85010082"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "85010082"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.21022",
+                        "lon": "6.14244"
+                    },
+                    "id": "stop_area:SNCF:85010082",
+                    "label": "Geneve (Gen\u00e8ve)",
+                    "links": [],
+                    "name": "Geneve",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B6EA9961-71EE-4D2E-9A72-345763D83770:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B6EA9961-71EE-4D2E-9A72-345763D83770:",
+                "links": [],
+                "name": "Lyon Part Dieu - Gen\u00e8ve Cornavin",
+                "opening_time": "051400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Gen\u00e8ve Cornavin"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87747006",
+                "name": "Grenoble (Grenoble)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87747006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87747006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.191491",
+                        "lon": "5.714548"
+                    },
+                    "id": "stop_area:SNCF:87747006",
+                    "label": "Grenoble (Grenoble)",
+                    "links": [],
+                    "name": "Grenoble",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "015000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D02BC35E-F58E-45E7-968F-42B8AB630E6E:",
+                "links": [],
+                "name": "Lyon Part Dieu - Grenoble",
+                "opening_time": "035000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Grenoble"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87742007",
+                "name": "Modane (Modane)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87742007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87742007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.193555",
+                        "lon": "6.659139"
+                    },
+                    "id": "stop_area:SNCF:87742007",
+                    "label": "Modane (Modane)",
+                    "links": [],
+                    "name": "Modane",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::872DCA7D-6C9D-4E8C-8A79-C252C8957BD3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225930",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::872DCA7D-6C9D-4E8C-8A79-C252C8957BD3:",
+                "links": [],
+                "name": "Lyon Part Dieu - Modane",
+                "opening_time": "065000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Modane"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87723197"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87723197"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.760596",
+                        "lon": "4.859409"
+                    },
+                    "id": "stop_area:SNCF:87723197",
+                    "label": "Lyon Part Dieu (Lyon)",
+                    "links": [],
+                    "name": "Lyon Part Dieu",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D9E3C2B3-FD86-4C45-9998-2922E320C3A2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "070000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D9E3C2B3-FD86-4C45-9998-2922E320C3A2:",
+                "links": [],
+                "name": "Lyon Part Dieu - M\u00e2con",
+                "opening_time": "165600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - M\u00e2con"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87722025",
+                "name": "Lyon Perrache (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87722025"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87722025"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.748508",
+                        "lon": "4.825777"
+                    },
+                    "id": "stop_area:SNCF:87722025",
+                    "label": "Lyon Perrache (Lyon)",
+                    "links": [],
+                    "name": "Lyon Perrache",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::421CAAD2-E505-425C-81AA-9E984B306F7D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::421CAAD2-E505-425C-81AA-9E984B306F7D:",
+                "links": [],
+                "name": "Lyon Perrache - Firminy",
+                "opening_time": "050900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Firminy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87722025",
+                "name": "Lyon Perrache (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87722025"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87722025"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.748508",
+                        "lon": "4.825777"
+                    },
+                    "id": "stop_area:SNCF:87722025",
+                    "label": "Lyon Perrache (Lyon)",
+                    "links": [],
+                    "name": "Lyon Perrache",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3E4DA822-E4FA-4B43-A7E9-B8B655161197:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "084400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3E4DA822-E4FA-4B43-A7E9-B8B655161197:",
+                "links": [],
+                "name": "Lyon Perrache - Lyon Part Dieu - Belfort",
+                "opening_time": "203200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Lyon Part Dieu - Belfort"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87743005",
+                "name": "Bourg-en-Bresse (Bourg-en-Bresse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87743005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87743005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.200111",
+                        "lon": "5.215011"
+                    },
+                    "id": "stop_area:SNCF:87743005",
+                    "label": "Bourg-en-Bresse (Bourg-en-Bresse)",
+                    "links": [],
+                    "name": "Bourg-en-Bresse",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::BE0A8D1F-C84D-4D75-87C8-D89DF19D1D40:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::BE0A8D1F-C84D-4D75-87C8-D89DF19D1D40:",
+                "links": [],
+                "name": "Lyon Perrache - Lyon Part Dieu - Bourg En Bresse",
+                "opening_time": "051700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Lyon Part Dieu - Bourg En Bresse"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87734004",
+                "name": "Clermont-Ferrand (Clermont-Ferrand)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87734004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87734004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.778945",
+                        "lon": "3.100543"
+                    },
+                    "id": "stop_area:SNCF:87734004",
+                    "label": "Clermont-Ferrand (Clermont-Ferrand)",
+                    "links": [],
+                    "name": "Clermont-Ferrand",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D79097CD-B3F9-4C30-8676-74078751808C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D79097CD-B3F9-4C30-8676-74078751808C:",
+                "links": [],
+                "name": "Lyon Perrache - Lyon Part Dieu - Clermont-Ferrand",
+                "opening_time": "060000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Lyon Part Dieu - Clermont-Ferrand"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9F274BE1-3158-4AD4-9B2F-5D1AC4DBCE72:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "174700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9F274BE1-3158-4AD4-9B2F-5D1AC4DBCE72:",
+                "links": [],
+                "name": "Lyon Perrache - Lyon Part Dieu - Paray - Nevers - Tours",
+                "opening_time": "114600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Lyon Part Dieu - Paray - Nevers - Tours"
+        }
+    ]
+}

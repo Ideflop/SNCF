@@ -1,0 +1,1636 @@
+{
+    "context": {
+        "current_datetime": "20220402T200657",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=34&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=36&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 35,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87574970",
+                "name": "Corbeil Essonne Noctilien (Corbeil-Essonnes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87574970"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87574970"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.613964",
+                        "lon": "2.474243"
+                    },
+                    "id": "stop_area:SNCF:87574970",
+                    "label": "Corbeil Essonne Noctilien (Corbeil-Essonnes)",
+                    "links": [],
+                    "name": "Corbeil Essonne Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87588202_stop_area:SNCF:87574970",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87588202_stop_area:SNCF:87574970",
+                "links": [],
+                "name": "Gare De Lyon Noctilien - Corbeil Essonne Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare De Lyon Noctilien - Corbeil Essonne Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87393314",
+                "name": "Rambouillet (Rambouillet)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87393314"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87393314"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.64377",
+                        "lon": "1.83154"
+                    },
+                    "id": "stop_area:SNCF:87393314",
+                    "label": "Rambouillet (Rambouillet)",
+                    "links": [],
+                    "name": "Rambouillet",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87591156_stop_area:SNCF:87393314",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87591156_stop_area:SNCF:87393314",
+                "links": [],
+                "name": "Gare Montparnasse Noctilien - Rambouillet",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Montparnasse Noctilien - Rambouillet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611244",
+                "name": "Montauban Ville Bourbon (Montauban)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611244"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611244"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.01444",
+                        "lon": "1.341499"
+                    },
+                    "id": "stop_area:SNCF:87611244",
+                    "label": "Montauban Ville Bourbon (Montauban)",
+                    "links": [],
+                    "name": "Montauban Ville Bourbon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87611004_stop_area:SNCF:87611244",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87611004_stop_area:SNCF:87611244",
+                "links": [],
+                "name": "Toulouse Matabiau - Montauban Ville Bourbon",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Montauban Ville Bourbon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591156",
+                "name": "Gare Montparnasse Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591156"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591156"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.838687",
+                        "lon": "2.316877"
+                    },
+                    "id": "stop_area:SNCF:87591156",
+                    "label": "Gare Montparnasse Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare Montparnasse Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87393314_stop_area:SNCF:87591156",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87393314_stop_area:SNCF:87591156",
+                "links": [],
+                "name": "Rambouillet - Gare Montparnasse Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Rambouillet - Gare Montparnasse Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87757625",
+                "name": "Cannes (Cannes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87757625"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87757625"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.553908",
+                        "lon": "7.019711"
+                    },
+                    "id": "stop_area:SNCF:87757625",
+                    "label": "Cannes (Cannes)",
+                    "links": [],
+                    "name": "Cannes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87757724_stop_area:SNCF:87757625",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87757724_stop_area:SNCF:87757625",
+                "links": [],
+                "name": "Grasse - Cannes",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Grasse - Cannes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87615286",
+                "name": "Carcassonne (Carcassonne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87615286"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87615286"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.218029",
+                        "lon": "2.351824"
+                    },
+                    "id": "stop_area:SNCF:87615286",
+                    "label": "Carcassonne (Carcassonne)",
+                    "links": [],
+                    "name": "Carcassonne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87611004_stop_area:SNCF:87615286",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87611004_stop_area:SNCF:87615286",
+                "links": [],
+                "name": "Toulouse Matabiau - Carcassonne",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Carcassonne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212027",
+                "name": "Strasbourg (Strasbourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212027"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212027"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.584532",
+                        "lon": "7.734793"
+                    },
+                    "id": "stop_area:SNCF:87212027",
+                    "label": "Strasbourg (Strasbourg)",
+                    "links": [],
+                    "name": "Strasbourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87214726_stop_area:SNCF:87212027",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87214726_stop_area:SNCF:87212027",
+                "links": [],
+                "name": "Rothau - Strasbourg",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Rothau - Strasbourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87595017",
+                "name": "Meaux Noctilien (Meaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87595017"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87595017"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.957286",
+                        "lon": "2.874147"
+                    },
+                    "id": "stop_area:SNCF:87595017",
+                    "label": "Meaux Noctilien (Meaux)",
+                    "links": [],
+                    "name": "Meaux Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87591180_stop_area:SNCF:87595017",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87591180_stop_area:SNCF:87595017",
+                "links": [],
+                "name": "Gare De L'Est Noctilien - Meaux Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare De L'Est Noctilien - Meaux Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600114",
+                "name": "Paris Saint-Lazare Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600114"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600114"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.875625",
+                        "lon": "2.326452"
+                    },
+                    "id": "stop_area:SNCF:87600114",
+                    "label": "Paris Saint-Lazare Noctilien (Paris)",
+                    "links": [],
+                    "name": "Paris Saint-Lazare Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87604892_stop_area:SNCF:87600114",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87604892_stop_area:SNCF:87600114",
+                "links": [],
+                "name": "Mantes-La-Jolie Noctilien - Paris Saint-Lazare Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Mantes-La-Jolie Noctilien - Paris Saint-Lazare Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87317586",
+                "name": "Boulogne sur Mer (Boulogne-sur-Mer)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87317586"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87317586"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.715613",
+                        "lon": "1.609714"
+                    },
+                    "id": "stop_area:SNCF:87317586",
+                    "label": "Boulogne sur Mer (Boulogne-sur-Mer)",
+                    "links": [],
+                    "name": "Boulogne sur Mer",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87317263_stop_area:SNCF:87317586",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87317263_stop_area:SNCF:87317586",
+                "links": [],
+                "name": "Calais Ville - Boulogne sur Mer",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Calais Ville - Boulogne sur Mer"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471003",
+                "name": "Rennes (Rennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.103517",
+                        "lon": "-1.672744"
+                    },
+                    "id": "stop_area:SNCF:87471003",
+                    "label": "Rennes (Rennes)",
+                    "links": [],
+                    "name": "Rennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87478107_stop_area:SNCF:87471003",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87478107_stop_area:SNCF:87471003",
+                "links": [],
+                "name": "Saint-Malo - Rennes",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Saint-Malo - Rennes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87588228_stop_area:SNCF:87588202",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87588228_stop_area:SNCF:87588202",
+                "links": [],
+                "name": "Marne-La-Vallee - Chessy Noctilien - Gare De Lyon Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Marne-La-Vallee - Chessy Noctilien - Gare De Lyon Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87476606",
+                "name": "Vannes (Vannes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87476606"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87476606"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.665169",
+                        "lon": "-2.75245"
+                    },
+                    "id": "stop_area:SNCF:87476606",
+                    "label": "Vannes (Vannes)",
+                    "links": [],
+                    "name": "Vannes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87471003_stop_area:SNCF:87476606",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87471003_stop_area:SNCF:87476606",
+                "links": [],
+                "name": "Rennes - Vannes",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Rennes - Vannes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87734004",
+                "name": "Clermont-Ferrand (Clermont-Ferrand)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87734004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87734004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.778945",
+                        "lon": "3.100543"
+                    },
+                    "id": "stop_area:SNCF:87734004",
+                    "label": "Clermont-Ferrand (Clermont-Ferrand)",
+                    "links": [],
+                    "name": "Clermont-Ferrand",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87641423_stop_area:SNCF:87734004",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87641423_stop_area:SNCF:87734004",
+                "links": [],
+                "name": "Volvic - Clermont-Ferrand",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Volvic - Clermont-Ferrand"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591180",
+                "name": "Gare De L'Est Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591180"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591180"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876084",
+                        "lon": "2.358877"
+                    },
+                    "id": "stop_area:SNCF:87591180",
+                    "label": "Gare De L'Est Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De L'Est Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87595017_stop_area:SNCF:87591180",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87595017_stop_area:SNCF:87591180",
+                "links": [],
+                "name": "Meaux Noctilien - Gare De L'Est Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Meaux Noctilien - Gare De L'Est Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87345520",
+                "name": "Cambrai (Cambrai)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87345520"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87345520"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.176582",
+                        "lon": "3.241197"
+                    },
+                    "id": "stop_area:SNCF:87345520",
+                    "label": "Cambrai (Cambrai)",
+                    "links": [],
+                    "name": "Cambrai",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87296004_stop_area:SNCF:87345520",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87296004_stop_area:SNCF:87345520",
+                "links": [],
+                "name": "Saint-Quentin - Cambrai",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Saint-Quentin - Cambrai"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87342337",
+                "name": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87342337"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87342337"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.379156",
+                        "lon": "2.33934"
+                    },
+                    "id": "stop_area:SNCF:87342337",
+                    "label": "Saint-Pol-sur-Ternoise (Saint-Pol-sur-Ternoise)",
+                    "links": [],
+                    "name": "Saint-Pol-sur-Ternoise",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87342006_stop_area:SNCF:87342337",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87342006_stop_area:SNCF:87342337",
+                "links": [],
+                "name": "B\u00e9thune - Saint-Pol-sur-Ternoise",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "B\u00e9thune - Saint-Pol-sur-Ternoise"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87184002",
+                "name": "Belfort (Belfort)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87184002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87184002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.633278",
+                        "lon": "6.854053"
+                    },
+                    "id": "stop_area:SNCF:87184002",
+                    "label": "Belfort (Belfort)",
+                    "links": [],
+                    "name": "Belfort",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87184523_stop_area:SNCF:87184002",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87184523_stop_area:SNCF:87184002",
+                "links": [],
+                "name": "Montb\u00e9liard - Belfort",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Montb\u00e9liard - Belfort"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87286005",
+                "name": "Lille Flandres (Lille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87286005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87286005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.636577",
+                        "lon": "3.06987"
+                    },
+                    "id": "stop_area:SNCF:87286005",
+                    "label": "Lille Flandres (Lille)",
+                    "links": [],
+                    "name": "Lille Flandres",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87345025_stop_area:SNCF:87286005",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87345025_stop_area:SNCF:87286005",
+                "links": [],
+                "name": "Lens - Lille Flandres",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Lens - Lille Flandres"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471003",
+                "name": "Rennes (Rennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.103517",
+                        "lon": "-1.672744"
+                    },
+                    "id": "stop_area:SNCF:87471003",
+                    "label": "Rennes (Rennes)",
+                    "links": [],
+                    "name": "Rennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87471185_stop_area:SNCF:87471003",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87471185_stop_area:SNCF:87471003",
+                "links": [],
+                "name": "Messac - Guipry - Rennes",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Messac - Guipry - Rennes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591180",
+                "name": "Gare De L'Est Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591180"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591180"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876084",
+                        "lon": "2.358877"
+                    },
+                    "id": "stop_area:SNCF:87591180",
+                    "label": "Gare De L'Est Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De L'Est Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87595058_stop_area:SNCF:87591180",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87595058_stop_area:SNCF:87591180",
+                "links": [],
+                "name": "Tournan Noctilien - Gare De L'Est Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Tournan Noctilien - Gare De L'Est Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87613422",
+                "name": "Rodez (Rodez)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87613422"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87613422"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.362633",
+                        "lon": "2.58056"
+                    },
+                    "id": "stop_area:SNCF:87613422",
+                    "label": "Rodez (Rodez)",
+                    "links": [],
+                    "name": "Rodez",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87613109_stop_area:SNCF:87613422",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87613109_stop_area:SNCF:87613422",
+                "links": [],
+                "name": "Capdenac - Rodez",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Capdenac - Rodez"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87718007",
+                "name": "Besan\u00e7on Viotte (Besan\u00e7on)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87718007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87718007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.247049",
+                        "lon": "6.021943"
+                    },
+                    "id": "stop_area:SNCF:87718007",
+                    "label": "Besan\u00e7on Viotte (Besan\u00e7on)",
+                    "links": [],
+                    "name": "Besan\u00e7on Viotte",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87718833_stop_area:SNCF:87718007",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87718833_stop_area:SNCF:87718007",
+                "links": [],
+                "name": "Mouchard - Besan\u00e7on Viotte",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Mouchard - Besan\u00e7on Viotte"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751750",
+                "name": "Aubagne (Aubagne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751750"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751750"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.296073",
+                        "lon": "5.566322"
+                    },
+                    "id": "stop_area:SNCF:87751750",
+                    "label": "Aubagne (Aubagne)",
+                    "links": [],
+                    "name": "Aubagne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87755009_stop_area:SNCF:87751750",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87755009_stop_area:SNCF:87751750",
+                "links": [],
+                "name": "Toulon - Aubagne",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Toulon - Aubagne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87595058",
+                "name": "Tournan Noctilien (Tournan-en-Brie)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87595058"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87595058"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.739605",
+                        "lon": "2.759518"
+                    },
+                    "id": "stop_area:SNCF:87595058",
+                    "label": "Tournan Noctilien (Tournan-en-Brie)",
+                    "links": [],
+                    "name": "Tournan Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87591180_stop_area:SNCF:87595058",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87591180_stop_area:SNCF:87595058",
+                "links": [],
+                "name": "Gare De L'Est Noctilien - Tournan Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare De L'Est Noctilien - Tournan Noctilien"
+        }
+    ]
+}

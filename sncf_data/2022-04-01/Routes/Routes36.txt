@@ -1,0 +1,1636 @@
+{
+    "context": {
+        "current_datetime": "20220402T200658",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=35&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=37&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 36,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87575001",
+                "name": "Poitiers (Poitiers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87575001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87575001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.582232",
+                        "lon": "0.333136"
+                    },
+                    "id": "stop_area:SNCF:87575001",
+                    "label": "Poitiers (Poitiers)",
+                    "links": [],
+                    "name": "Poitiers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87575142_stop_area:SNCF:87575001",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87575142_stop_area:SNCF:87575001",
+                "links": [],
+                "name": "Ch\u00e2tellerault - Poitiers",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Ch\u00e2tellerault - Poitiers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87478164",
+                "name": "Dinan (Dinan)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87478164"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87478164"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.456715",
+                        "lon": "-2.053425"
+                    },
+                    "id": "stop_area:SNCF:87478164",
+                    "label": "Dinan (Dinan)",
+                    "links": [],
+                    "name": "Dinan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87478073_stop_area:SNCF:87478164",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87478073_stop_area:SNCF:87478164",
+                "links": [],
+                "name": "Dol-de-Bretagne - Dinan",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Dol-de-Bretagne - Dinan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751362",
+                "name": "Pertuis (Pertuis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751362"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751362"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.684584",
+                        "lon": "5.503716"
+                    },
+                    "id": "stop_area:SNCF:87751362",
+                    "label": "Pertuis (Pertuis)",
+                    "links": [],
+                    "name": "Pertuis",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87751438_stop_area:SNCF:87751362",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87751438_stop_area:SNCF:87751362",
+                "links": [],
+                "name": "Simiane - Pertuis",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Simiane - Pertuis"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87613422",
+                "name": "Rodez (Rodez)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87613422"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87613422"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.362633",
+                        "lon": "2.58056"
+                    },
+                    "id": "stop_area:SNCF:87613422",
+                    "label": "Rodez (Rodez)",
+                    "links": [],
+                    "name": "Rodez",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87594002_stop_area:SNCF:87613422",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87594002_stop_area:SNCF:87613422",
+                "links": [],
+                "name": "Brive-la-Gaillarde - Rodez",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Brive-la-Gaillarde - Rodez"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87722025",
+                "name": "Lyon Perrache (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87722025"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87722025"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.748508",
+                        "lon": "4.825777"
+                    },
+                    "id": "stop_area:SNCF:87722025",
+                    "label": "Lyon Perrache (Lyon)",
+                    "links": [],
+                    "name": "Lyon Perrache",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87694687_stop_area:SNCF:87722025",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87694687_stop_area:SNCF:87722025",
+                "links": [],
+                "name": "Paray-le-Monial - Lyon Perrache",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Paray-le-Monial - Lyon Perrache"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87672006",
+                "name": "Pau (Pau)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87672006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87672006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.291711",
+                        "lon": "-0.369675"
+                    },
+                    "id": "stop_area:SNCF:87672006",
+                    "label": "Pau (Pau)",
+                    "links": [],
+                    "name": "Pau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87671008_stop_area:SNCF:87672006",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87671008_stop_area:SNCF:87672006",
+                "links": [],
+                "name": "Tarbes - Pau",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Tarbes - Pau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87613422_stop_area:SNCF:87611004",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87613422_stop_area:SNCF:87611004",
+                "links": [],
+                "name": "Rodez - Toulouse Matabiau",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Rodez - Toulouse Matabiau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87584052",
+                "name": "Libourne (Libourne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87584052"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87584052"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.915904",
+                        "lon": "-0.236359"
+                    },
+                    "id": "stop_area:SNCF:87584052",
+                    "label": "Libourne (Libourne)",
+                    "links": [],
+                    "name": "Libourne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87581009_stop_area:SNCF:87584052",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87581009_stop_area:SNCF:87584052",
+                "links": [],
+                "name": "Bordeaux Saint-Jean - Libourne",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Bordeaux Saint-Jean - Libourne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87144014",
+                "name": "Saint-Di\u00e9-des-Vosges (Saint-Di\u00e9-des-Vosges)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87144014"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87144014"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.282043",
+                        "lon": "6.948516"
+                    },
+                    "id": "stop_area:SNCF:87144014",
+                    "label": "Saint-Di\u00e9-des-Vosges (Saint-Di\u00e9-des-Vosges)",
+                    "links": [],
+                    "name": "Saint-Di\u00e9-des-Vosges",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87144006_stop_area:SNCF:87144014",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87144006_stop_area:SNCF:87144014",
+                "links": [],
+                "name": "\u00c9pinal - Saint-Di\u00e9-des-Vosges",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "\u00c9pinal - Saint-Di\u00e9-des-Vosges"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87672725",
+                "name": "Oloron-Sainte-Marie (Oloron-Sainte-Marie)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87672725"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87672725"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.194709",
+                        "lon": "-0.6121180000000001"
+                    },
+                    "id": "stop_area:SNCF:87672725",
+                    "label": "Oloron-Sainte-Marie (Oloron-Sainte-Marie)",
+                    "links": [],
+                    "name": "Oloron-Sainte-Marie",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87672006_stop_area:SNCF:87672725",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87672006_stop_area:SNCF:87672725",
+                "links": [],
+                "name": "Pau - Oloron-Sainte-Marie",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Pau - Oloron-Sainte-Marie"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87313874",
+                "name": "Amiens (Amiens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87313874"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87313874"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.890584",
+                        "lon": "2.308277"
+                    },
+                    "id": "stop_area:SNCF:87313874",
+                    "label": "Amiens (Amiens)",
+                    "links": [],
+                    "name": "Amiens",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87317362_stop_area:SNCF:87313874",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87317362_stop_area:SNCF:87313874",
+                "links": [],
+                "name": "Abbeville - Amiens",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Abbeville - Amiens"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87182394",
+                "name": "Munster (Munster)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87182394"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87182394"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.038621",
+                        "lon": "7.133568"
+                    },
+                    "id": "stop_area:SNCF:87182394",
+                    "label": "Munster (Munster)",
+                    "links": [],
+                    "name": "Munster",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87182014_stop_area:SNCF:87182394",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87182014_stop_area:SNCF:87182394",
+                "links": [],
+                "name": "Colmar - Munster",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Colmar - Munster"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87317529",
+                "name": "Le Tr\u00e9port - Mers-les-Bains (Le Tr\u00e9port)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87317529"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87317529"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.062716",
+                        "lon": "1.376078"
+                    },
+                    "id": "stop_area:SNCF:87317529",
+                    "label": "Le Tr\u00e9port - Mers-les-Bains (Le Tr\u00e9port)",
+                    "links": [],
+                    "name": "Le Tr\u00e9port - Mers-les-Bains",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87313510_stop_area:SNCF:87317529",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87313510_stop_area:SNCF:87317529",
+                "links": [],
+                "name": "Beauvais - Le Tr\u00e9port - Mers-les-Bains",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Beauvais - Le Tr\u00e9port - Mers-les-Bains"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87751404_stop_area:SNCF:87751008",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87751404_stop_area:SNCF:87751008",
+                "links": [],
+                "name": "Aix-en-Provence - Marseille Saint-Charles",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Aix-en-Provence - Marseille Saint-Charles"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87583005",
+                "name": "Angoul\u00eame (Angoul\u00eame)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87583005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87583005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.653572",
+                        "lon": "0.164608"
+                    },
+                    "id": "stop_area:SNCF:87583005",
+                    "label": "Angoul\u00eame (Angoul\u00eame)",
+                    "links": [],
+                    "name": "Angoul\u00eame",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87575001_stop_area:SNCF:87583005",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87575001_stop_area:SNCF:87583005",
+                "links": [],
+                "name": "Poitiers - Angoul\u00eame",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Poitiers - Angoul\u00eame"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:85000109",
+                "name": "Basel SBB (Basel)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "85000109"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "85000109"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.5474",
+                        "lon": "7.58956"
+                    },
+                    "id": "stop_area:SNCF:85000109",
+                    "label": "Basel SBB (Basel)",
+                    "links": [],
+                    "name": "Basel SBB",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:85030007_stop_area:SNCF:85000109",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:85030007_stop_area:SNCF:85000109",
+                "links": [],
+                "name": "Zuerich HB - Basel SBB",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Zuerich HB - Basel SBB"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87592246",
+                "name": "Solignac - Le Vigen (Le Vigen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87592246"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87592246"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.756142",
+                        "lon": "1.285594"
+                    },
+                    "id": "stop_area:SNCF:87592246",
+                    "label": "Solignac - Le Vigen (Le Vigen)",
+                    "links": [],
+                    "name": "Solignac - Le Vigen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87594200_stop_area:SNCF:87592246",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87594200_stop_area:SNCF:87592246",
+                "links": [],
+                "name": "Uzerche - Solignac - Le Vigen",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Uzerche - Solignac - Le Vigen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444000",
+                "name": "Caen (Caen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.176354",
+                        "lon": "-0.347613"
+                    },
+                    "id": "stop_area:SNCF:87444000",
+                    "label": "Caen (Caen)",
+                    "links": [],
+                    "name": "Caen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87444711_stop_area:SNCF:87444000",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87444711_stop_area:SNCF:87444000",
+                "links": [],
+                "name": "Alen\u00e7on - Caen",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Alen\u00e7on - Caen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87611533_stop_area:SNCF:87611004",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87611533_stop_area:SNCF:87611004",
+                "links": [],
+                "name": "Ax-les-Thermes - Toulouse Matabiau",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Ax-les-Thermes - Toulouse Matabiau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87575001",
+                "name": "Poitiers (Poitiers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87575001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87575001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.582232",
+                        "lon": "0.333136"
+                    },
+                    "id": "stop_area:SNCF:87575001",
+                    "label": "Poitiers (Poitiers)",
+                    "links": [],
+                    "name": "Poitiers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87575001_stop_area:SNCF:87575001",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87575001_stop_area:SNCF:87575001",
+                "links": [],
+                "name": "Poitiers - Poitiers",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Poitiers - Poitiers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87214726",
+                "name": "Rothau (Rothau)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87214726"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87214726"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.459232",
+                        "lon": "7.207709"
+                    },
+                    "id": "stop_area:SNCF:87214726",
+                    "label": "Rothau (Rothau)",
+                    "links": [],
+                    "name": "Rothau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87144014_stop_area:SNCF:87214726",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87144014_stop_area:SNCF:87214726",
+                "links": [],
+                "name": "Saint-Di\u00e9-des-Vosges - Rothau",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Saint-Di\u00e9-des-Vosges - Rothau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87413013",
+                "name": "Le Havre (Le Havre)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87413013"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87413013"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.492624",
+                        "lon": "0.124644"
+                    },
+                    "id": "stop_area:SNCF:87413013",
+                    "label": "Le Havre (Le Havre)",
+                    "links": [],
+                    "name": "Le Havre",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87413542_stop_area:SNCF:87413013",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87413542_stop_area:SNCF:87413013",
+                "links": [],
+                "name": "F\u00e9camp - Le Havre",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "F\u00e9camp - Le Havre"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87592410",
+                "name": "Nieul (Nieul)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87592410"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87592410"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.927491",
+                        "lon": "1.172377"
+                    },
+                    "id": "stop_area:SNCF:87592410",
+                    "label": "Nieul (Nieul)",
+                    "links": [],
+                    "name": "Nieul",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87575001_stop_area:SNCF:87592410",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87575001_stop_area:SNCF:87592410",
+                "links": [],
+                "name": "Poitiers - Nieul",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Poitiers - Nieul"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87116582",
+                "name": "Ch\u00e2teau-Thierry (Ch\u00e2teau-Thierry)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87116582"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87116582"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.03814",
+                        "lon": "3.409302"
+                    },
+                    "id": "stop_area:SNCF:87116582",
+                    "label": "Ch\u00e2teau-Thierry (Ch\u00e2teau-Thierry)",
+                    "links": [],
+                    "name": "Ch\u00e2teau-Thierry",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87171553_stop_area:SNCF:87116582",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87171553_stop_area:SNCF:87116582",
+                "links": [],
+                "name": "\u00c9pernay - Ch\u00e2teau-Thierry",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "\u00c9pernay - Ch\u00e2teau-Thierry"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87718007",
+                "name": "Besan\u00e7on Viotte (Besan\u00e7on)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87718007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87718007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.247049",
+                        "lon": "6.021943"
+                    },
+                    "id": "stop_area:SNCF:87718007",
+                    "label": "Besan\u00e7on Viotte (Besan\u00e7on)",
+                    "links": [],
+                    "name": "Besan\u00e7on Viotte",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87743633_stop_area:SNCF:87718007",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87743633_stop_area:SNCF:87718007",
+                "links": [],
+                "name": "Saint-Claude - Besan\u00e7on Viotte",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Saint-Claude - Besan\u00e7on Viotte"
+        }
+    ]
+}

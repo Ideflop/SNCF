@@ -1,0 +1,1698 @@
+{
+    "context": {
+        "current_datetime": "20220402T200635",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=0&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=2&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 1,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:552100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:552100",
+                "links": [],
+                "name": "Toulouse Matabiau - Bayonne",
+                "opening_time": "070300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Bayonne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:556300",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "092600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:556300",
+                "links": [],
+                "name": "Cerb\u00e8re - Paris Austerlitz",
+                "opening_time": "190700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cerb\u00e8re - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611483",
+                "name": "Latour-de-Carol - Enveitg (Enveitg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611483"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611483"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "42.458991",
+                        "lon": "1.904433"
+                    },
+                    "id": "stop_area:SNCF:87611483",
+                    "label": "Latour-de-Carol - Enveitg (Enveitg)",
+                    "links": [],
+                    "name": "Latour-de-Carol - Enveitg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:556200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "091200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:556200",
+                "links": [],
+                "name": "Latour-de-Carol - Enveitg - Paris Austerlitz",
+                "opening_time": "191800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Latour-de-Carol - Enveitg - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:770100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "090800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:770100",
+                "links": [],
+                "name": "Paris Austerlitz - Brian\u00e7on",
+                "opening_time": "191600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Austerlitz - Brian\u00e7on"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87671339",
+                "name": "Lourdes (Lourdes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87671339"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87671339"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.100429",
+                        "lon": "-0.042186"
+                    },
+                    "id": "stop_area:SNCF:87671339",
+                    "label": "Lourdes (Lourdes)",
+                    "links": [],
+                    "name": "Lourdes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:556100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "085100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:556100",
+                "links": [],
+                "name": "Paris Austerlitz - Lourdes",
+                "opening_time": "195500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Austerlitz - Lourdes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:555200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "092100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:555200",
+                "links": [],
+                "name": "Rodez - Paris Austerlitz",
+                "opening_time": "193600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rodez - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:555100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "083600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ICN",
+                    "name": "Intercit\u00e9s de nuit"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:555100",
+                "links": [],
+                "name": "Toulouse Matabiau - Paris Austerlitz",
+                "opening_time": "214500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:85010231",
+                "name": "Coppet (Coppet)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "85010231"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "85010231"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.317378",
+                        "lon": "6.187829"
+                    },
+                    "id": "stop_area:SNCF:85010231",
+                    "label": "Coppet (Coppet)",
+                    "links": [],
+                    "name": "Coppet",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7EF9EA42-DEB3-4717-ABDF-2E1B8BC66BFA:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "014000",
+                "code": "L1",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::a80c322c-12b1-4273-9413-e2df5dd6dce8:",
+                    "name": "LEX"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7EF9EA42-DEB3-4717-ABDF-2E1B8BC66BFA:",
+                "links": [],
+                "name": "L1",
+                "opening_time": "021000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L1"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87746008",
+                "name": "Annecy (Annecy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87746008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87746008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.902047",
+                        "lon": "6.121826"
+                    },
+                    "id": "stop_area:SNCF:87746008",
+                    "label": "Annecy (Annecy)",
+                    "links": [],
+                    "name": "Annecy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::608A9B0B-6DF0-475B-82BA-E9792D7972A5:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "012000",
+                "code": "L2",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::a80c322c-12b1-4273-9413-e2df5dd6dce8:",
+                    "name": "LEX"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::608A9B0B-6DF0-475B-82BA-E9792D7972A5:",
+                "links": [],
+                "name": "L2",
+                "opening_time": "051000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L2"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87746479",
+                "name": "Saint-Gervais-les-Bains-Le Fayet (Saint-Gervais-les-Bains)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87746479"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87746479"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.906423",
+                        "lon": "6.701331"
+                    },
+                    "id": "stop_area:SNCF:87746479",
+                    "label": "Saint-Gervais-les-Bains-Le Fayet (Saint-Gervais-les-Bains)",
+                    "links": [],
+                    "name": "Saint-Gervais-les-Bains-Le Fayet",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E937D19D-BA51-4EC8-9C8E-6B20FD5D6FF3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221600",
+                "code": "L3",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::a80c322c-12b1-4273-9413-e2df5dd6dce8:",
+                    "name": "LEX"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E937D19D-BA51-4EC8-9C8E-6B20FD5D6FF3:",
+                "links": [],
+                "name": "L3",
+                "opening_time": "054900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L3"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87745497",
+                "name": "Annemasse (Annemasse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87745497"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87745497"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.199245",
+                        "lon": "6.236431"
+                    },
+                    "id": "stop_area:SNCF:87745497",
+                    "label": "Annemasse (Annemasse)",
+                    "links": [],
+                    "name": "Annemasse",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3DCDF960-BA93-4443-899F-283A2A13B7FE:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235959",
+                "code": "L4",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::a80c322c-12b1-4273-9413-e2df5dd6dce8:",
+                    "name": "LEX"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3DCDF960-BA93-4443-899F-283A2A13B7FE:",
+                "links": [],
+                "name": "L4",
+                "opening_time": "000000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L4"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87745000",
+                "name": "Bellegarde (Valserh\u00f4ne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87745000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87745000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.109425",
+                        "lon": "5.823483"
+                    },
+                    "id": "stop_area:SNCF:87745000",
+                    "label": "Bellegarde (Valserh\u00f4ne)",
+                    "links": [],
+                    "name": "Bellegarde",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C5996E08-5B80-4EA7-8BD5-268DCBA77858:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220000",
+                "code": "L6",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:FR:Branding::a80c322c-12b1-4273-9413-e2df5dd6dce8:",
+                    "name": "LEX"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C5996E08-5B80-4EA7-8BD5-268DCBA77858:",
+                "links": [],
+                "name": "L6",
+                "opening_time": "050200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L6"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N130",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "060300",
+                "code": "N130",
+                "codes": [],
+                "color": "EB282F",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N130",
+                "links": [],
+                "name": "Gare de Lyon/Marne-la-Vall\u00e9e - Chessy RER",
+                "opening_time": "002909",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Marne-la-Vall\u00e9e - Chessy RER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N131",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "055500",
+                "code": "N131",
+                "codes": [],
+                "color": "FFE300",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N131",
+                "links": [],
+                "name": "Gare de Lyon/Br\u00e9tigny RER",
+                "opening_time": "000000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Br\u00e9tigny RER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87590562",
+                "name": "Melun Noctilien (Melun)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87590562"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87590562"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.5277",
+                        "lon": "2.655505"
+                    },
+                    "id": "stop_area:SNCF:87590562",
+                    "label": "Melun Noctilien (Melun)",
+                    "links": [],
+                    "name": "Melun Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N132",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "061809",
+                "code": "N132",
+                "codes": [],
+                "color": "3CA342",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N132",
+                "links": [],
+                "name": "Gare de Lyon/Melun RER",
+                "opening_time": "010000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Melun RER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87574921",
+                "name": "Juvisy Noctilien (Juvisy-sur-Orge)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87574921"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87574921"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.690446",
+                        "lon": "2.381638"
+                    },
+                    "id": "stop_area:SNCF:87574921",
+                    "label": "Juvisy Noctilien (Juvisy-sur-Orge)",
+                    "links": [],
+                    "name": "Juvisy Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N133",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "053344",
+                "code": "N133",
+                "codes": [],
+                "color": "FFE300",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N133",
+                "links": [],
+                "name": "Gare de Lyon/Juvisy",
+                "opening_time": "010000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Juvisy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87590505",
+                "name": "Combs-La-Ville Quincy Noctilie (Combs-la-Ville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87590505"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87590505"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.667073",
+                        "lon": "2.547841"
+                    },
+                    "id": "stop_area:SNCF:87590505",
+                    "label": "Combs-La-Ville Quincy Noctilie (Combs-la-Ville)",
+                    "links": [],
+                    "name": "Combs-La-Ville Quincy Noctilie",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N134",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "051400",
+                "code": "N134",
+                "codes": [],
+                "color": "3CA342",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N134",
+                "links": [],
+                "name": "Gare de Lyon/Combs la Ville",
+                "opening_time": "010000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Combs la Ville"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87574970",
+                "name": "Corbeil Essonne Noctilien (Corbeil-Essonnes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87574970"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87574970"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.613964",
+                        "lon": "2.474243"
+                    },
+                    "id": "stop_area:SNCF:87574970",
+                    "label": "Corbeil Essonne Noctilien (Corbeil-Essonnes)",
+                    "links": [],
+                    "name": "Corbeil Essonne Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N135",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "055956",
+                "code": "N135",
+                "codes": [],
+                "color": "3CA342",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N135",
+                "links": [],
+                "name": "Villeneuve St Georges/Corbeil Essonnes",
+                "opening_time": "021500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Villeneuve St Georges/Corbeil Essonnes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87994152",
+                "name": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87994152"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87994152"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.009976",
+                        "lon": "2.561354"
+                    },
+                    "id": "stop_area:SNCF:87994152",
+                    "label": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                    "links": [],
+                    "name": "A\u00e9roport Charles de Gaulle T3",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N140",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "050200",
+                "code": "N140",
+                "codes": [],
+                "color": "4D8FC9",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N140",
+                "links": [],
+                "name": "Gare de l'Est/A\u00e9roport Ch. de Gaulle",
+                "opening_time": "010000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de l'Est/A\u00e9roport Ch. de Gaulle"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591180",
+                "name": "Gare De L'Est Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591180"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591180"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876084",
+                        "lon": "2.358877"
+                    },
+                    "id": "stop_area:SNCF:87591180",
+                    "label": "Gare De L'Est Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De L'Est Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N141",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "061500",
+                "code": "N141",
+                "codes": [],
+                "color": "FCB131",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N141",
+                "links": [],
+                "name": "Gare de l'Est/Gare de Meaux",
+                "opening_time": "003000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de l'Est/Gare de Meaux"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87595058",
+                "name": "Tournan Noctilien (Tournan-en-Brie)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87595058"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87595058"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.739605",
+                        "lon": "2.759518"
+                    },
+                    "id": "stop_area:SNCF:87595058",
+                    "label": "Tournan Noctilien (Tournan-en-Brie)",
+                    "links": [],
+                    "name": "Tournan Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N142",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "060106",
+                "code": "N142",
+                "codes": [],
+                "color": "D17FB5",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N142",
+                "links": [],
+                "name": "Gare de l'Est/Tournan RER",
+                "opening_time": "005000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de l'Est/Tournan RER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87994152",
+                "name": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87994152"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87994152"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.009976",
+                        "lon": "2.561354"
+                    },
+                    "id": "stop_area:SNCF:87994152",
+                    "label": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                    "links": [],
+                    "name": "A\u00e9roport Charles de Gaulle T3",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N143",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "060500",
+                "code": "N143",
+                "codes": [],
+                "color": "4D8FC9",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N143",
+                "links": [],
+                "name": "Gare de l'Est/A\u00e9roport Ch. de Gaulle",
+                "opening_time": "235834",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de l'Est/A\u00e9roport Ch. de Gaulle"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N144",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "055806",
+                "code": "N144",
+                "codes": [],
+                "color": "3CA342",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N144",
+                "links": [],
+                "name": "Gare de Lyon/Corbeil Essonnes",
+                "opening_time": "001000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare de Lyon/Corbeil Essonnes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591156",
+                "name": "Gare Montparnasse Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591156"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591156"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.838687",
+                        "lon": "2.316877"
+                    },
+                    "id": "stop_area:SNCF:87591156",
+                    "label": "Gare Montparnasse Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare Montparnasse Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N145",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "062200",
+                "code": "N145",
+                "codes": [],
+                "color": "00A091",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N145",
+                "links": [],
+                "name": "Gare Montparnasse/Rambouillet",
+                "opening_time": "010500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Montparnasse/Rambouillet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600205",
+                "name": "Cergy-Le-Haut Noctilien (Cergy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600205"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600205"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.048477",
+                        "lon": "2.012349"
+                    },
+                    "id": "stop_area:SNCF:87600205",
+                    "label": "Cergy-Le-Haut Noctilien (Cergy)",
+                    "links": [],
+                    "name": "Cergy-Le-Haut Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N150",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "054502",
+                "code": "N150",
+                "codes": [],
+                "color": "EB282F",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N150",
+                "links": [],
+                "name": "Gare Saint-Lazare/Cergy Le Haut RER",
+                "opening_time": "000000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Saint-Lazare/Cergy Le Haut RER"
+        }
+    ]
+}

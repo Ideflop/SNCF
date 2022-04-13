@@ -1,0 +1,1709 @@
+{
+    "context": {
+        "current_datetime": "20220402T200634",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=1&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 0,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113001",
+                "name": "Paris Est (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876742",
+                        "lon": "2.358424"
+                    },
+                    "id": "stop_area:SNCF:87113001",
+                    "label": "Paris Est (Paris)",
+                    "links": [],
+                    "name": "Paris Est",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:651200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:DBS",
+                    "name": "DB SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:651200",
+                "links": [],
+                "name": "Francfort sur le Main - Paris Est",
+                "opening_time": "055600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Francfort sur le Main - Paris Est"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212464",
+                "name": "Lauterbourg (Lauterbourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212464"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212464"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.967697",
+                        "lon": "8.182682"
+                    },
+                    "id": "stop_area:SNCF:87212464",
+                    "label": "Lauterbourg (Lauterbourg)",
+                    "links": [],
+                    "name": "Lauterbourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2515CEC3-EF8D-40D6-AA15-5DC17572BCFA:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:DBS",
+                    "name": "DB SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2515CEC3-EF8D-40D6-AA15-5DC17572BCFA:",
+                "links": [],
+                "name": "Lauterbourg - Woerth Rhein",
+                "opening_time": "042800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lauterbourg - Woerth Rhein"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:671100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:DBS",
+                    "name": "DB SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:671100",
+                "links": [],
+                "name": "Marseille Saint-Charles - Francfort sur le Main",
+                "opening_time": "081000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marseille Saint-Charles - Francfort sur le Main"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113001",
+                "name": "Paris Est (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876742",
+                        "lon": "2.358424"
+                    },
+                    "id": "stop_area:SNCF:87113001",
+                    "label": "Paris Est (Paris)",
+                    "links": [],
+                    "name": "Paris Est",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:651100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:DBS",
+                    "name": "DB SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:651100",
+                "links": [],
+                "name": "Paris Est - Francfort sur le Main",
+                "opening_time": "065600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Est - Francfort sur le Main"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113001",
+                "name": "Paris Est (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876742",
+                        "lon": "2.358424"
+                    },
+                    "id": "stop_area:SNCF:87113001",
+                    "label": "Paris Est (Paris)",
+                    "links": [],
+                    "name": "Paris Est",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:661100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:DBS",
+                    "name": "DB SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:661100",
+                "links": [],
+                "name": "Stuttgart Hbf - Paris Est",
+                "opening_time": "064000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Stuttgart Hbf - Paris Est"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-84000588-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-84000588-70154005",
+                "links": [],
+                "name": "Amsterdam Centraal - Londres Saint Pancras",
+                "opening_time": "134700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Amsterdam Centraal - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-87741793-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "171300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-87741793-70154005",
+                "links": [],
+                "name": "Bourg-Saint-Maurice - Londres Saint Pancras",
+                "opening_time": "093200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bourg-Saint-Maurice - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-88140010-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-88140010-70154005",
+                "links": [],
+                "name": "Bruxelles Midi - Londres Saint Pancras",
+                "opening_time": "085200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bruxelles Midi - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84000588",
+                "name": "Amsterdam Centraal (Amsterdam)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84000588"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84000588"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.37908",
+                        "lon": "4.900632"
+                    },
+                    "id": "stop_area:SNCF:84000588",
+                    "label": "Amsterdam Centraal (Amsterdam)",
+                    "links": [],
+                    "name": "Amsterdam Centraal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-70154005-84000588",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-70154005-84000588",
+                "links": [],
+                "name": "Londres Saint Pancras - Amsterdam Centraal",
+                "opening_time": "091900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Londres Saint Pancras - Amsterdam Centraal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:88140010",
+                "name": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "88140010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "88140010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.836",
+                        "lon": "4.336"
+                    },
+                    "id": "stop_area:SNCF:88140010",
+                    "label": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                    "links": [],
+                    "name": "Bruxelles Midi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-70154005-88140010",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-70154005-88140010",
+                "links": [],
+                "name": "Londres Saint Pancras - Bruxelles Midi",
+                "opening_time": "080400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Londres Saint Pancras - Bruxelles Midi"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87111849",
+                "name": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87111849"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87111849"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.869898",
+                        "lon": "2.782626"
+                    },
+                    "id": "stop_area:SNCF:87111849",
+                    "label": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                    "links": [],
+                    "name": "Marne-la-Vall\u00e9e Chessy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-70154005-87111849",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "140000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-70154005-87111849",
+                "links": [],
+                "name": "Londres Saint Pancras - Marne-la-Vall\u00e9e Chessy",
+                "opening_time": "113100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Londres Saint Pancras - Marne-la-Vall\u00e9e Chessy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-70154005-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-70154005-87271007",
+                "links": [],
+                "name": "Londres Saint Pancras - Paris Gare du Nord",
+                "opening_time": "070100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Londres Saint Pancras - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84005306",
+                "name": "Rotterdam Centraal (Rotterdam)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84005306"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84005306"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.924845",
+                        "lon": "4.469313"
+                    },
+                    "id": "stop_area:SNCF:84005306",
+                    "label": "Rotterdam Centraal (Rotterdam)",
+                    "links": [],
+                    "name": "Rotterdam Centraal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-70154005-84005306",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-70154005-84005306",
+                "links": [],
+                "name": "Londres Saint Pancras - Rotterdam Centraal",
+                "opening_time": "120400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Londres Saint Pancras - Rotterdam Centraal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-87111849-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-87111849-70154005",
+                "links": [],
+                "name": "Marne-la-Vall\u00e9e Chessy - Londres Saint Pancras",
+                "opening_time": "180300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marne-la-Vall\u00e9e Chessy - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-87271007-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-87271007-70154005",
+                "links": [],
+                "name": "Paris Gare du Nord - Londres Saint Pancras",
+                "opening_time": "071300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:70154005",
+                "name": "Londres Saint Pancras (London)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "70154005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "70154005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.5338",
+                        "lon": "-0.12807"
+                    },
+                    "id": "stop_area:SNCF:70154005",
+                    "label": "Londres Saint Pancras (London)",
+                    "links": [],
+                    "name": "Londres Saint Pancras",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0019-84005306-70154005",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:EUROSTAR",
+                    "name": "Eurostar"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0019-84005306-70154005",
+                "links": [],
+                "name": "Rotterdam Centraal - Londres Saint Pancras",
+                "opening_time": "142800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rotterdam Centraal - Londres Saint Pancras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:180100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:180100",
+                "links": [],
+                "name": "Bordeaux Saint-Jean - Marseille Saint-Charles",
+                "opening_time": "062800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bordeaux Saint-Jean - Marseille Saint-Charles"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:591100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:591100",
+                "links": [],
+                "name": "Bordeaux Saint-Jean - Nantes",
+                "opening_time": "075500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bordeaux Saint-Jean - Nantes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:560400",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231330",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:560400",
+                "links": [],
+                "name": "Brive-la-Gaillarde - Paris Austerlitz",
+                "opening_time": "064100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Brive-la-Gaillarde - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87781005",
+                "name": "B\u00e9ziers (B\u00e9ziers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87781005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87781005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.336295",
+                        "lon": "3.218895"
+                    },
+                    "id": "stop_area:SNCF:87781005",
+                    "label": "B\u00e9ziers (B\u00e9ziers)",
+                    "links": [],
+                    "name": "B\u00e9ziers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:723100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "193130",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:723100",
+                "links": [],
+                "name": "B\u00e9ziers - Clermont-Ferrand",
+                "opening_time": "093500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "B\u00e9ziers - Clermont-Ferrand"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87722025",
+                "name": "Lyon Perrache (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87722025"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87722025"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.748508",
+                        "lon": "4.825777"
+                    },
+                    "id": "stop_area:SNCF:87722025",
+                    "label": "Lyon Perrache (Lyon)",
+                    "links": [],
+                    "name": "Lyon Perrache",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:170300",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "163400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:170300",
+                "links": [],
+                "name": "Clermont-Ferrand - Lyon Perrache",
+                "opening_time": "112700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Clermont-Ferrand - Lyon Perrache"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:560100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "000800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:560100",
+                "links": [],
+                "name": "Limoges B\u00e9n\u00e9dictins - Paris Austerlitz",
+                "opening_time": "035800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Limoges B\u00e9n\u00e9dictins - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:121100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:121100",
+                "links": [],
+                "name": "Nantes - Lyon Perrache",
+                "opening_time": "062800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Lyon Perrache"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:560200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:560200",
+                "links": [],
+                "name": "Paris Austerlitz - Toulouse Matabiau",
+                "opening_time": "063400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Austerlitz - Toulouse Matabiau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87734004",
+                "name": "Clermont-Ferrand (Clermont-Ferrand)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87734004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87734004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.778945",
+                        "lon": "3.100543"
+                    },
+                    "id": "stop_area:SNCF:87734004",
+                    "label": "Clermont-Ferrand (Clermont-Ferrand)",
+                    "links": [],
+                    "name": "Clermont-Ferrand",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:722100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:IC",
+                    "name": "Intercit\u00e9s"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:722100",
+                "links": [],
+                "name": "Paris Bercy Bourg. Pays d'Auv. - Clermont-Ferrand",
+                "opening_time": "052400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Bercy Bourg. Pays d'Auv. - Clermont-Ferrand"
+        }
+    ]
+}

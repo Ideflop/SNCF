@@ -1,0 +1,1790 @@
+{
+    "context": {
+        "current_datetime": "20220402T200655",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=32&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=34&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 33,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84000588",
+                "name": "Amsterdam Centraal (Amsterdam)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84000588"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84000588"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.37908",
+                        "lon": "4.900632"
+                    },
+                    "id": "stop_area:SNCF:84000588",
+                    "label": "Amsterdam Centraal (Amsterdam)",
+                    "links": [],
+                    "name": "Amsterdam Centraal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-88140010-84000588",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "184400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-88140010-84000588",
+                "links": [],
+                "name": "Bruxelles Midi - Amsterdam Centraal",
+                "opening_time": "065200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bruxelles Midi - Amsterdam Centraal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741793",
+                "name": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741793"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741793"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.619036",
+                        "lon": "6.771273"
+                    },
+                    "id": "stop_area:SNCF:87741793",
+                    "label": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                    "links": [],
+                    "name": "Bourg-Saint-Maurice",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-88140010-87741793",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "142900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-88140010-87741793",
+                "links": [],
+                "name": "Bruxelles Midi - Bourg-Saint-Maurice",
+                "opening_time": "080400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bruxelles Midi - Bourg-Saint-Maurice"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-88140010-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-88140010-87271007",
+                "links": [],
+                "name": "Bruxelles Midi - Paris Gare du Nord",
+                "opening_time": "064200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bruxelles Midi - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-80154583-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-80154583-87271007",
+                "links": [],
+                "name": "Cologne - Paris Gare du Nord",
+                "opening_time": "064400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cologne - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-80100537-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "160500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-80100537-87271007",
+                "links": [],
+                "name": "Dortmund Hbf - Paris Gare du Nord",
+                "opening_time": "045700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Dortmund Hbf - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-80101840-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-80101840-87271007",
+                "links": [],
+                "name": "Essen Hbf - Paris Gare du Nord",
+                "opening_time": "154900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Essen Hbf - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84000588",
+                "name": "Amsterdam Centraal (Amsterdam)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84000588"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84000588"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.37908",
+                        "lon": "4.900632"
+                    },
+                    "id": "stop_area:SNCF:84000588",
+                    "label": "Amsterdam Centraal (Amsterdam)",
+                    "links": [],
+                    "name": "Amsterdam Centraal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87111849-84000588",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87111849-84000588",
+                "links": [],
+                "name": "Marne-la-Vall\u00e9e Chessy - Amsterdam Centraal",
+                "opening_time": "160400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marne-la-Vall\u00e9e Chessy - Amsterdam Centraal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:88140010",
+                "name": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "88140010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "88140010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.836",
+                        "lon": "4.336"
+                    },
+                    "id": "stop_area:SNCF:88140010",
+                    "label": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                    "links": [],
+                    "name": "Bruxelles Midi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87111849-88140010",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87111849-88140010",
+                "links": [],
+                "name": "Marne-la-Vall\u00e9e Chessy - Bruxelles Midi",
+                "opening_time": "120400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marne-la-Vall\u00e9e Chessy - Bruxelles Midi"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84005611",
+                "name": "Schiphol Airport (Schiphol)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84005611"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84005611"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.309636",
+                        "lon": "4.761985"
+                    },
+                    "id": "stop_area:SNCF:84005611",
+                    "label": "Schiphol Airport (Schiphol)",
+                    "links": [],
+                    "name": "Schiphol Airport",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87111849-84005611",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87111849-84005611",
+                "links": [],
+                "name": "Marne-la-Vall\u00e9e Chessy - Schiphol Airport",
+                "opening_time": "200400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marne-la-Vall\u00e9e Chessy - Schiphol Airport"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84000588",
+                "name": "Amsterdam Centraal (Amsterdam)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84000588"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84000588"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.37908",
+                        "lon": "4.900632"
+                    },
+                    "id": "stop_area:SNCF:84000588",
+                    "label": "Amsterdam Centraal (Amsterdam)",
+                    "links": [],
+                    "name": "Amsterdam Centraal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-84000588",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-84000588",
+                "links": [],
+                "name": "Paris Gare du Nord - Amsterdam Centraal",
+                "opening_time": "061300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Amsterdam Centraal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:88140010",
+                "name": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "88140010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "88140010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.836",
+                        "lon": "4.336"
+                    },
+                    "id": "stop_area:SNCF:88140010",
+                    "label": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                    "links": [],
+                    "name": "Bruxelles Midi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-88140010",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-88140010",
+                "links": [],
+                "name": "Paris Gare du Nord - Bruxelles Midi",
+                "opening_time": "072500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Bruxelles Midi"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:80154583",
+                "name": "Cologne (K\u00f6ln)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "80154583"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "80154583"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.9428",
+                        "lon": "6.9591"
+                    },
+                    "id": "stop_area:SNCF:80154583",
+                    "label": "Cologne (K\u00f6ln)",
+                    "links": [],
+                    "name": "Cologne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-80154583",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-80154583",
+                "links": [],
+                "name": "Paris Gare du Nord - Cologne",
+                "opening_time": "075500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Cologne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:80100537",
+                "name": "Dortmund Hbf (Dortmund)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "80100537"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "80100537"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.518",
+                        "lon": "7.4592"
+                    },
+                    "id": "stop_area:SNCF:80100537",
+                    "label": "Dortmund Hbf (Dortmund)",
+                    "links": [],
+                    "name": "Dortmund Hbf",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-80100537",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-80100537",
+                "links": [],
+                "name": "Paris Gare du Nord - Dortmund Hbf",
+                "opening_time": "155500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Dortmund Hbf"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:80101840",
+                "name": "Essen Hbf (Essen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "80101840"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "80101840"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "51.4516",
+                        "lon": "7.0138"
+                    },
+                    "id": "stop_area:SNCF:80101840",
+                    "label": "Essen Hbf (Essen)",
+                    "links": [],
+                    "name": "Essen Hbf",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-80101840",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "163100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-80101840",
+                "links": [],
+                "name": "Paris Gare du Nord - Essen Hbf",
+                "opening_time": "095500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Essen Hbf"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:84005611",
+                "name": "Schiphol Airport (Schiphol)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "84005611"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "84005611"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "52.309636",
+                        "lon": "4.761985"
+                    },
+                    "id": "stop_area:SNCF:84005611",
+                    "label": "Schiphol Airport (Schiphol)",
+                    "links": [],
+                    "name": "Schiphol Airport",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87271007-84005611",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87271007-84005611",
+                "links": [],
+                "name": "Paris Gare du Nord - Schiphol Airport",
+                "opening_time": "075500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare du Nord - Schiphol Airport"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87111849",
+                "name": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87111849"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87111849"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.869898",
+                        "lon": "2.782626"
+                    },
+                    "id": "stop_area:SNCF:87111849",
+                    "label": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                    "links": [],
+                    "name": "Marne-la-Vall\u00e9e Chessy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-84005611-87111849",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "103100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-84005611-87111849",
+                "links": [],
+                "name": "Schiphol Airport - Marne-la-Vall\u00e9e Chessy",
+                "opening_time": "070400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Schiphol Airport - Marne-la-Vall\u00e9e Chessy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-84005611-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-84005611-87271007",
+                "links": [],
+                "name": "Schiphol Airport - Paris Gare du Nord",
+                "opening_time": "083400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Schiphol Airport - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87591875",
+                "name": "La Verriere Noctilien (La Verri\u00e8re)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87591875"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87591875"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.755566",
+                        "lon": "1.942579"
+                    },
+                    "id": "stop_area:SNCF:87591875",
+                    "label": "La Verriere Noctilien (La Verri\u00e8re)",
+                    "links": [],
+                    "name": "La Verriere Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87591156_stop_area:SNCF:87591875",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87591156_stop_area:SNCF:87591875",
+                "links": [],
+                "name": "Gare Montparnasse Noctilien - La Verriere Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Montparnasse Noctilien - La Verriere Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611749",
+                "name": "Auch (Auch)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611749"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611749"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.647488",
+                        "lon": "0.596661"
+                    },
+                    "id": "stop_area:SNCF:87611749",
+                    "label": "Auch (Auch)",
+                    "links": [],
+                    "name": "Auch",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87611806_stop_area:SNCF:87611749",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87611806_stop_area:SNCF:87611749",
+                "links": [],
+                "name": "L'Isle-Jourdain - Auch",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "L'Isle-Jourdain - Auch"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87478073",
+                "name": "Dol-de-Bretagne (Dol-de-Bretagne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87478073"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87478073"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.54425",
+                        "lon": "-1.750536"
+                    },
+                    "id": "stop_area:SNCF:87478073",
+                    "label": "Dol-de-Bretagne (Dol-de-Bretagne)",
+                    "links": [],
+                    "name": "Dol-de-Bretagne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87478164_stop_area:SNCF:87478073",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87478164_stop_area:SNCF:87478073",
+                "links": [],
+                "name": "Dinan - Dol-de-Bretagne",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Dinan - Dol-de-Bretagne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87994152",
+                "name": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87994152"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87994152"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.009976",
+                        "lon": "2.561354"
+                    },
+                    "id": "stop_area:SNCF:87994152",
+                    "label": "A\u00e9roport Charles de Gaulle T3 (Tremblay-en-France)",
+                    "links": [],
+                    "name": "A\u00e9roport Charles de Gaulle T3",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87591180_stop_area:SNCF:87994152",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87591180_stop_area:SNCF:87994152",
+                "links": [],
+                "name": "Gare De L'Est Noctilien - A\u00e9roport Charles de Gaulle T3",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare De L'Est Noctilien - A\u00e9roport Charles de Gaulle T3"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87588236_stop_area:SNCF:87588202",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87588236_stop_area:SNCF:87588202",
+                "links": [],
+                "name": "Bretigny Noctilien - Gare De Lyon Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Bretigny Noctilien - Gare De Lyon Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600122",
+                "name": "Montigny Beauchamp Noctilien (Beauchamp)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600122"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600122"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.007611",
+                        "lon": "2.197838"
+                    },
+                    "id": "stop_area:SNCF:87600122",
+                    "label": "Montigny Beauchamp Noctilien (Beauchamp)",
+                    "links": [],
+                    "name": "Montigny Beauchamp Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87600114_stop_area:SNCF:87600122",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87600114_stop_area:SNCF:87600122",
+                "links": [],
+                "name": "Paris Saint-Lazare Noctilien - Montigny Beauchamp Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Paris Saint-Lazare Noctilien - Montigny Beauchamp Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87588202",
+                "name": "Gare De Lyon Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87588202"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87588202"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.84578",
+                        "lon": "2.373719"
+                    },
+                    "id": "stop_area:SNCF:87588202",
+                    "label": "Gare De Lyon Noctilien (Paris)",
+                    "links": [],
+                    "name": "Gare De Lyon Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87574970_stop_area:SNCF:87588202",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87574970_stop_area:SNCF:87588202",
+                "links": [],
+                "name": "Corbeil Essonne Noctilien - Gare De Lyon Noctilien",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Corbeil Essonne Noctilien - Gare De Lyon Noctilien"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87583005",
+                "name": "Angoul\u00eame (Angoul\u00eame)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87583005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87583005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.653572",
+                        "lon": "0.164608"
+                    },
+                    "id": "stop_area:SNCF:87583005",
+                    "label": "Angoul\u00eame (Angoul\u00eame)",
+                    "links": [],
+                    "name": "Angoul\u00eame",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:stop_area:SNCF:87581009_stop_area:SNCF:87583005",
+            "is_frequence": "False",
+            "line": {
+                "code": "",
+                "codes": [],
+                "color": "000000",
+                "commercial_mode": {
+                    "id": "commercial_mode:additional_service",
+                    "name": "additional service"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:stop_area:SNCF:87581009_stop_area:SNCF:87583005",
+                "links": [],
+                "name": "Bordeaux Saint-Jean - Angoul\u00eame",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Bordeaux Saint-Jean - Angoul\u00eame"
+        }
+    ]
+}

@@ -1,0 +1,1758 @@
+{
+    "context": {
+        "current_datetime": "20220402T200655",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=31&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=33&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 32,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:H",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "014320",
+                "code": "H",
+                "codes": [],
+                "color": "7B4339",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:H",
+                "links": [],
+                "name": "H",
+                "opening_time": "043500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "H"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87164780",
+                "name": "Stade de France Saint-Denis (Saint-Denis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87164780"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87164780"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.91779",
+                        "lon": "2.35134"
+                    },
+                    "id": "stop_area:SNCF:87164780",
+                    "label": "Stade de France Saint-Denis (Saint-Denis)",
+                    "links": [],
+                    "name": "Stade de France Saint-Denis",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:62",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235959",
+                "code": "H",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:62",
+                "links": [],
+                "name": "H Bus",
+                "opening_time": "000000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "H Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87386680",
+                "name": "Les Mureaux (Les Mureaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87386680"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87386680"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.992725",
+                        "lon": "1.913027"
+                    },
+                    "id": "stop_area:SNCF:87386680",
+                    "label": "Les Mureaux (Les Mureaux)",
+                    "links": [],
+                    "name": "Les Mureaux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:72",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "023200",
+                "code": "J",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:72",
+                "links": [],
+                "name": "Conflans Ste Honorine - Mantes",
+                "opening_time": "220500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Conflans Ste Honorine - Mantes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87384008",
+                "name": "Paris Saint-Lazare (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87384008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87384008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876242",
+                        "lon": "2.325331"
+                    },
+                    "id": "stop_area:SNCF:87384008",
+                    "label": "Paris Saint-Lazare (Paris)",
+                    "links": [],
+                    "name": "Paris Saint-Lazare",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:J",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "014630",
+                "code": "J",
+                "codes": [],
+                "color": "CDCD00",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:J",
+                "links": [],
+                "name": "J",
+                "opening_time": "042000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "J"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87386680",
+                "name": "Les Mureaux (Les Mureaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87386680"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87386680"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.992725",
+                        "lon": "1.913027"
+                    },
+                    "id": "stop_area:SNCF:87386680",
+                    "label": "Les Mureaux (Les Mureaux)",
+                    "links": [],
+                    "name": "Les Mureaux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:63",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "025500",
+                "code": "J",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:63",
+                "links": [],
+                "name": "J Bus",
+                "opening_time": "035300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "J Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271593",
+                "name": "Cr\u00e9py-en-Valois (Cr\u00e9py-en-Valois)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87271593"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271593"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.231252",
+                        "lon": "2.886494"
+                    },
+                    "id": "stop_area:SNCF:87271593",
+                    "label": "Cr\u00e9py-en-Valois (Cr\u00e9py-en-Valois)",
+                    "links": [],
+                    "name": "Cr\u00e9py-en-Valois",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:K",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233850",
+                "code": "K",
+                "codes": [],
+                "color": "C7B300",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:K",
+                "links": [],
+                "name": "K",
+                "opening_time": "050900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "K"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87384008",
+                "name": "Paris Saint-Lazare (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87384008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87384008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876242",
+                        "lon": "2.325331"
+                    },
+                    "id": "stop_area:SNCF:87384008",
+                    "label": "Paris Saint-Lazare (Paris)",
+                    "links": [],
+                    "name": "Paris Saint-Lazare",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:L",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "013509",
+                "code": "L",
+                "codes": [],
+                "color": "7584BC",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:L",
+                "links": [],
+                "name": "L",
+                "opening_time": "044800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "L"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87393876",
+                "name": "Noisy-le-Roi (Noisy-le-Roi)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87393876"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87393876"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841483",
+                        "lon": "2.061657"
+                    },
+                    "id": "stop_area:SNCF:87393876",
+                    "label": "Noisy-le-Roi (Noisy-le-Roi)",
+                    "links": [],
+                    "name": "Noisy-le-Roi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:65",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "032200",
+                "code": "L",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:65",
+                "links": [],
+                "name": "L Bus",
+                "opening_time": "050600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "L Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87391003",
+                "name": "Paris Montparnasse Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87391003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87391003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841172",
+                        "lon": "2.320514"
+                    },
+                    "id": "stop_area:SNCF:87391003",
+                    "label": "Paris Montparnasse Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Montparnasse Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "013130",
+                "code": "N",
+                "codes": [],
+                "color": "00A092",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N",
+                "links": [],
+                "name": "N",
+                "opening_time": "043700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "N"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87391003",
+                "name": "Paris Montparnasse Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87391003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87391003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841172",
+                        "lon": "2.320514"
+                    },
+                    "id": "stop_area:SNCF:87391003",
+                    "label": "Paris Montparnasse Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Montparnasse Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:66",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "091100",
+                "code": "N",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:66",
+                "links": [],
+                "name": "N Bus",
+                "opening_time": "215200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "N Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87116301",
+                "name": "Coulommiers (Coulommiers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87116301"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87116301"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.807783",
+                        "lon": "3.082122"
+                    },
+                    "id": "stop_area:SNCF:87116301",
+                    "label": "Coulommiers (Coulommiers)",
+                    "links": [],
+                    "name": "Coulommiers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:73",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215800",
+                "code": "P",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:73",
+                "links": [],
+                "name": "Coulommiers - La Fert\u00e9 Gaucher Centre",
+                "opening_time": "055000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Coulommiers - La Fert\u00e9 Gaucher Centre"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87116160",
+                "name": "Provins (Provins)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87116160"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87116160"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.555737",
+                        "lon": "3.302837"
+                    },
+                    "id": "stop_area:SNCF:87116160",
+                    "label": "Provins (Provins)",
+                    "links": [],
+                    "name": "Provins",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:75",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "182300",
+                "code": "P",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:75",
+                "links": [],
+                "name": "Longueville - Provins",
+                "opening_time": "062500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Longueville - Provins"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113001",
+                "name": "Paris Est (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876742",
+                        "lon": "2.358424"
+                    },
+                    "id": "stop_area:SNCF:87113001",
+                    "label": "Paris Est (Paris)",
+                    "links": [],
+                    "name": "Paris Est",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:P",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235530",
+                "code": "P",
+                "codes": [],
+                "color": "F0B600",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:P",
+                "links": [],
+                "name": "P",
+                "opening_time": "045030",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "P"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113746",
+                "name": "Nogent - Le Perreux (Nogent-sur-Marne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113746"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113746"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.838415",
+                        "lon": "2.494043"
+                    },
+                    "id": "stop_area:SNCF:87113746",
+                    "label": "Nogent - Le Perreux (Nogent-sur-Marne)",
+                    "links": [],
+                    "name": "Nogent - Le Perreux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:67",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "024600",
+                "code": "P",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:67",
+                "links": [],
+                "name": "P Bus",
+                "opening_time": "040500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "P Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87682302",
+                "name": "Montereau (Montereau-Fault-Yonne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87682302"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87682302"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.379902",
+                        "lon": "2.94293"
+                    },
+                    "id": "stop_area:SNCF:87682302",
+                    "label": "Montereau (Montereau-Fault-Yonne)",
+                    "links": [],
+                    "name": "Montereau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:R",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "014500",
+                "code": "R",
+                "codes": [],
+                "color": "E4B4D1",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:R",
+                "links": [],
+                "name": "R",
+                "opening_time": "044807",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "R"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87682278",
+                "name": "Moret - Veneux-les-Sablons (Moret-Loing-et-Orvanne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87682278"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87682278"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.378416",
+                        "lon": "2.799478"
+                    },
+                    "id": "stop_area:SNCF:87682278",
+                    "label": "Moret - Veneux-les-Sablons (Moret-Loing-et-Orvanne)",
+                    "links": [],
+                    "name": "Moret - Veneux-les-Sablons",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:68",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "024600",
+                "code": "R",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:68",
+                "links": [],
+                "name": "R Bus",
+                "opening_time": "040500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "R Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113407",
+                "name": "Bondy (Bondy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113407"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113407"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.894423",
+                        "lon": "2.479022"
+                    },
+                    "id": "stop_area:SNCF:87113407",
+                    "label": "Bondy (Bondy)",
+                    "links": [],
+                    "name": "Bondy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:T4",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "015440",
+                "code": "T4",
+                "codes": [],
+                "color": "F2AF00",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:T4",
+                "links": [],
+                "name": "T4",
+                "opening_time": "043045",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Tramway",
+                        "name": "Tramway"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "T4"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113407",
+                "name": "Bondy (Bondy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113407"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113407"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.894423",
+                        "lon": "2.479022"
+                    },
+                    "id": "stop_area:SNCF:87113407",
+                    "label": "Bondy (Bondy)",
+                    "links": [],
+                    "name": "Bondy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:70",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "053200",
+                "code": "T4",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:70",
+                "links": [],
+                "name": "T4 Bus",
+                "opening_time": "211300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "T4 Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87697292",
+                "name": "\u00c9pinay-sur-Seine Tram 11 Express (\u00c9pinay-sur-Seine)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87697292"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87697292"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.954481",
+                        "lon": "2.302258"
+                    },
+                    "id": "stop_area:SNCF:87697292",
+                    "label": "\u00c9pinay-sur-Seine Tram 11 Express (\u00c9pinay-sur-Seine)",
+                    "links": [],
+                    "name": "\u00c9pinay-sur-Seine Tram 11 Express",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:T11",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "011910",
+                "code": "T11",
+                "codes": [],
+                "color": "E65E37",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:T11",
+                "links": [],
+                "name": "T11 Express",
+                "opening_time": "050000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Tramway",
+                        "name": "Tramway"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "T11 Express"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87382218",
+                "name": "La D\u00e9fense (Puteaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87382218"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87382218"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.89308",
+                        "lon": "2.23763"
+                    },
+                    "id": "stop_area:SNCF:87382218",
+                    "label": "La D\u00e9fense (Puteaux)",
+                    "links": [],
+                    "name": "La D\u00e9fense",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:U",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230449",
+                "code": "U",
+                "codes": [],
+                "color": "D60058",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:U",
+                "links": [],
+                "name": "U",
+                "opening_time": "052000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "U"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87382218",
+                "name": "La D\u00e9fense (Puteaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87382218"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87382218"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.89308",
+                        "lon": "2.23763"
+                    },
+                    "id": "stop_area:SNCF:87382218",
+                    "label": "La D\u00e9fense (Puteaux)",
+                    "links": [],
+                    "name": "La D\u00e9fense",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:69",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "091300",
+                "code": "U",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TN",
+                    "name": "TRANSILIEN"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:69",
+                "links": [],
+                "name": "U Bus",
+                "opening_time": "223000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "U Bus"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:88140010",
+                "name": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "88140010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "88140010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.836",
+                        "lon": "4.336"
+                    },
+                    "id": "stop_area:SNCF:88140010",
+                    "label": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                    "links": [],
+                    "name": "Bruxelles Midi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-84000588-88140010",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-84000588-88140010",
+                "links": [],
+                "name": "Amsterdam Centraal - Bruxelles Midi",
+                "opening_time": "101500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Amsterdam Centraal - Bruxelles Midi"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87111849",
+                "name": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87111849"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87111849"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.869898",
+                        "lon": "2.782626"
+                    },
+                    "id": "stop_area:SNCF:87111849",
+                    "label": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                    "links": [],
+                    "name": "Marne-la-Vall\u00e9e Chessy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-84000588-87111849",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "110100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-84000588-87111849",
+                "links": [],
+                "name": "Amsterdam Centraal - Marne-la-Vall\u00e9e Chessy",
+                "opening_time": "064500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Amsterdam Centraal - Marne-la-Vall\u00e9e Chessy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87271007",
+                "name": "Paris Gare du Nord (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271023"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87271031"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87271031"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271023"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87271031"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.880136",
+                        "lon": "2.354851"
+                    },
+                    "id": "stop_area:SNCF:87271007",
+                    "label": "Paris Gare du Nord (Paris)",
+                    "links": [],
+                    "name": "Paris Gare du Nord",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-84000588-87271007",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-84000588-87271007",
+                "links": [],
+                "name": "Amsterdam Centraal - Paris Gare du Nord",
+                "opening_time": "061500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Amsterdam Centraal - Paris Gare du Nord"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:88140010",
+                "name": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "88140010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "88140010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.836",
+                        "lon": "4.336"
+                    },
+                    "id": "stop_area:SNCF:88140010",
+                    "label": "Bruxelles Midi (Saint-Gilles - Sint-Gillis)",
+                    "links": [],
+                    "name": "Bruxelles Midi",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:0018-87741793-88140010",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:THA",
+                    "name": "Thalys"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:0018-87741793-88140010",
+                "links": [],
+                "name": "Bourg-Saint-Maurice - Bruxelles Midi",
+                "opening_time": "153200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Bourg-Saint-Maurice - Bruxelles Midi"
+        }
+    ]
+}

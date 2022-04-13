@@ -1,0 +1,1722 @@
+{
+    "context": {
+        "current_datetime": "20220402T200644",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=14&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=16&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 15,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87193615",
+                "name": "Sarreguemines (Sarreguemines)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87193615"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87193615"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.10738",
+                        "lon": "7.068576"
+                    },
+                    "id": "stop_area:SNCF:87193615",
+                    "label": "Sarreguemines (Sarreguemines)",
+                    "links": [],
+                    "name": "Sarreguemines",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8386b67c-20d6-4521-abfa-f87aed64db30:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214230",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8386b67c-20d6-4521-abfa-f87aed64db30:",
+                "links": [],
+                "name": "Metz - Sarreguemines",
+                "opening_time": "060300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Metz - Sarreguemines"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87191007",
+                "name": "Thionville (Thionville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87191007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87191007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.353965",
+                        "lon": "6.168582"
+                    },
+                    "id": "stop_area:SNCF:87191007",
+                    "label": "Thionville (Thionville)",
+                    "links": [],
+                    "name": "Thionville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::596F07F3-98CE-401C-B7B8-7F9D83F663CD:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212030",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::596F07F3-98CE-401C-B7B8-7F9D83F663CD:",
+                "links": [],
+                "name": "Metz - Thionville - Perl",
+                "opening_time": "064100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Metz - Thionville - Perl"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87192039",
+                "name": "Metz (Metz)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87192039"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87192039"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.109466",
+                        "lon": "6.177052"
+                    },
+                    "id": "stop_area:SNCF:87192039",
+                    "label": "Metz (Metz)",
+                    "links": [],
+                    "name": "Metz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::b6cbce65-0bd7-4efb-bd98-0490aa50c9fc:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::b6cbce65-0bd7-4efb-bd98-0490aa50c9fc:",
+                "links": [],
+                "name": "Metz - Verdun",
+                "opening_time": "062000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Metz - Verdun"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87192039",
+                "name": "Metz (Metz)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87192039"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87192039"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.109466",
+                        "lon": "6.177052"
+                    },
+                    "id": "stop_area:SNCF:87192039",
+                    "label": "Metz (Metz)",
+                    "links": [],
+                    "name": "Metz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::f00e26b7-6485-49be-b167-547cf1c64ded:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::f00e26b7-6485-49be-b167-547cf1c64ded:",
+                "links": [],
+                "name": "Metz - Verdun",
+                "opening_time": "181300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Metz - Verdun"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212142",
+                "name": "Mommenheim (Mommenheim)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212142"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212142"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.755951",
+                        "lon": "7.642303"
+                    },
+                    "id": "stop_area:SNCF:87212142",
+                    "label": "Mommenheim (Mommenheim)",
+                    "links": [],
+                    "name": "Mommenheim",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::510B9A71-D5BA-4662-BBF4-52C37975DCD5:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::510B9A71-D5BA-4662-BBF4-52C37975DCD5:",
+                "links": [],
+                "name": "Mommenheim - Bouxwiller",
+                "opening_time": "064400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mommenheim - Bouxwiller"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87594002",
+                "name": "Brive-la-Gaillarde (Brive-la-Gaillarde)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87594002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87594002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.152601",
+                        "lon": "1.528634"
+                    },
+                    "id": "stop_area:SNCF:87594002",
+                    "label": "Brive-la-Gaillarde (Brive-la-Gaillarde)",
+                    "links": [],
+                    "name": "Brive-la-Gaillarde",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C1C5D858-07FB-4245-8AEF-8CACD1E3D686:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "114300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C1C5D858-07FB-4245-8AEF-8CACD1E3D686:",
+                "links": [],
+                "name": "Montauban - Brive La Gaillarde",
+                "opening_time": "091700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Montauban - Brive La Gaillarde"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87641001",
+                "name": "Montlu\u00e7on (Montlu\u00e7on)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87641001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87641001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.338101",
+                        "lon": "2.596159"
+                    },
+                    "id": "stop_area:SNCF:87641001",
+                    "label": "Montlu\u00e7on (Montlu\u00e7on)",
+                    "links": [],
+                    "name": "Montlu\u00e7on",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::FF20CA46-D0ED-49F0-95B3-59FFC379C6D0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "003800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::FF20CA46-D0ED-49F0-95B3-59FFC379C6D0:",
+                "links": [],
+                "name": "Montlu\u00e7on - Vierzon",
+                "opening_time": "052100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Montlu\u00e7on - Vierzon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87765008",
+                "name": "Avignon Centre (Avignon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87765008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87765008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.941923",
+                        "lon": "4.805269"
+                    },
+                    "id": "stop_area:SNCF:87765008",
+                    "label": "Avignon Centre (Avignon)",
+                    "links": [],
+                    "name": "Avignon Centre",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0202671B-7107-429E-A37B-473C55E0254C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "191930",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0202671B-7107-429E-A37B-473C55E0254C:",
+                "links": [],
+                "name": "Montpellier Saint-Roch - Avignon Centre",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Montpellier Saint-Roch - Avignon Centre"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87781104",
+                "name": "Narbonne (Narbonne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87781104"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87781104"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.190618",
+                        "lon": "3.005667"
+                    },
+                    "id": "stop_area:SNCF:87781104",
+                    "label": "Narbonne (Narbonne)",
+                    "links": [],
+                    "name": "Narbonne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B175B939-CEB2-4013-A90F-64CA627A5C45:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "192200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B175B939-CEB2-4013-A90F-64CA627A5C45:",
+                "links": [],
+                "name": "Montpellier Saint-Roch - Perpignan",
+                "opening_time": "063600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Montpellier Saint-Roch - Perpignan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611152",
+                "name": "Montr\u00e9jeau - Gourdan-Polignan (Gourdan-Polignan)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611152"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611152"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.078085",
+                        "lon": "0.57359"
+                    },
+                    "id": "stop_area:SNCF:87611152",
+                    "label": "Montr\u00e9jeau - Gourdan-Polignan (Gourdan-Polignan)",
+                    "links": [],
+                    "name": "Montr\u00e9jeau - Gourdan-Polignan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2B0506BC-0CB9-4FFC-B90C-E202497AE4F0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215310",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2B0506BC-0CB9-4FFC-B90C-E202497AE4F0:",
+                "links": [],
+                "name": "Montrejeau Gourdan Polignan - Luchon",
+                "opening_time": "060900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Montrejeau Gourdan Polignan - Luchon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87556522",
+                "name": "Montelimar Gare Routi\u00e8re (Mont\u00e9limar)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87556522"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87556522"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.559439",
+                        "lon": "4.745107"
+                    },
+                    "id": "stop_area:SNCF:87556522",
+                    "label": "Montelimar Gare Routi\u00e8re (Mont\u00e9limar)",
+                    "links": [],
+                    "name": "Montelimar Gare Routi\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1421bbf5-44b2-4770-888e-ded13b7a8f89:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1421bbf5-44b2-4770-888e-ded13b7a8f89:",
+                "links": [],
+                "name": "Mont\u00e9limar / Nyons",
+                "opening_time": "065500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mont\u00e9limar / Nyons"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87671016",
+                "name": "Mont-de-Marsan (Mont-de-Marsan)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87671016"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87671016"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.884898",
+                        "lon": "-0.50466"
+                    },
+                    "id": "stop_area:SNCF:87671016",
+                    "label": "Mont-de-Marsan (Mont-de-Marsan)",
+                    "links": [],
+                    "name": "Mont-de-Marsan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:1187-87673103-87671016",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "101000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:1187-87673103-87671016",
+                "links": [],
+                "name": "Morcenx - Mont-de-Marsan",
+                "opening_time": "092500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Morcenx - Mont-de-Marsan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87215012",
+                "name": "Sarrebourg (Sarrebourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87215012"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87215012"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.73808",
+                        "lon": "7.05285"
+                    },
+                    "id": "stop_area:SNCF:87215012",
+                    "label": "Sarrebourg (Sarrebourg)",
+                    "links": [],
+                    "name": "Sarrebourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::87124177-736D-40EA-8C1F-64C0FE8F5BA4:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "192200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::87124177-736D-40EA-8C1F-64C0FE8F5BA4:",
+                "links": [],
+                "name": "Morhange - Sarrebourg",
+                "opening_time": "061300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Morhange - Sarrebourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87474007",
+                "name": "Brest (Brest)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87474007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87474007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.38762",
+                        "lon": "-4.480306"
+                    },
+                    "id": "stop_area:SNCF:87474007",
+                    "label": "Brest (Brest)",
+                    "links": [],
+                    "name": "Brest",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::58E7EAEC-D896-481E-8E78-6CD689E7B142:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "194300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::58E7EAEC-D896-481E-8E78-6CD689E7B142:",
+                "links": [],
+                "name": "Morlaix - Brest",
+                "opening_time": "060600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Morlaix - Brest"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87718239",
+                "name": "Lons-le-Saunier (Lons-le-Saunier)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87718239"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87718239"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.66858",
+                        "lon": "5.551108"
+                    },
+                    "id": "stop_area:SNCF:87718239",
+                    "label": "Lons-le-Saunier (Lons-le-Saunier)",
+                    "links": [],
+                    "name": "Lons-le-Saunier",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D58BBBD2-B74E-4039-88A8-FB7E567AE029:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D58BBBD2-B74E-4039-88A8-FB7E567AE029:",
+                "links": [],
+                "name": "Mouchard - Lons",
+                "opening_time": "052400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mouchard - Lons"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87696328",
+                "name": "Moulins sur Allier (Moulins)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87696328"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87696328"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.561394",
+                        "lon": "3.338782"
+                    },
+                    "id": "stop_area:SNCF:87696328",
+                    "label": "Moulins sur Allier (Moulins)",
+                    "links": [],
+                    "name": "Moulins sur Allier",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6DA54FE6-6422-40CF-AE37-046532F9B309:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6DA54FE6-6422-40CF-AE37-046532F9B309:",
+                "links": [],
+                "name": "Moulin - Lozanne",
+                "opening_time": "045500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Moulin - Lozanne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:85000109",
+                "name": "Basel SBB (Basel)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "85000109"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "85000109"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.5474",
+                        "lon": "7.58956"
+                    },
+                    "id": "stop_area:SNCF:85000109",
+                    "label": "Basel SBB (Basel)",
+                    "links": [],
+                    "name": "Basel SBB",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::99549616-3619-4AD4-BD4C-6EDCEB576FB9:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "003300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::99549616-3619-4AD4-BD4C-6EDCEB576FB9:",
+                "links": [],
+                "name": "Mulhouse - B\u00e2le",
+                "opening_time": "044930",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse - B\u00e2le"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87182063",
+                "name": "Mulhouse (Mulhouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87182063"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87182063"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.742691",
+                        "lon": "7.34316"
+                    },
+                    "id": "stop_area:SNCF:87182063",
+                    "label": "Mulhouse (Mulhouse)",
+                    "links": [],
+                    "name": "Mulhouse",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::AFB8B4FB-780A-45F1-B4B2-B82160FD4E22:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "074300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::AFB8B4FB-780A-45F1-B4B2-B82160FD4E22:",
+                "links": [],
+                "name": "Mulhouse - B\u00e2le",
+                "opening_time": "233800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse - B\u00e2le"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87182063",
+                "name": "Mulhouse (Mulhouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87182063"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87182063"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.742691",
+                        "lon": "7.34316"
+                    },
+                    "id": "stop_area:SNCF:87182063",
+                    "label": "Mulhouse (Mulhouse)",
+                    "links": [],
+                    "name": "Mulhouse",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9EC38608-E325-4BD5-AAB1-18F387ED7DEB:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9EC38608-E325-4BD5-AAB1-18F387ED7DEB:",
+                "links": [],
+                "name": "Mulhouse - Fribourg",
+                "opening_time": "063300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse - Fribourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87182642",
+                "name": "Kruth (Kruth)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87182642"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87182642"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.92396",
+                        "lon": "6.969094"
+                    },
+                    "id": "stop_area:SNCF:87182642",
+                    "label": "Kruth (Kruth)",
+                    "links": [],
+                    "name": "Kruth",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C274A7A0-7FB4-4987-BDE8-D06312115C42:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C274A7A0-7FB4-4987-BDE8-D06312115C42:",
+                "links": [],
+                "name": "Mulhouse - Kruth",
+                "opening_time": "044700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse - Kruth"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87533620",
+                "name": "Mulhouse Gare Centrale (Mulhouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87533620"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87533620"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.741818",
+                        "lon": "7.342869"
+                    },
+                    "id": "stop_area:SNCF:87533620",
+                    "label": "Mulhouse Gare Centrale (Mulhouse)",
+                    "links": [],
+                    "name": "Mulhouse Gare Centrale",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B6411A13-18F4-4AEC-9ABB-AA4BD872A604:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230830",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B6411A13-18F4-4AEC-9ABB-AA4BD872A604:",
+                "links": [],
+                "name": "Mulhouse Gare Centrale - Lutterbach",
+                "opening_time": "053000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Tramway",
+                        "name": "Tramway"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse Gare Centrale - Lutterbach"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87533620",
+                "name": "Mulhouse Gare Centrale (Mulhouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87533620"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87533620"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.741818",
+                        "lon": "7.342869"
+                    },
+                    "id": "stop_area:SNCF:87533620",
+                    "label": "Mulhouse Gare Centrale (Mulhouse)",
+                    "links": [],
+                    "name": "Mulhouse Gare Centrale",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7DEDA169-CB7D-44BD-B486-B1049617B446:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7DEDA169-CB7D-44BD-B486-B1049617B446:",
+                "links": [],
+                "name": "Mulhouse Gare Centrale - Thann Saint-Jacques",
+                "opening_time": "052900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Tramway",
+                        "name": "Tramway"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Mulhouse Gare Centrale - Thann Saint-Jacques"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::d0cae41c-a6c4-4707-89d4-80e72d814b36:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::d0cae41c-a6c4-4707-89d4-80e72d814b36:",
+                "links": [],
+                "name": "NANCY - REMIREMONT",
+                "opening_time": "051100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "NANCY - REMIREMONT"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::14254a37-7e25-43a2-8be1-db7eafb9b72c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::14254a37-7e25-43a2-8be1-db7eafb9b72c:",
+                "links": [],
+                "name": "NANCY - ST DIE DES VOSGES",
+                "opening_time": "054200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "NANCY - ST DIE DES VOSGES"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87144014",
+                "name": "Saint-Di\u00e9-des-Vosges (Saint-Di\u00e9-des-Vosges)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87144014"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87144014"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.282043",
+                        "lon": "6.948516"
+                    },
+                    "id": "stop_area:SNCF:87144014",
+                    "label": "Saint-Di\u00e9-des-Vosges (Saint-Di\u00e9-des-Vosges)",
+                    "links": [],
+                    "name": "Saint-Di\u00e9-des-Vosges",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::ffe6d3aa-3a90-47ea-aeeb-92fa84909329:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::ffe6d3aa-3a90-47ea-aeeb-92fa84909329:",
+                "links": [],
+                "name": "NANCY - ST DIE DES VOSGES",
+                "opening_time": "050500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "NANCY - ST DIE DES VOSGES"
+        }
+    ]
+}

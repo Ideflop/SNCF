@@ -1,0 +1,1710 @@
+{
+    "context": {
+        "current_datetime": "20220402T200650",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=24&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=26&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 25,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87775007",
+                "name": "N\u00eemes (N\u00eemes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87775007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87775007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.832313",
+                        "lon": "4.365872"
+                    },
+                    "id": "stop_area:SNCF:87775007",
+                    "label": "N\u00eemes (N\u00eemes)",
+                    "links": [],
+                    "name": "N\u00eemes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1CEA14EA-7F5A-4D44-A739-F6A13138F139:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1CEA14EA-7F5A-4D44-A739-F6A13138F139:",
+                "links": [],
+                "name": "Toulouse Matabiau - Nimes",
+                "opening_time": "054000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Nimes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::BE27A9C7-13DC-4189-A2DF-7DDE28924201:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "024800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::BE27A9C7-13DC-4189-A2DF-7DDE28924201:",
+                "links": [],
+                "name": "Toulouse Matabiau - Pau",
+                "opening_time": "052000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Pau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E5FF5D61-7D3C-4DDA-9663-3C36510681CF:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E5FF5D61-7D3C-4DDA-9663-3C36510681CF:",
+                "links": [],
+                "name": "Toulouse Matabiau - Port Bou Frontiere",
+                "opening_time": "060400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Port Bou Frontiere"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8A45A100-4B0A-430B-BAD0-EDB1ECD38F84:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8A45A100-4B0A-430B-BAD0-EDB1ECD38F84:",
+                "links": [],
+                "name": "Toulouse Matabiau - Rodez",
+                "opening_time": "055700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Rodez"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0B0B302C-2E5D-4AB4-BE84-4DA893F7C926:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0B0B302C-2E5D-4AB4-BE84-4DA893F7C926:",
+                "links": [],
+                "name": "Tours - Bl\u00e9r\u00e9 - St-Aignan-Noyers - Vierzon",
+                "opening_time": "063100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Bl\u00e9r\u00e9 - St-Aignan-Noyers - Vierzon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4FCCF995-7BFF-4F64-8F81-BCCA421B95D8:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4FCCF995-7BFF-4F64-8F81-BCCA421B95D8:",
+                "links": [],
+                "name": "Tours - Bourges - Nevers",
+                "opening_time": "004500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Bourges - Nevers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1AC9122F-96CA-4237-BEDA-79ACE1F2F02B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1AC9122F-96CA-4237-BEDA-79ACE1F2F02B:",
+                "links": [],
+                "name": "Tours - Chinon",
+                "opening_time": "062400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Chinon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8a6ae27b-05ba-469e-acf9-a382993511f5:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8a6ae27b-05ba-469e-acf9-a382993511f5:",
+                "links": [],
+                "name": "Tours - Chinon (car)",
+                "opening_time": "064000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Chinon (car)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444711",
+                "name": "Alen\u00e7on (Alen\u00e7on)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444711"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444711"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.433884",
+                        "lon": "0.09853099999999999"
+                    },
+                    "id": "stop_area:SNCF:87444711",
+                    "label": "Alen\u00e7on (Alen\u00e7on)",
+                    "links": [],
+                    "name": "Alen\u00e7on",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::50C907C1-A36D-4548-B162-6DE4BEBAE195:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "195500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::50C907C1-A36D-4548-B162-6DE4BEBAE195:",
+                "links": [],
+                "name": "Tours - Ch\u00e2teau Du Loir - Le Mans",
+                "opening_time": "052200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Ch\u00e2teau Du Loir - Le Mans"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87201541",
+                "name": "Chateauroux GR (Ch\u00e2teauroux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87201541"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87201541"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.8095",
+                        "lon": "1.698721"
+                    },
+                    "id": "stop_area:SNCF:87201541",
+                    "label": "Chateauroux GR (Ch\u00e2teauroux)",
+                    "links": [],
+                    "name": "Chateauroux GR",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8CF8B448-DE32-402A-B8D9-C028B69EE9F2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8CF8B448-DE32-402A-B8D9-C028B69EE9F2:",
+                "links": [],
+                "name": "Tours - Ch\u00e2teauroux (Car)",
+                "opening_time": "052500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Ch\u00e2teauroux (Car)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C44E558F-5178-474C-9A86-E206B1325746:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C44E558F-5178-474C-9A86-E206B1325746:",
+                "links": [],
+                "name": "Tours - Le Croisic",
+                "opening_time": "062000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Le Croisic"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87396002",
+                "name": "Le Mans (Le Mans)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87396002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87396002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.995615",
+                        "lon": "0.192614"
+                    },
+                    "id": "stop_area:SNCF:87396002",
+                    "label": "Le Mans (Le Mans)",
+                    "links": [],
+                    "name": "Le Mans",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4D755748-E05C-46BD-A1CD-209349C9999E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4D755748-E05C-46BD-A1CD-209349C9999E:",
+                "links": [],
+                "name": "Tours - Le Mans - Alen\u00e7on",
+                "opening_time": "075600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Le Mans - Alen\u00e7on"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444000",
+                "name": "Caen (Caen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.176354",
+                        "lon": "-0.347613"
+                    },
+                    "id": "stop_area:SNCF:87444000",
+                    "label": "Caen (Caen)",
+                    "links": [],
+                    "name": "Caen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::960d5017-915b-4c7e-b452-2fd669ba48a5:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "121200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::960d5017-915b-4c7e-b452-2fd669ba48a5:",
+                "links": [],
+                "name": "Tours - Le Mans - Caen",
+                "opening_time": "091900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Le Mans - Caen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6C6559A3-00FA-4B21-9192-B00E2C8C9A63:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6C6559A3-00FA-4B21-9192-B00E2C8C9A63:",
+                "links": [],
+                "name": "Tours - Loches",
+                "opening_time": "062200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Loches"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571471",
+                "name": "Loches (Loches)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571471"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571471"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.130464",
+                        "lon": "1.000467"
+                    },
+                    "id": "stop_area:SNCF:87571471",
+                    "label": "Loches (Loches)",
+                    "links": [],
+                    "name": "Loches",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::749898a2-abe1-4772-b94c-631dc8ce602c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::749898a2-abe1-4772-b94c-631dc8ce602c:",
+                "links": [],
+                "name": "Tours - Loches (car)",
+                "opening_time": "053000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Loches (car)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87722025",
+                "name": "Lyon Perrache (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87722025"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87722025"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.748508",
+                        "lon": "4.825777"
+                    },
+                    "id": "stop_area:SNCF:87722025",
+                    "label": "Lyon Perrache (Lyon)",
+                    "links": [],
+                    "name": "Lyon Perrache",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8E9E1A26-30D4-49B7-8B37-D439E17FFC20:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "180300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8E9E1A26-30D4-49B7-8B37-D439E17FFC20:",
+                "links": [],
+                "name": "Tours - Lyon",
+                "opening_time": "120500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Lyon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87575001",
+                "name": "Poitiers (Poitiers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87575001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87575001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.582232",
+                        "lon": "0.333136"
+                    },
+                    "id": "stop_area:SNCF:87575001",
+                    "label": "Poitiers (Poitiers)",
+                    "links": [],
+                    "name": "Poitiers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::229ED139-9256-4B71-80BD-E7EAD93A6C9A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212330",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::229ED139-9256-4B71-80BD-E7EAD93A6C9A:",
+                "links": [],
+                "name": "Tours - Poitiers",
+                "opening_time": "061500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Poitiers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87484006",
+                "name": "Angers Saint-Laud (Angers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87484006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87484006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.464649",
+                        "lon": "-0.55677"
+                    },
+                    "id": "stop_area:SNCF:87484006",
+                    "label": "Angers Saint-Laud (Angers)",
+                    "links": [],
+                    "name": "Angers Saint-Laud",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::16FE01A8-BCC7-4AC8-A0B7-7173EEB65876:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::16FE01A8-BCC7-4AC8-A0B7-7173EEB65876:",
+                "links": [],
+                "name": "Tours - Saumur - Angers - Nantes",
+                "opening_time": "060500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Saumur - Angers - Nantes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87486019",
+                "name": "La Roche-sur-Yon (La Roche-sur-Yon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87486019"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87486019"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.672075",
+                        "lon": "-1.43566"
+                    },
+                    "id": "stop_area:SNCF:87486019",
+                    "label": "La Roche-sur-Yon (La Roche-sur-Yon)",
+                    "links": [],
+                    "name": "La Roche-sur-Yon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B71F4E4B-B393-472F-8C58-404EAE85E857:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B71F4E4B-B393-472F-8C58-404EAE85E857:",
+                "links": [],
+                "name": "Tours - Saumur - Bressuire - La Roche sur Yon",
+                "opening_time": "135800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - Saumur - Bressuire - La Roche sur Yon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87571000",
+                "name": "Tours (Tours)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87571000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87571000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.389866",
+                        "lon": "0.692831"
+                    },
+                    "id": "stop_area:SNCF:87571000",
+                    "label": "Tours (Tours)",
+                    "links": [],
+                    "name": "Tours",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::eda0e194-1391-4883-9076-5d8c79c33b7d:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::eda0e194-1391-4883-9076-5d8c79c33b7d:",
+                "links": [],
+                "name": "Tours - St Christophe sur le Nais - Ch\u00e2teau du Loir (car)",
+                "opening_time": "062600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours - St Christophe sur le Nais - Ch\u00e2teau du Loir (car)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87545756",
+                "name": "Ch\u00e2teaudun (Ch\u00e2teaudun)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87545756"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87545756"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.073409",
+                        "lon": "1.338114"
+                    },
+                    "id": "stop_area:SNCF:87545756",
+                    "label": "Ch\u00e2teaudun (Ch\u00e2teaudun)",
+                    "links": [],
+                    "name": "Ch\u00e2teaudun",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::ebbe4137-931d-4f4b-afad-c4ca7b1b0c8c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::ebbe4137-931d-4f4b-afad-c4ca7b1b0c8c:",
+                "links": [],
+                "name": "Tours-Vend\u00f4me-Ch\u00e2teaudun",
+                "opening_time": "050300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours-Vend\u00f4me-Ch\u00e2teaudun"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87394007",
+                "name": "Chartres (Chartres)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87394007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87394007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.448202",
+                        "lon": "1.481313"
+                    },
+                    "id": "stop_area:SNCF:87394007",
+                    "label": "Chartres (Chartres)",
+                    "links": [],
+                    "name": "Chartres",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A9EA26B0-3D69-4602-855E-C8D196A3FD89:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A9EA26B0-3D69-4602-855E-C8D196A3FD89:",
+                "links": [],
+                "name": "Tours-Voves-Chartres",
+                "opening_time": "054200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tours-Voves-Chartres"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87683318",
+                "name": "Saint-Florentin - Vergigny (Vergigny)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87683318"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87683318"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.981058",
+                        "lon": "3.731036"
+                    },
+                    "id": "stop_area:SNCF:87683318",
+                    "label": "Saint-Florentin - Vergigny (Vergigny)",
+                    "links": [],
+                    "name": "Saint-Florentin - Vergigny",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0A1BAEE0-0123-4813-9261-CCA779B617BF:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "063800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0A1BAEE0-0123-4813-9261-CCA779B617BF:",
+                "links": [],
+                "name": "Troyes - Laroche Migennes",
+                "opening_time": "200800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Troyes - Laroche Migennes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87118000",
+                "name": "Troyes (Troyes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87118000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87118000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.296069",
+                        "lon": "4.065281"
+                    },
+                    "id": "stop_area:SNCF:87118000",
+                    "label": "Troyes (Troyes)",
+                    "links": [],
+                    "name": "Troyes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A09381D8-4D5B-40EB-91DA-830670648FC6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A09381D8-4D5B-40EB-91DA-830670648FC6:",
+                "links": [],
+                "name": "Troyes - Laroche Migennes",
+                "opening_time": "052500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Troyes - Laroche Migennes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87118000",
+                "name": "Troyes (Troyes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87118000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87118000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.296069",
+                        "lon": "4.065281"
+                    },
+                    "id": "stop_area:SNCF:87118000",
+                    "label": "Troyes (Troyes)",
+                    "links": [],
+                    "name": "Troyes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2B19926F-67DD-442C-A4B7-5CD22C81B10C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "195300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2B19926F-67DD-442C-A4B7-5CD22C81B10C:",
+                "links": [],
+                "name": "Troyes - Romilly",
+                "opening_time": "054500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Troyes - Romilly"
+        }
+    ]
+}

@@ -1,0 +1,1754 @@
+{
+    "context": {
+        "current_datetime": "20220402T200650",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=23&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=25&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 24,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212027",
+                "name": "Strasbourg (Strasbourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212027"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212027"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.584532",
+                        "lon": "7.734793"
+                    },
+                    "id": "stop_area:SNCF:87212027",
+                    "label": "Strasbourg (Strasbourg)",
+                    "links": [],
+                    "name": "Strasbourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::10AA5C1F-3876-4FB6-BDFB-05DF525EAFC0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "123900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::10AA5C1F-3876-4FB6-BDFB-05DF525EAFC0:",
+                "links": [],
+                "name": "Strasbourg - Rothau",
+                "opening_time": "044500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Rothau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212225",
+                "name": "Saverne (Saverne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212225"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212225"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.744483",
+                        "lon": "7.362055"
+                    },
+                    "id": "stop_area:SNCF:87212225",
+                    "label": "Saverne (Saverne)",
+                    "links": [],
+                    "name": "Saverne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C25FC0CF-C053-47FF-AE70-839854FE792A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C25FC0CF-C053-47FF-AE70-839854FE792A:",
+                "links": [],
+                "name": "Strasbourg - Sarrebourg",
+                "opening_time": "050000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Sarrebourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212027",
+                "name": "Strasbourg (Strasbourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212027"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212027"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.584532",
+                        "lon": "7.734793"
+                    },
+                    "id": "stop_area:SNCF:87212027",
+                    "label": "Strasbourg (Strasbourg)",
+                    "links": [],
+                    "name": "Strasbourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::666769D0-F105-4734-9587-1D966650724A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "234400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::666769D0-F105-4734-9587-1D966650724A:",
+                "links": [],
+                "name": "Strasbourg - Sarrebruck",
+                "opening_time": "045200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Sarrebruck"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87212027",
+                "name": "Strasbourg (Strasbourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87212027"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87212027"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.584532",
+                        "lon": "7.734793"
+                    },
+                    "id": "stop_area:SNCF:87212027",
+                    "label": "Strasbourg (Strasbourg)",
+                    "links": [],
+                    "name": "Strasbourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E84C5EAA-AB72-4937-8C18-A2124EE8D25A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E84C5EAA-AB72-4937-8C18-A2124EE8D25A:",
+                "links": [],
+                "name": "Strasbourg - Selestat",
+                "opening_time": "042300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Selestat"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87214247",
+                "name": "Barr (Barr)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87214247"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87214247"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.40348",
+                        "lon": "7.456713"
+                    },
+                    "id": "stop_area:SNCF:87214247",
+                    "label": "Barr (Barr)",
+                    "links": [],
+                    "name": "Barr",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0D8BFBF7-551C-44B1-8DF9-465F01EEE633:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "095300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0D8BFBF7-551C-44B1-8DF9-465F01EEE633:",
+                "links": [],
+                "name": "Strasbourg - S\u00e9lestat Via Molsheim",
+                "opening_time": "204000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - S\u00e9lestat Via Molsheim"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87213470",
+                "name": "Wissembourg (Wissembourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87213470"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87213470"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.031931",
+                        "lon": "7.95018"
+                    },
+                    "id": "stop_area:SNCF:87213470",
+                    "label": "Wissembourg (Wissembourg)",
+                    "links": [],
+                    "name": "Wissembourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4873E985-5075-4572-B1D6-C6A5E8C1DB41:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "081700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4873E985-5075-4572-B1D6-C6A5E8C1DB41:",
+                "links": [],
+                "name": "Strasbourg - Wissembourg",
+                "opening_time": "165300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Wissembourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87213470",
+                "name": "Wissembourg (Wissembourg)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87213470"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87213470"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.031931",
+                        "lon": "7.95018"
+                    },
+                    "id": "stop_area:SNCF:87213470",
+                    "label": "Wissembourg (Wissembourg)",
+                    "links": [],
+                    "name": "Wissembourg",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::B6DB46FE-DA3F-4AA3-BD90-C7582BF95CA1:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "193700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::B6DB46FE-DA3F-4AA3-BD90-C7582BF95CA1:",
+                "links": [],
+                "name": "Strasbourg - Wissembourg",
+                "opening_time": "073500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Wissembourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87144006",
+                "name": "\u00c9pinal (\u00c9pinal)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87144006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87144006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.178005",
+                        "lon": "6.441787"
+                    },
+                    "id": "stop_area:SNCF:87144006",
+                    "label": "\u00c9pinal (\u00c9pinal)",
+                    "links": [],
+                    "name": "\u00c9pinal",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:1187-87144097-87144006",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "074000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:1187-87144097-87144006",
+                "links": [],
+                "name": "Thaon - \u00c9pinal",
+                "opening_time": "072000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Thaon - \u00c9pinal"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87191007",
+                "name": "Thionville (Thionville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87191007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87191007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.353965",
+                        "lon": "6.168582"
+                    },
+                    "id": "stop_area:SNCF:87191007",
+                    "label": "Thionville (Thionville)",
+                    "links": [],
+                    "name": "Thionville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D0E12385-D246-40A3-86E4-ACB6E8837C50:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D0E12385-D246-40A3-86E4-ACB6E8837C50:",
+                "links": [],
+                "name": "Thionville - Creutzwald",
+                "opening_time": "053400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Thionville - Creutzwald"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87191007",
+                "name": "Thionville (Thionville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87191007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87191007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.353965",
+                        "lon": "6.168582"
+                    },
+                    "id": "stop_area:SNCF:87191007",
+                    "label": "Thionville (Thionville)",
+                    "links": [],
+                    "name": "Thionville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E0A47A78-21C0-4090-BD86-6F38A1343942:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E0A47A78-21C0-4090-BD86-6F38A1343942:",
+                "links": [],
+                "name": "Thionville - Longwy",
+                "opening_time": "052800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Thionville - Longwy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87191007",
+                "name": "Thionville (Thionville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87191007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87191007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.353965",
+                        "lon": "6.168582"
+                    },
+                    "id": "stop_area:SNCF:87191007",
+                    "label": "Thionville (Thionville)",
+                    "links": [],
+                    "name": "Thionville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0f00d151-4f24-49f4-8afc-e7b86ec0b00d:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0f00d151-4f24-49f4-8afc-e7b86ec0b00d:",
+                "links": [],
+                "name": "Thionville -Longwy",
+                "opening_time": "090700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Thionville -Longwy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87402008",
+                "name": "Romorantin Place de la Gare (Romorantin-Lanthenay)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87402008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87402008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.355557",
+                        "lon": "1.739308"
+                    },
+                    "id": "stop_area:SNCF:87402008",
+                    "label": "Romorantin Place de la Gare (Romorantin-Lanthenay)",
+                    "links": [],
+                    "name": "Romorantin Place de la Gare",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::096B0550-15D1-4801-8DFA-D4BD0E3A025D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "191000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::096B0550-15D1-4801-8DFA-D4BD0E3A025D:",
+                "links": [],
+                "name": "Th\u00e9s\u00e9e - Saint Aignan Noyers - Romorantin (Car)",
+                "opening_time": "065000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Th\u00e9s\u00e9e - Saint Aignan Noyers - Romorantin (Car)"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87755447",
+                "name": "Les Arcs - Draguignan (Les Arcs-sur-Argens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87755447"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87755447"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.455725",
+                        "lon": "6.482424"
+                    },
+                    "id": "stop_area:SNCF:87755447",
+                    "label": "Les Arcs - Draguignan (Les Arcs-sur-Argens)",
+                    "links": [],
+                    "name": "Les Arcs - Draguignan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D35E42AA-328F-4D2D-8A41-A3756EB2DF07:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D35E42AA-328F-4D2D-8A41-A3756EB2DF07:",
+                "links": [],
+                "name": "Toulon - Carnoules - Les Arcs",
+                "opening_time": "060800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulon - Carnoules - Les Arcs"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611095",
+                "name": "Boussens (Boussens)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611095"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611095"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.179617",
+                        "lon": "0.972543"
+                    },
+                    "id": "stop_area:SNCF:87611095",
+                    "label": "Boussens (Boussens)",
+                    "links": [],
+                    "name": "Boussens",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7fdd7856-45c6-4aeb-8177-fbd52c0cde81:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7fdd7856-45c6-4aeb-8177-fbd52c0cde81:",
+                "links": [],
+                "name": "Toulouse - Guzet",
+                "opening_time": "055000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse - Guzet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87586008",
+                "name": "Agen (Agen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87586008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87586008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.207967",
+                        "lon": "0.6208669999999999"
+                    },
+                    "id": "stop_area:SNCF:87586008",
+                    "label": "Agen (Agen)",
+                    "links": [],
+                    "name": "Agen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::F9BD440B-D41F-4106-B2BA-B807F0635262:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "001700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::F9BD440B-D41F-4106-B2BA-B807F0635262:",
+                "links": [],
+                "name": "Toulouse Matabiau - Agen",
+                "opening_time": "055600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Agen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::DDEF5935-0332-4ED5-B499-5C664AF7CF05:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215430",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::DDEF5935-0332-4ED5-B499-5C664AF7CF05:",
+                "links": [],
+                "name": "Toulouse Matabiau - Auch",
+                "opening_time": "052400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Auch"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9076088F-48FF-42F3-BABE-1AA476103702:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230030",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9076088F-48FF-42F3-BABE-1AA476103702:",
+                "links": [],
+                "name": "Toulouse Matabiau - Ax Les Thermes",
+                "opening_time": "055800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Ax Les Thermes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0312E125-B6BC-404C-A7D1-C1600D4CACAF:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0312E125-B6BC-404C-A7D1-C1600D4CACAF:",
+                "links": [],
+                "name": "Toulouse Matabiau - Brive La Gaillarde",
+                "opening_time": "052000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Brive La Gaillarde"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3730A943-C62B-4673-845F-64A7E3DAF78B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "015200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3730A943-C62B-4673-845F-64A7E3DAF78B:",
+                "links": [],
+                "name": "Toulouse Matabiau - Carmaux",
+                "opening_time": "052200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Carmaux"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87613109",
+                "name": "Capdenac (Capdenac-Gare)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87613109"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87613109"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.578246",
+                        "lon": "2.077963"
+                    },
+                    "id": "stop_area:SNCF:87613109",
+                    "label": "Capdenac (Capdenac-Gare)",
+                    "links": [],
+                    "name": "Capdenac",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::11F076F8-55AD-4273-8679-AB5D0FBE8F9E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::11F076F8-55AD-4273-8679-AB5D0FBE8F9E:",
+                "links": [],
+                "name": "Toulouse Matabiau - Clermont Ferrand",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Clermont Ferrand"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A0FA829F-1AEE-4DAE-8464-09CDCB107164:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "002400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A0FA829F-1AEE-4DAE-8464-09CDCB107164:",
+                "links": [],
+                "name": "Toulouse Matabiau - Latour De Carol Enveitg",
+                "opening_time": "062700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Latour De Carol Enveitg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87615542",
+                "name": "Mazamet (Mazamet)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87615542"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87615542"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.497785",
+                        "lon": "2.374735"
+                    },
+                    "id": "stop_area:SNCF:87615542",
+                    "label": "Mazamet (Mazamet)",
+                    "links": [],
+                    "name": "Mazamet",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6B259509-7C17-4FB6-9FCC-895FA3DE16D4:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6B259509-7C17-4FB6-9FCC-895FA3DE16D4:",
+                "links": [],
+                "name": "Toulouse Matabiau - Mazamet",
+                "opening_time": "052700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Mazamet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3EA7647F-5C9C-4833-AFB5-3B9D213283B0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3EA7647F-5C9C-4833-AFB5-3B9D213283B0:",
+                "links": [],
+                "name": "Toulouse Matabiau - Montauban Ville Bourbon",
+                "opening_time": "054700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Montauban Ville Bourbon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C6991869-26A0-42B9-9675-D3CC3213A920:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C6991869-26A0-42B9-9675-D3CC3213A920:",
+                "links": [],
+                "name": "Toulouse Matabiau - Montrejeau Gourdan Polignan",
+                "opening_time": "060200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Montrejeau Gourdan Polignan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87611004",
+                "name": "Toulouse Matabiau (Toulouse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87611004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87611004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.611206",
+                        "lon": "1.453616"
+                    },
+                    "id": "stop_area:SNCF:87611004",
+                    "label": "Toulouse Matabiau (Toulouse)",
+                    "links": [],
+                    "name": "Toulouse Matabiau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::52D5BA37-0A0E-43ED-AB0D-DAF12888D586:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::52D5BA37-0A0E-43ED-AB0D-DAF12888D586:",
+                "links": [],
+                "name": "Toulouse Matabiau - Narbonne",
+                "opening_time": "054900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Toulouse Matabiau - Narbonne"
+        }
+    ]
+}

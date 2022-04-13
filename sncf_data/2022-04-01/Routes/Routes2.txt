@@ -1,0 +1,1758 @@
+{
+    "context": {
+        "current_datetime": "20220402T200636",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=1&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=3&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 2,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600114",
+                "name": "Paris Saint-Lazare Noctilien (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600114"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600114"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.875625",
+                        "lon": "2.326452"
+                    },
+                    "id": "stop_area:SNCF:87600114",
+                    "label": "Paris Saint-Lazare Noctilien (Paris)",
+                    "links": [],
+                    "name": "Paris Saint-Lazare Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N151",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "063631",
+                "code": "N151",
+                "codes": [],
+                "color": "BDD044",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N151",
+                "links": [],
+                "name": "Gare Saint-Lazare/Gare de Mantes-la-Jolie",
+                "opening_time": "001000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Saint-Lazare/Gare de Mantes-la-Jolie"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600205",
+                "name": "Cergy-Le-Haut Noctilien (Cergy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600205"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600205"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.048477",
+                        "lon": "2.012349"
+                    },
+                    "id": "stop_area:SNCF:87600205",
+                    "label": "Cergy-Le-Haut Noctilien (Cergy)",
+                    "links": [],
+                    "name": "Cergy-Le-Haut Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N152",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "062216",
+                "code": "N152",
+                "codes": [],
+                "color": "E92D30",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N152",
+                "links": [],
+                "name": "Gare Saint-Lazare/Cergy-Le Haut RER",
+                "opening_time": "004000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Saint-Lazare/Cergy-Le Haut RER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87600122",
+                "name": "Montigny Beauchamp Noctilien (Beauchamp)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87600122"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87600122"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.007611",
+                        "lon": "2.197838"
+                    },
+                    "id": "stop_area:SNCF:87600122",
+                    "label": "Montigny Beauchamp Noctilien (Beauchamp)",
+                    "links": [],
+                    "name": "Montigny Beauchamp Noctilien",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:N154",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "055800",
+                "code": "N154",
+                "codes": [],
+                "color": "FFE300",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNNOC",
+                    "name": "Noctilien"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:N154",
+                "links": [],
+                "name": "Gare Saint-Lazare/Montigny Beauchamp",
+                "opening_time": "005000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Bus",
+                        "name": "Bus"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "Gare Saint-Lazare/Montigny Beauchamp"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87474098",
+                "name": "Quimper (Quimper)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87474098"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87474098"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.994455",
+                        "lon": "-4.092103"
+                    },
+                    "id": "stop_area:SNCF:87474098",
+                    "label": "Quimper (Quimper)",
+                    "links": [],
+                    "name": "Quimper",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:533300",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:533300",
+                "links": [],
+                "name": "A\u00e9roport Charles de Gaulle 2 TGV - Quimper",
+                "opening_time": "093600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "A\u00e9roport Charles de Gaulle 2 TGV - Quimper"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87686006",
+                "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87686030"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87758581"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87758581"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87758581"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.844945",
+                        "lon": "2.373481"
+                    },
+                    "id": "stop_area:SNCF:87686006",
+                    "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Gare de Lyon Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:633400",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233230",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:633400",
+                "links": [],
+                "name": "Lyon Part Dieu - Paris Gare de Lyon Hall 1 &2",
+                "opening_time": "062500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Paris Gare de Lyon Hall 1 &2"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:633500",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:633500",
+                "links": [],
+                "name": "Lyon Perrache - Marseille Saint-Charles",
+                "opening_time": "070600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Marseille Saint-Charles"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87286005",
+                "name": "Lille Flandres (Lille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87286005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87286005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.636577",
+                        "lon": "3.06987"
+                    },
+                    "id": "stop_area:SNCF:87286005",
+                    "label": "Lille Flandres (Lille)",
+                    "links": [],
+                    "name": "Lille Flandres",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:533100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230930",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:533100",
+                "links": [],
+                "name": "Marseille Saint-Charles - Lille Flandres",
+                "opening_time": "061200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marseille Saint-Charles - Lille Flandres"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:633100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:633100",
+                "links": [],
+                "name": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2",
+                "opening_time": "055600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Marseille Saint-Charles - Paris Gare de Lyon Hall 1 &2"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87686006",
+                "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87686030"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87758581"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87758581"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87758581"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.844945",
+                        "lon": "2.373481"
+                    },
+                    "id": "stop_area:SNCF:87686006",
+                    "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Gare de Lyon Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:633300",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214730",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:633300",
+                "links": [],
+                "name": "Paris Gare de Lyon Hall 1 &2 - Montpellier Saint-Roch",
+                "opening_time": "060900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare de Lyon Hall 1 &2 - Montpellier Saint-Roch"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87686006",
+                "name": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87686030"
+                        },
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87758581"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87758581"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87686030"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87758581"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.844945",
+                        "lon": "2.373481"
+                    },
+                    "id": "stop_area:SNCF:87686006",
+                    "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Gare de Lyon Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:633200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:633200",
+                "links": [],
+                "name": "Paris Gare de Lyon Hall 1 &2 - Nice-Ville",
+                "opening_time": "055200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare de Lyon Hall 1 &2 - Nice-Ville"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87391003",
+                "name": "Paris Montparnasse Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87391003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87391003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841172",
+                        "lon": "2.320514"
+                    },
+                    "id": "stop_area:SNCF:87391003",
+                    "label": "Paris Montparnasse Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Montparnasse Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:433200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:433200",
+                "links": [],
+                "name": "Paris Montparnasse Hall 1 &2 - Bordeaux Saint-Jean",
+                "opening_time": "084100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Montparnasse Hall 1 &2 - Bordeaux Saint-Jean"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:433100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "202700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:433100",
+                "links": [],
+                "name": "Paris Montparnasse Hall 1 &2 - Nantes",
+                "opening_time": "083900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Montparnasse Hall 1 &2 - Nantes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87391003",
+                "name": "Paris Montparnasse Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87391003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87391003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841172",
+                        "lon": "2.320514"
+                    },
+                    "id": "stop_area:SNCF:87391003",
+                    "label": "Paris Montparnasse Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Montparnasse Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:433400",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "195400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:433400",
+                "links": [],
+                "name": "Paris Montparnasse Hall 1 &2 - Rennes",
+                "opening_time": "074800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Montparnasse Hall 1 &2 - Rennes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87391003",
+                "name": "Paris Montparnasse Hall 1 &2 (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87391003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87391003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.841172",
+                        "lon": "2.320514"
+                    },
+                    "id": "stop_area:SNCF:87391003",
+                    "label": "Paris Montparnasse Hall 1 &2 (Paris)",
+                    "links": [],
+                    "name": "Paris Montparnasse Hall 1 &2",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:433500",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "231500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:433500",
+                "links": [],
+                "name": "Paris Montparnasse Hall 1 &2 - Toulouse Matabiau",
+                "opening_time": "091100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Montparnasse Hall 1 &2 - Toulouse Matabiau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87113001",
+                "name": "Paris Est (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87113001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87113001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876742",
+                        "lon": "2.358424"
+                    },
+                    "id": "stop_area:SNCF:87113001",
+                    "label": "Paris Est (Paris)",
+                    "links": [],
+                    "name": "Paris Est",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:333100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:333100",
+                "links": [],
+                "name": "Strasbourg - Paris Est",
+                "opening_time": "100400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Strasbourg - Paris Est"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:533200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TGVOUIGO",
+                    "name": "OUIGO"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:533200",
+                "links": [],
+                "name": "Tourcoing - Bordeaux Saint-Jean",
+                "opening_time": "054100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Tourcoing - Bordeaux Saint-Jean"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87547000",
+                "name": "Paris Austerlitz (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87547000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87547000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.842285",
+                        "lon": "2.364891"
+                    },
+                    "id": "stop_area:SNCF:87547000",
+                    "label": "Paris Austerlitz (Paris)",
+                    "links": [],
+                    "name": "Paris Austerlitz",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:634100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:OUIGO_TC",
+                    "name": "OUIGO Train Classique"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:634100",
+                "links": [],
+                "name": "Lyon Perrache - Paris Austerlitz",
+                "opening_time": "060300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Perrache - Paris Austerlitz"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:434100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:OUIGO_TC",
+                    "name": "OUIGO Train Classique"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:434100",
+                "links": [],
+                "name": "Paris Austerlitz - Nantes",
+                "opening_time": "063200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Austerlitz - Nantes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87723197",
+                "name": "Lyon Part Dieu (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87723197"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87723197"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.760596",
+                        "lon": "4.859409"
+                    },
+                    "id": "stop_area:SNCF:87723197",
+                    "label": "Lyon Part Dieu (Lyon)",
+                    "links": [],
+                    "name": "Lyon Part Dieu",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:812200",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "193200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ELI",
+                    "name": "RENFE SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:812200",
+                "links": [],
+                "name": "Lyon Part Dieu - Barcelone-Sants",
+                "opening_time": "081500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Lyon Part Dieu - Barcelone-Sants"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87751008",
+                "name": "Marseille Saint-Charles (Marseille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87751008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87751008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.302666",
+                        "lon": "5.380407"
+                    },
+                    "id": "stop_area:SNCF:87751008",
+                    "label": "Marseille Saint-Charles (Marseille)",
+                    "links": [],
+                    "name": "Marseille Saint-Charles",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:812300",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ELI",
+                    "name": "RENFE SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:812300",
+                "links": [],
+                "name": "Madrid Porte d'Atocha - Marseille Saint-Charles",
+                "opening_time": "080200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Madrid Porte d'Atocha - Marseille Saint-Charles"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:71718010",
+                "name": "Barcelone-Sants (Barcelona)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "71718010"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "71718010"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "41.378961",
+                        "lon": "2.139834"
+                    },
+                    "id": "stop_area:SNCF:71718010",
+                    "label": "Barcelone-Sants (Barcelona)",
+                    "links": [],
+                    "name": "Barcelone-Sants",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:CSR:802100",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "165400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:ELI",
+                    "name": "RENFE SNCF"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:CSR:802100",
+                "links": [],
+                "name": "Paris Gare de Lyon Hall 1 &2 - Barcelone-Sants",
+                "opening_time": "081200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Paris Gare de Lyon Hall 1 &2 - Barcelone-Sants"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87758201",
+                "name": "Boissy-Saint-L\u00e9ger (Boissy-Saint-L\u00e9ger)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87758201"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87758201"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.753076",
+                        "lon": "2.505344"
+                    },
+                    "id": "stop_area:SNCF:87758201",
+                    "label": "Boissy-Saint-L\u00e9ger (Boissy-Saint-L\u00e9ger)",
+                    "links": [],
+                    "name": "Boissy-Saint-L\u00e9ger",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:A",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "014140",
+                "code": "A",
+                "codes": [],
+                "color": "D1302F",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNRER",
+                    "name": "RER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:A",
+                "links": [],
+                "name": "A",
+                "opening_time": "044140",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "A"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87001479",
+                "name": "A\u00e9roport Charles-de-Gaulle 2 RER (Tremblay-en-France)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87001479"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87001479"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.003965",
+                        "lon": "2.570665"
+                    },
+                    "id": "stop_area:SNCF:87001479",
+                    "label": "A\u00e9roport Charles-de-Gaulle 2 RER (Tremblay-en-France)",
+                    "links": [],
+                    "name": "A\u00e9roport Charles-de-Gaulle 2 RER",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:B",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "020115",
+                "code": "B",
+                "codes": [],
+                "color": "427DBD",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNRER",
+                    "name": "RER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:B",
+                "links": [],
+                "name": "B",
+                "opening_time": "044700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "B"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87393157",
+                "name": "Versailles Ch\u00e2teau Rive Gauche (Versailles)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87393157"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87393157"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.800364",
+                        "lon": "2.128827"
+                    },
+                    "id": "stop_area:SNCF:87393157",
+                    "label": "Versailles Ch\u00e2teau Rive Gauche (Versailles)",
+                    "links": [],
+                    "name": "Versailles Ch\u00e2teau Rive Gauche",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:C",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "013230",
+                "code": "C",
+                "codes": [],
+                "color": "FCD946",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNRER",
+                    "name": "RER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:C",
+                "links": [],
+                "name": "C",
+                "opening_time": "033840",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "C"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87681007",
+                "name": "Corbeil-Essonnes (Corbeil-Essonnes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87681007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87681007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.614405",
+                        "lon": "2.47376"
+                    },
+                    "id": "stop_area:SNCF:87681007",
+                    "label": "Corbeil-Essonnes (Corbeil-Essonnes)",
+                    "links": [],
+                    "name": "Corbeil-Essonnes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:D",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "015030",
+                "code": "D",
+                "codes": [],
+                "color": "5E9620",
+                "commercial_mode": {
+                    "id": "commercial_mode:TNRER",
+                    "name": "RER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:D",
+                "links": [],
+                "name": "D",
+                "opening_time": "040310",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:RapidTransit",
+                        "name": "RER / Transilien"
+                    }
+                ],
+                "text_color": "FFFFFF"
+            },
+            "links": [],
+            "name": "D"
+        }
+    ]
+}

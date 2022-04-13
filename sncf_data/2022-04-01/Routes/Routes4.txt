@@ -1,0 +1,1754 @@
+{
+    "context": {
+        "current_datetime": "20220402T200638",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=3&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=5&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 4,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87594630",
+                "name": "Objat (Objat)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87594630"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87594630"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.264695",
+                        "lon": "1.406982"
+                    },
+                    "id": "stop_area:SNCF:87594630",
+                    "label": "Objat (Objat)",
+                    "links": [],
+                    "name": "Objat",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3D294378-9EB2-418C-82FD-549205FF7899:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3D294378-9EB2-418C-82FD-549205FF7899:",
+                "links": [],
+                "name": "23. Limoges-St-Yrieix-Brive",
+                "opening_time": "053200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "23. Limoges-St-Yrieix-Brive"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87592006",
+                "name": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87592006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87592006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.836207",
+                        "lon": "1.267419"
+                    },
+                    "id": "stop_area:SNCF:87592006",
+                    "label": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                    "links": [],
+                    "name": "Limoges B\u00e9n\u00e9dictins",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A9C279F8-E614-4EFD-9727-DA2A83E31609:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222730",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A9C279F8-E614-4EFD-9727-DA2A83E31609:",
+                "links": [],
+                "name": "24. Limoges-Poitiers",
+                "opening_time": "044700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "24. Limoges-Poitiers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87597609",
+                "name": "Gu\u00e9ret (Gu\u00e9ret)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87597609"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87597609"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.174142",
+                        "lon": "1.879131"
+                    },
+                    "id": "stop_area:SNCF:87597609",
+                    "label": "Gu\u00e9ret (Gu\u00e9ret)",
+                    "links": [],
+                    "name": "Gu\u00e9ret",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1E708F4C-D9FF-4DD1-819E-69257CA9E90F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211930",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1E708F4C-D9FF-4DD1-819E-69257CA9E90F:",
+                "links": [],
+                "name": "25. Limoges-Montlu\u00e7on/Felletin",
+                "opening_time": "055100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "25. Limoges-Montlu\u00e7on/Felletin"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87592006",
+                "name": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87592006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87592006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.836207",
+                        "lon": "1.267419"
+                    },
+                    "id": "stop_area:SNCF:87592006",
+                    "label": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                    "links": [],
+                    "name": "Limoges B\u00e9n\u00e9dictins",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::572D299E-EA38-4280-BD5A-5F460D33004C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230130",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::572D299E-EA38-4280-BD5A-5F460D33004C:",
+                "links": [],
+                "name": "26. Limoges-Ussel",
+                "opening_time": "053400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "26. Limoges-Ussel"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87594002",
+                "name": "Brive-la-Gaillarde (Brive-la-Gaillarde)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87594002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87594002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.152601",
+                        "lon": "1.528634"
+                    },
+                    "id": "stop_area:SNCF:87594002",
+                    "label": "Brive-la-Gaillarde (Brive-la-Gaillarde)",
+                    "links": [],
+                    "name": "Brive-la-Gaillarde",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::95F538E4-A059-438E-A230-5946C0C6C914:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "224730",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::95F538E4-A059-438E-A230-5946C0C6C914:",
+                "links": [],
+                "name": "27. Brive-Ussel",
+                "opening_time": "052500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "27. Brive-Ussel"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::36510BCA-CF80-4B39-82E1-85C3D97AC26B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::36510BCA-CF80-4B39-82E1-85C3D97AC26B:",
+                "links": [],
+                "name": "31. Bordeaux-Limoges-Montlu\u00e7on",
+                "opening_time": "055000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "31. Bordeaux-Limoges-Montlu\u00e7on"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87595009",
+                "name": "P\u00e9rigueux (P\u00e9rigueux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87595009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87595009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.187408",
+                        "lon": "0.707879"
+                    },
+                    "id": "stop_area:SNCF:87595009",
+                    "label": "P\u00e9rigueux (P\u00e9rigueux)",
+                    "links": [],
+                    "name": "P\u00e9rigueux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E0B82D2A-55FC-42AD-9DE4-E159BF3E8AB8:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "013700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E0B82D2A-55FC-42AD-9DE4-E159BF3E8AB8:",
+                "links": [],
+                "name": "31. Bordeaux-Limoges-Montlu\u00e7on",
+                "opening_time": "043100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "31. Bordeaux-Limoges-Montlu\u00e7on"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87595009",
+                "name": "P\u00e9rigueux (P\u00e9rigueux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87595009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87595009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.187408",
+                        "lon": "0.707879"
+                    },
+                    "id": "stop_area:SNCF:87595009",
+                    "label": "P\u00e9rigueux (P\u00e9rigueux)",
+                    "links": [],
+                    "name": "P\u00e9rigueux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::50C0FC37-378D-4D7D-A18B-F9513AB7E75E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "224400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::50C0FC37-378D-4D7D-A18B-F9513AB7E75E:",
+                "links": [],
+                "name": "32. Bordeaux-Brive-Ussel",
+                "opening_time": "053400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "32. Bordeaux-Brive-Ussel"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87584268",
+                "name": "Bergerac (Bergerac)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87584268"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87584268"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.857061",
+                        "lon": "0.489174"
+                    },
+                    "id": "stop_area:SNCF:87584268",
+                    "label": "Bergerac (Bergerac)",
+                    "links": [],
+                    "name": "Bergerac",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0F1CA3D2-DA11-4866-BFD0-2AB4F90EF647:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0F1CA3D2-DA11-4866-BFD0-2AB4F90EF647:",
+                "links": [],
+                "name": "33. Bordeaux-Sarlat",
+                "opening_time": "053200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "33. Bordeaux-Sarlat"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::659E36F2-1E8F-41BB-9D87-32EF494031D0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::659E36F2-1E8F-41BB-9D87-32EF494031D0:",
+                "links": [],
+                "name": "33. Bordeaux-Sarlat",
+                "opening_time": "055100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "33. Bordeaux-Sarlat"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87586008",
+                "name": "Agen (Agen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87586008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87586008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.207967",
+                        "lon": "0.6208669999999999"
+                    },
+                    "id": "stop_area:SNCF:87586008",
+                    "label": "Agen (Agen)",
+                    "links": [],
+                    "name": "Agen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::69CC08C6-46B9-45E0-85F1-ABACB8874308:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::69CC08C6-46B9-45E0-85F1-ABACB8874308:",
+                "links": [],
+                "name": "34. P\u00e9rigueux-Agen/Sarlat",
+                "opening_time": "054900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "34. P\u00e9rigueux-Agen/Sarlat"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87582668",
+                "name": "Arcachon (Arcachon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87582668"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87582668"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.658967",
+                        "lon": "-1.165323"
+                    },
+                    "id": "stop_area:SNCF:87582668",
+                    "label": "Arcachon (Arcachon)",
+                    "links": [],
+                    "name": "Arcachon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::54f01c57-167c-4e93-8fa0-67e407187f8f:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::54f01c57-167c-4e93-8fa0-67e407187f8f:",
+                "links": [],
+                "name": "41. Arcachon-Bordeaux-Libourne-Coutras",
+                "opening_time": "053200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "41. Arcachon-Bordeaux-Libourne-Coutras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::CE688AD5-224A-4FF4-AD2F-F3C83233B88E:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "183100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::CE688AD5-224A-4FF4-AD2F-F3C83233B88E:",
+                "links": [],
+                "name": "41. Arcachon-Bordeaux-Libourne-Coutras",
+                "opening_time": "075600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "41. Arcachon-Bordeaux-Libourne-Coutras"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87582668",
+                "name": "Arcachon (Arcachon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87582668"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87582668"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.658967",
+                        "lon": "-1.165323"
+                    },
+                    "id": "stop_area:SNCF:87582668",
+                    "label": "Arcachon (Arcachon)",
+                    "links": [],
+                    "name": "Arcachon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C1350296-CE22-43CB-8C8B-87E8DE256DD3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "011700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C1350296-CE22-43CB-8C8B-87E8DE256DD3:",
+                "links": [],
+                "name": "41U.O. Bordeaux-Arcachon",
+                "opening_time": "050100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "41U.O. Bordeaux-Arcachon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::BD528CB5-D071-4F03-96D7-DE16B243FCD6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::BD528CB5-D071-4F03-96D7-DE16B243FCD6:",
+                "links": [],
+                "name": "42. Bordeaux-Pessac-Pointe-de-Grave",
+                "opening_time": "054100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "42. Bordeaux-Pessac-Pointe-de-Grave"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581199",
+                "name": "Macau (Macau)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581199"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581199"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.004171",
+                        "lon": "-0.619859"
+                    },
+                    "id": "stop_area:SNCF:87581199",
+                    "label": "Macau (Macau)",
+                    "links": [],
+                    "name": "Macau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::EB5A15AD-2BDF-48A7-853D-2F95899BC6F6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::EB5A15AD-2BDF-48A7-853D-2F95899BC6F6:",
+                "links": [],
+                "name": "42. Bordeaux-Pessac-Pointe-de-Grave",
+                "opening_time": "055400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "42. Bordeaux-Pessac-Pointe-de-Grave"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::D9B029B8-A329-4496-B080-CBC82AFC1FED:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::D9B029B8-A329-4496-B080-CBC82AFC1FED:",
+                "links": [],
+                "name": "43U.N. Bordeaux-St-Mariens",
+                "opening_time": "060800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "43U.N. Bordeaux-St-Mariens"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87582775",
+                "name": "Langon (Langon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87582775"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87582775"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.555414",
+                        "lon": "-0.255534"
+                    },
+                    "id": "stop_area:SNCF:87582775",
+                    "label": "Langon (Langon)",
+                    "links": [],
+                    "name": "Langon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::86A87764-5000-4664-AE25-310C2A7BA39D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::86A87764-5000-4664-AE25-310C2A7BA39D:",
+                "links": [],
+                "name": "43U.S. Bordeaux-Langon",
+                "opening_time": "054000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "43U.S. Bordeaux-Langon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87586545",
+                "name": "Marmande (Marmande)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87586545"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87586545"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.503071",
+                        "lon": "0.168091"
+                    },
+                    "id": "stop_area:SNCF:87586545",
+                    "label": "Marmande (Marmande)",
+                    "links": [],
+                    "name": "Marmande",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2C66A825-8878-4243-93C2-4207D6DC4BCE:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2C66A825-8878-4243-93C2-4207D6DC4BCE:",
+                "links": [],
+                "name": "44. Bordeaux-Agen",
+                "opening_time": "053700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "44. Bordeaux-Agen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87586008",
+                "name": "Agen (Agen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87586008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87586008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.207967",
+                        "lon": "0.6208669999999999"
+                    },
+                    "id": "stop_area:SNCF:87586008",
+                    "label": "Agen (Agen)",
+                    "links": [],
+                    "name": "Agen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::BA372561-8E53-4C8D-AED9-C7F10D84AE3F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "225400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::BA372561-8E53-4C8D-AED9-C7F10D84AE3F:",
+                "links": [],
+                "name": "44. Bordeaux-Agen",
+                "opening_time": "053500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "44. Bordeaux-Agen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87671016",
+                "name": "Mont-de-Marsan (Mont-de-Marsan)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87671016"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87671016"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.884898",
+                        "lon": "-0.50466"
+                    },
+                    "id": "stop_area:SNCF:87671016",
+                    "label": "Mont-de-Marsan (Mont-de-Marsan)",
+                    "links": [],
+                    "name": "Mont-de-Marsan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::DF796303-3374-432A-9382-D1A44BB1528D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::DF796303-3374-432A-9382-D1A44BB1528D:",
+                "links": [],
+                "name": "45. Bordeaux-Mont-de-Marsan",
+                "opening_time": "065300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "45. Bordeaux-Mont-de-Marsan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87581009",
+                "name": "Bordeaux Saint-Jean (Bordeaux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87581009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87581009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.825873",
+                        "lon": "-0.556697"
+                    },
+                    "id": "stop_area:SNCF:87581009",
+                    "label": "Bordeaux Saint-Jean (Bordeaux)",
+                    "links": [],
+                    "name": "Bordeaux Saint-Jean",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::EBF6EE73-3204-479A-B062-695F6B23E133:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::EBF6EE73-3204-479A-B062-695F6B23E133:",
+                "links": [],
+                "name": "45. Bordeaux-Mont-de-Marsan",
+                "opening_time": "052400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "45. Bordeaux-Mont-de-Marsan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87673004",
+                "name": "Bayonne (Bayonne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87673004"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87673004"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.496793",
+                        "lon": "-1.470368"
+                    },
+                    "id": "stop_area:SNCF:87673004",
+                    "label": "Bayonne (Bayonne)",
+                    "links": [],
+                    "name": "Bayonne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::34C70115-8252-4E3B-AFC2-27A8443879D2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213930",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::34C70115-8252-4E3B-AFC2-27A8443879D2:",
+                "links": [],
+                "name": "51. Bordeaux-Hendaye",
+                "opening_time": "060400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "51. Bordeaux-Hendaye"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87677005",
+                "name": "Hendaye (Hendaye)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87677005"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87677005"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.353132",
+                        "lon": "-1.781724"
+                    },
+                    "id": "stop_area:SNCF:87677005",
+                    "label": "Hendaye (Hendaye)",
+                    "links": [],
+                    "name": "Hendaye",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::928FC929-55BC-45A0-ADE5-54BF6321A1B6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::928FC929-55BC-45A0-ADE5-54BF6321A1B6:",
+                "links": [],
+                "name": "51. Bordeaux-Hendaye",
+                "opening_time": "044000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "51. Bordeaux-Hendaye"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87672006",
+                "name": "Pau (Pau)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87672006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87672006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.291711",
+                        "lon": "-0.369675"
+                    },
+                    "id": "stop_area:SNCF:87672006",
+                    "label": "Pau (Pau)",
+                    "links": [],
+                    "name": "Pau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::42AF2809-56F9-4EDF-982A-B48B1EEF5409:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::42AF2809-56F9-4EDF-982A-B48B1EEF5409:",
+                "links": [],
+                "name": "52. Bordeaux-Pau-Tarbes",
+                "opening_time": "050300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "52. Bordeaux-Pau-Tarbes"
+        }
+    ]
+}

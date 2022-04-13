@@ -1,0 +1,1706 @@
+{
+    "context": {
+        "current_datetime": "20220402T200640",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=7&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=9&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 8,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444000",
+                "name": "Caen (Caen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.176354",
+                        "lon": "-0.347613"
+                    },
+                    "id": "stop_area:SNCF:87444000",
+                    "label": "Caen (Caen)",
+                    "links": [],
+                    "name": "Caen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1f647a2c-138d-47de-8fb5-333f230e16f7:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1f647a2c-138d-47de-8fb5-333f230e16f7:",
+                "links": [],
+                "name": "Caen - Le Mans - Tours",
+                "opening_time": "055200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Caen - Le Mans - Tours"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444000",
+                "name": "Caen (Caen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.176354",
+                        "lon": "-0.347613"
+                    },
+                    "id": "stop_area:SNCF:87444000",
+                    "label": "Caen (Caen)",
+                    "links": [],
+                    "name": "Caen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::c21468e7-fa90-4c2a-81bc-7f07f634ab4c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::c21468e7-fa90-4c2a-81bc-7f07f634ab4c:",
+                "links": [],
+                "name": "Caen - Le Mans - Tours",
+                "opening_time": "061300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Caen - Le Mans - Tours"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444000",
+                "name": "Caen (Caen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.176354",
+                        "lon": "-0.347613"
+                    },
+                    "id": "stop_area:SNCF:87444000",
+                    "label": "Caen (Caen)",
+                    "links": [],
+                    "name": "Caen",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::e77e0870-10b9-47ad-95d0-cb38e782f1c2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213730",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::e77e0870-10b9-47ad-95d0-cb38e782f1c2:",
+                "links": [],
+                "name": "Caen - Rouen",
+                "opening_time": "070300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Caen - Rouen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87613000",
+                "name": "Cahors (Cahors)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87613000"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87613000"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "44.449275",
+                        "lon": "1.433325"
+                    },
+                    "id": "stop_area:SNCF:87613000",
+                    "label": "Cahors (Cahors)",
+                    "links": [],
+                    "name": "Cahors",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::acba7675-f9a6-4ca9-a5ba-0a91e7d2d807:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "200000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::acba7675-f9a6-4ca9-a5ba-0a91e7d2d807:",
+                "links": [],
+                "name": "Cahors - Monsempron",
+                "opening_time": "055500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cahors - Monsempron"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87281071",
+                "name": "Calais - Fr\u00e9thun (Fr\u00e9thun)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87281071"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87281071"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "50.901247",
+                        "lon": "1.811178"
+                    },
+                    "id": "stop_area:SNCF:87281071",
+                    "label": "Calais - Fr\u00e9thun (Fr\u00e9thun)",
+                    "links": [],
+                    "name": "Calais - Fr\u00e9thun",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3e47fcaf-035a-4f79-a33c-c3d5177289b6:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "000900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3e47fcaf-035a-4f79-a33c-c3d5177289b6:",
+                "links": [],
+                "name": "Calais-Frethun - Lille Europe - Arras Tergv",
+                "opening_time": "050000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Calais-Frethun - Lille Europe - Arras Tergv"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87673723",
+                "name": "Saint-Jean-Pied-de-Port (Saint-Jean-Pied-de-Port)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87673723"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87673723"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "43.167726",
+                        "lon": "-1.237725"
+                    },
+                    "id": "stop_area:SNCF:87673723",
+                    "label": "Saint-Jean-Pied-de-Port (Saint-Jean-Pied-de-Port)",
+                    "links": [],
+                    "name": "Saint-Jean-Pied-de-Port",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:1187-87673657-87673723",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:1187-87673657-87673723",
+                "links": [],
+                "name": "Cambo-les-Bains - Saint-Jean-Pied-de-Port",
+                "opening_time": "071500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cambo-les-Bains - Saint-Jean-Pied-de-Port"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87413377",
+                "name": "Foucart - Alvimare (Foucart)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87413377"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87413377"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.608329",
+                        "lon": "0.59699"
+                    },
+                    "id": "stop_area:SNCF:87413377",
+                    "label": "Foucart - Alvimare (Foucart)",
+                    "links": [],
+                    "name": "Foucart - Alvimare",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::5be0dfce-8994-4d1e-b896-2f9a641b4c37:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "175300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::5be0dfce-8994-4d1e-b896-2f9a641b4c37:",
+                "links": [],
+                "name": "Car Br\u00e9aut\u00e9 Foucart",
+                "opening_time": "173000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Car Br\u00e9aut\u00e9 Foucart"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444372",
+                "name": "Trouville - Deauville (Deauville)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444372"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444372"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.360005",
+                        "lon": "0.08416700000000001"
+                    },
+                    "id": "stop_area:SNCF:87444372",
+                    "label": "Trouville - Deauville (Deauville)",
+                    "links": [],
+                    "name": "Trouville - Deauville",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::12c8d414-e66c-4a8d-a612-1a2efaa1e584:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "132500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::12c8d414-e66c-4a8d-a612-1a2efaa1e584:",
+                "links": [],
+                "name": "Car Lisieux-Deauville",
+                "opening_time": "123500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Car Lisieux-Deauville"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87411017",
+                "name": "Rouen Rive Droite (Rouen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87411017"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87411017"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.448663",
+                        "lon": "1.094103"
+                    },
+                    "id": "stop_area:SNCF:87411017",
+                    "label": "Rouen Rive Droite (Rouen)",
+                    "links": [],
+                    "name": "Rouen Rive Droite",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7fd9ad51-56f2-4a7f-88fd-210b32486659:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "055500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7fd9ad51-56f2-4a7f-88fd-210b32486659:",
+                "links": [],
+                "name": "Car Motteville - Rouen",
+                "opening_time": "050000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Car Motteville - Rouen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87705822",
+                "name": "Pont-Audemer Gare SNCF (Pont-Audemer)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87705822"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87705822"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.351824",
+                        "lon": "0.514146"
+                    },
+                    "id": "stop_area:SNCF:87705822",
+                    "label": "Pont-Audemer Gare SNCF (Pont-Audemer)",
+                    "links": [],
+                    "name": "Pont-Audemer Gare SNCF",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::125499d8-ba0e-49c5-9490-04cc35192851:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "194500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::125499d8-ba0e-49c5-9490-04cc35192851:",
+                "links": [],
+                "name": "Car Rouen-Pont Audemer",
+                "opening_time": "061500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Car Rouen-Pont Audemer"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87615260",
+                "name": "Quillan (Quillan)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87615260"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87615260"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "42.873947",
+                        "lon": "2.181787"
+                    },
+                    "id": "stop_area:SNCF:87615260",
+                    "label": "Quillan (Quillan)",
+                    "links": [],
+                    "name": "Quillan",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6854eb86-ffca-4936-8190-c26392a40fbe:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6854eb86-ffca-4936-8190-c26392a40fbe:",
+                "links": [],
+                "name": "Carcassonne - Limoux - Quillan",
+                "opening_time": "062000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Carcassonne - Limoux - Quillan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87449330",
+                "name": "Bagnoles-de-l'Orne \u00c9glise (Bagnoles-de-l'Orne-Normandie)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87449330"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87449330"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.54974",
+                        "lon": "-0.424693"
+                    },
+                    "id": "stop_area:SNCF:87449330",
+                    "label": "Bagnoles-de-l'Orne \u00c9glise (Bagnoles-de-l'Orne-Normandie)",
+                    "links": [],
+                    "name": "Bagnoles-de-l'Orne \u00c9glise",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::fba763f2-d7bd-4ab2-8923-c6ad39ec668e:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "194100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::fba763f2-d7bd-4ab2-8923-c6ad39ec668e:",
+                "links": [],
+                "name": "Cars Bagnoles de l'Orne-Argentan",
+                "opening_time": "091000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Bagnoles de l'Orne-Argentan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87448084",
+                "name": "Briouze (Briouze)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87448084"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87448084"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.701862",
+                        "lon": "-0.368204"
+                    },
+                    "id": "stop_area:SNCF:87448084",
+                    "label": "Briouze (Briouze)",
+                    "links": [],
+                    "name": "Briouze",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8bb8ebbe-6604-476e-97a3-d8c71c9d97f1:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "224600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8bb8ebbe-6604-476e-97a3-d8c71c9d97f1:",
+                "links": [],
+                "name": "Cars Bagnoles de l'Orne-Briouze",
+                "opening_time": "060600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Bagnoles de l'Orne-Briouze"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471003",
+                "name": "Rennes (Rennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.103517",
+                        "lon": "-1.672744"
+                    },
+                    "id": "stop_area:SNCF:87471003",
+                    "label": "Rennes (Rennes)",
+                    "links": [],
+                    "name": "Rennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::c4b48fab-829a-49a8-bdd6-4362865c8b1f:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::c4b48fab-829a-49a8-bdd6-4362865c8b1f:",
+                "links": [],
+                "name": "Cars CAEN - GRANVILLE - RENNES",
+                "opening_time": "073000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars CAEN - GRANVILLE - RENNES"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87411470",
+                "name": "Serqueux (Serqueux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87411470"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87411470"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.631551",
+                        "lon": "1.539403"
+                    },
+                    "id": "stop_area:SNCF:87411470",
+                    "label": "Serqueux (Serqueux)",
+                    "links": [],
+                    "name": "Serqueux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9d6e012c-12b9-405c-a981-12b5cdb72224:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9d6e012c-12b9-405c-a981-12b5cdb72224:",
+                "links": [],
+                "name": "Cars Dieppe - Serqueux - Gisors",
+                "opening_time": "050300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Dieppe - Serqueux - Gisors"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87448001",
+                "name": "Flers (Flers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87448001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87448001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.744785",
+                        "lon": "-0.5732159999999999"
+                    },
+                    "id": "stop_area:SNCF:87448001",
+                    "label": "Flers (Flers)",
+                    "links": [],
+                    "name": "Flers",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::c4d079da-0bd0-4187-ad3d-d876079ce8d8:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::c4d079da-0bd0-4187-ad3d-d876079ce8d8:",
+                "links": [],
+                "name": "Cars Granville-Argentan",
+                "opening_time": "050900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Granville-Argentan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87447110",
+                "name": "Coutances (Coutances)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87447110"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87447110"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.042928",
+                        "lon": "-1.441726"
+                    },
+                    "id": "stop_area:SNCF:87447110",
+                    "label": "Coutances (Coutances)",
+                    "links": [],
+                    "name": "Coutances",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9f4f0069-3acd-42bd-bfb0-4bcf81fc3fba:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "004800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9f4f0069-3acd-42bd-bfb0-4bcf81fc3fba:",
+                "links": [],
+                "name": "Cars Lison-Coutances-Granville-Pontorson",
+                "opening_time": "051500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Lison-Coutances-Granville-Pontorson"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87387001",
+                "name": "\u00c9vreux Normandie (\u00c9vreux)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87387001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87387001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.018748",
+                        "lon": "1.149629"
+                    },
+                    "id": "stop_area:SNCF:87387001",
+                    "label": "\u00c9vreux Normandie (\u00c9vreux)",
+                    "links": [],
+                    "name": "\u00c9vreux Normandie",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::7e07ad1c-c6db-4484-8348-9476e7710d64:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::7e07ad1c-c6db-4484-8348-9476e7710d64:",
+                "links": [],
+                "name": "Cars Rouen-Evreux-Verneuil sur Avre",
+                "opening_time": "062000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Rouen-Evreux-Verneuil sur Avre"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87444711",
+                "name": "Alen\u00e7on (Alen\u00e7on)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87444711"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87444711"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.433884",
+                        "lon": "0.09853099999999999"
+                    },
+                    "id": "stop_area:SNCF:87444711",
+                    "label": "Alen\u00e7on (Alen\u00e7on)",
+                    "links": [],
+                    "name": "Alen\u00e7on",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::c8209a23-a4a6-437b-8d24-52e0ff940147:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::c8209a23-a4a6-437b-8d24-52e0ff940147:",
+                "links": [],
+                "name": "Cars Surdon-Alen\u00e7on",
+                "opening_time": "045300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Surdon-Alen\u00e7on"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87413385",
+                "name": "Yvetot (Yvetot)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87413385"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87413385"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.622115",
+                        "lon": "0.750139"
+                    },
+                    "id": "stop_area:SNCF:87413385",
+                    "label": "Yvetot (Yvetot)",
+                    "links": [],
+                    "name": "Yvetot",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8a9ba5a3-b289-48b8-a3de-6ab370b14a64:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8a9ba5a3-b289-48b8-a3de-6ab370b14a64:",
+                "links": [],
+                "name": "Cars Yvetot-St Val\u00e9ry en Caux",
+                "opening_time": "052000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cars Yvetot-St Val\u00e9ry en Caux"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87642157",
+                "name": "Sewen \u00c9glise (Sewen)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87642157"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87642157"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.807236",
+                        "lon": "6.905291"
+                    },
+                    "id": "stop_area:SNCF:87642157",
+                    "label": "Sewen \u00c9glise (Sewen)",
+                    "links": [],
+                    "name": "Sewen \u00c9glise",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::40DB6CE2-89EC-4058-B496-3780B9B8DEB2:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "184800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::40DB6CE2-89EC-4058-B496-3780B9B8DEB2:",
+                "links": [],
+                "name": "Cernay - Sewen",
+                "opening_time": "070400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Cernay - Sewen"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481390",
+                "name": "Challans (Challans)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481390"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481390"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.844148",
+                        "lon": "-1.871814"
+                    },
+                    "id": "stop_area:SNCF:87481390",
+                    "label": "Challans (Challans)",
+                    "links": [],
+                    "name": "Challans",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1352FD82-EA86-4D62-BDCD-197FC12DDB2F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1352FD82-EA86-4D62-BDCD-197FC12DDB2F:",
+                "links": [],
+                "name": "Challans - St-Jean-De-Monts",
+                "opening_time": "070200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Challans - St-Jean-De-Monts"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87725002",
+                "name": "Chalon-sur-Sa\u00f4ne (Chalon-sur-Sa\u00f4ne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87725002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87725002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.781622",
+                        "lon": "4.843479"
+                    },
+                    "id": "stop_area:SNCF:87725002",
+                    "label": "Chalon-sur-Sa\u00f4ne (Chalon-sur-Sa\u00f4ne)",
+                    "links": [],
+                    "name": "Chalon-sur-Sa\u00f4ne",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::82D50B01-1C39-4EBA-A198-F038BDEAF8BB:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::82D50B01-1C39-4EBA-A198-F038BDEAF8BB:",
+                "links": [],
+                "name": "Chalon - Montchanin",
+                "opening_time": "053500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Chalon - Montchanin"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741793",
+                "name": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741793"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741793"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.619036",
+                        "lon": "6.771273"
+                    },
+                    "id": "stop_area:SNCF:87741793",
+                    "label": "Bourg-Saint-Maurice (Bourg-Saint-Maurice)",
+                    "links": [],
+                    "name": "Bourg-Saint-Maurice",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::2295DCB3-5ABB-4028-8431-F6E4F94D0299:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "002500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::2295DCB3-5ABB-4028-8431-F6E4F94D0299:",
+                "links": [],
+                "name": "Chambery - Bourg St-Maurice",
+                "opening_time": "041900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Chambery - Bourg St-Maurice"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87742007",
+                "name": "Modane (Modane)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87742007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87742007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.193555",
+                        "lon": "6.659139"
+                    },
+                    "id": "stop_area:SNCF:87742007",
+                    "label": "Modane (Modane)",
+                    "links": [],
+                    "name": "Modane",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::A57CFA44-0C60-40FC-AAA6-D0624CF259FE:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "010700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::A57CFA44-0C60-40FC-AAA6-D0624CF259FE:",
+                "links": [],
+                "name": "Chambery - Modane",
+                "opening_time": "043600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Chambery - Modane"
+        }
+    ]
+}

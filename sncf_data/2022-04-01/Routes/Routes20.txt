@@ -1,0 +1,1730 @@
+{
+    "context": {
+        "current_datetime": "20220402T200647",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=19&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=21&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 20,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87697128",
+                "name": "Lyon-Part-Dieu Gare Routi\u00e8re (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87697128"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87697128"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.761064",
+                        "lon": "4.862984"
+                    },
+                    "id": "stop_area:SNCF:87697128",
+                    "label": "Lyon-Part-Dieu Gare Routi\u00e8re (Lyon)",
+                    "links": [],
+                    "name": "Lyon-Part-Dieu Gare Routi\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9a389d3e-5e46-456a-bb0c-d67842aae6ac:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "002500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9a389d3e-5e46-456a-bb0c-d67842aae6ac:",
+                "links": [],
+                "name": "RE Chamonix / Lyon",
+                "opening_time": "140000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE Chamonix / Lyon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87741009",
+                "name": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87741009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87741009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.571302",
+                        "lon": "5.919547"
+                    },
+                    "id": "stop_area:SNCF:87741009",
+                    "label": "Chamb\u00e9ry - Challes-les-Eaux (Chamb\u00e9ry)",
+                    "links": [],
+                    "name": "Chamb\u00e9ry - Challes-les-Eaux",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::cdd7e903-8018-41d2-92e7-4e38168a9bcf:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "005530",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::cdd7e903-8018-41d2-92e7-4e38168a9bcf:",
+                "links": [],
+                "name": "RE Evian / Chamb\u00e9ry",
+                "opening_time": "152000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE Evian / Chamb\u00e9ry"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87335521",
+                "name": "Grenoble (Grenoble)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87335521"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87335521"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.192693",
+                        "lon": "5.714366"
+                    },
+                    "id": "stop_area:SNCF:87335521",
+                    "label": "Grenoble (Grenoble)",
+                    "links": [],
+                    "name": "Grenoble",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::49a38037-4ced-4c27-b83a-76b818b8265f:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230020",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::49a38037-4ced-4c27-b83a-76b818b8265f:",
+                "links": [],
+                "name": "RE Evian / Grenoble",
+                "opening_time": "133500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE Evian / Grenoble"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87742007",
+                "name": "Modane (Modane)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87742007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87742007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.193555",
+                        "lon": "6.659139"
+                    },
+                    "id": "stop_area:SNCF:87742007",
+                    "label": "Modane (Modane)",
+                    "links": [],
+                    "name": "Modane",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::576ebcaf-ad0f-4599-ae3b-c9b9e15312e0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230550",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::576ebcaf-ad0f-4599-ae3b-c9b9e15312e0:",
+                "links": [],
+                "name": "RE Modane / Grenoble",
+                "opening_time": "174000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE Modane / Grenoble"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87697128",
+                "name": "Lyon-Part-Dieu Gare Routi\u00e8re (Lyon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87697128"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87697128"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.761064",
+                        "lon": "4.862984"
+                    },
+                    "id": "stop_area:SNCF:87697128",
+                    "label": "Lyon-Part-Dieu Gare Routi\u00e8re (Lyon)",
+                    "links": [],
+                    "name": "Lyon-Part-Dieu Gare Routi\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9774036f-ddc4-48c1-a390-fb77383c5e3c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9774036f-ddc4-48c1-a390-fb77383c5e3c:",
+                "links": [],
+                "name": "RE St-Claude / Lyon",
+                "opening_time": "174000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE St-Claude / Lyon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87698662",
+                "name": "St-Etienne-Ch\u00e2tcrx. G Routi\u00e8re (Saint-\u00c9tienne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87698662"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87698662"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.442658",
+                        "lon": "4.401156"
+                    },
+                    "id": "stop_area:SNCF:87698662",
+                    "label": "St-Etienne-Ch\u00e2tcrx. G Routi\u00e8re (Saint-\u00c9tienne)",
+                    "links": [],
+                    "name": "St-Etienne-Ch\u00e2tcrx. G Routi\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::458f8a7a-6bfe-4108-a9c3-9525e7b448b3:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::458f8a7a-6bfe-4108-a9c3-9525e7b448b3:",
+                "links": [],
+                "name": "RE St-Etienne / Valence",
+                "opening_time": "161000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE St-Etienne / Valence"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87335521",
+                "name": "Grenoble (Grenoble)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87335521"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87335521"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "45.192693",
+                        "lon": "5.714366"
+                    },
+                    "id": "stop_area:SNCF:87335521",
+                    "label": "Grenoble (Grenoble)",
+                    "links": [],
+                    "name": "Grenoble",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::49d16d6f-004c-4f90-bc81-9ea26e6aa201:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "170030",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::49d16d6f-004c-4f90-bc81-9ea26e6aa201:",
+                "links": [],
+                "name": "RE St-Gervais-les-Bains / Grenoble",
+                "opening_time": "135000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "RE St-Gervais-les-Bains / Grenoble"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171009",
+                "name": "Reims (Reims)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.258934",
+                        "lon": "4.021994"
+                    },
+                    "id": "stop_area:SNCF:87171009",
+                    "label": "Reims (Reims)",
+                    "links": [],
+                    "name": "Reims",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6833bf81-1ed0-4954-a4e7-803f6801897b:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "230000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6833bf81-1ed0-4954-a4e7-803f6801897b:",
+                "links": [],
+                "name": "REIMS - CULMONT CHALINDREY",
+                "opening_time": "053700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "REIMS - CULMONT CHALINDREY"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171009",
+                "name": "Reims (Reims)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.258934",
+                        "lon": "4.021994"
+                    },
+                    "id": "stop_area:SNCF:87171009",
+                    "label": "Reims (Reims)",
+                    "links": [],
+                    "name": "Reims",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::93676b4d-70bb-42ae-a4ad-fade138a46c4:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::93676b4d-70bb-42ae-a4ad-fade138a46c4:",
+                "links": [],
+                "name": "REIMS - LAON",
+                "opening_time": "053000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "REIMS - LAON"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171009",
+                "name": "Reims (Reims)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.258934",
+                        "lon": "4.021994"
+                    },
+                    "id": "stop_area:SNCF:87171009",
+                    "label": "Reims (Reims)",
+                    "links": [],
+                    "name": "Reims",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::514f7286-d90a-4a5f-a186-9e672880c946:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210130",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::514f7286-d90a-4a5f-a186-9e672880c946:",
+                "links": [],
+                "name": "REIMS - SAINT DIZIER",
+                "opening_time": "055700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "REIMS - SAINT DIZIER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87405878",
+                "name": "Bussang Office du Tourisme (Bussang)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87405878"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87405878"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.88365",
+                        "lon": "6.854307"
+                    },
+                    "id": "stop_area:SNCF:87405878",
+                    "label": "Bussang Office du Tourisme (Bussang)",
+                    "links": [],
+                    "name": "Bussang Office du Tourisme",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::d35b32a1-0295-4cb7-a3aa-307807e1652c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::d35b32a1-0295-4cb7-a3aa-307807e1652c:",
+                "links": [],
+                "name": "REMIREMONT - BUSSANG TER",
+                "opening_time": "060200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "REMIREMONT - BUSSANG TER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87524850",
+                "name": "La Bresse Rue Paul Claudel (La Bresse)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87524850"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87524850"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.006703",
+                        "lon": "6.879641"
+                    },
+                    "id": "stop_area:SNCF:87524850",
+                    "label": "La Bresse Rue Paul Claudel (La Bresse)",
+                    "links": [],
+                    "name": "La Bresse Rue Paul Claudel",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::eb68f79f-233d-4d8a-844e-b03915c3e7ef:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::eb68f79f-233d-4d8a-844e-b03915c3e7ef:",
+                "links": [],
+                "name": "REMIREMONT - LA BRESSE TER",
+                "opening_time": "055800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "REMIREMONT - LA BRESSE TER"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87384008",
+                "name": "Paris Saint-Lazare (Paris)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "secondary_id",
+                            "value": "SNCF:87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "source",
+                            "value": "87384008"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87281899"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87384008"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.876242",
+                        "lon": "2.325331"
+                    },
+                    "id": "stop_area:SNCF:87384008",
+                    "label": "Paris Saint-Lazare (Paris)",
+                    "links": [],
+                    "name": "Paris Saint-Lazare",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::97E911FA-C8F2-4861-AD3C-C36CF4750A49:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "011000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::97E911FA-C8F2-4861-AD3C-C36CF4750A49:",
+                "links": [],
+                "name": "ROUEN - VERNON - PARIS",
+                "opening_time": "051900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "ROUEN - VERNON - PARIS"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171009",
+                "name": "Reims (Reims)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.258934",
+                        "lon": "4.021994"
+                    },
+                    "id": "stop_area:SNCF:87171009",
+                    "label": "Reims (Reims)",
+                    "links": [],
+                    "name": "Reims",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9D3B9426-2A05-40FA-A209-79E554630737:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9D3B9426-2A05-40FA-A209-79E554630737:",
+                "links": [],
+                "name": "Reims - Champagne Ardenne Tgv",
+                "opening_time": "063500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Reims - Champagne Ardenne Tgv"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171926",
+                "name": "Champagne-Ardenne TGV (Bezannes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171926"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171926"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.214769",
+                        "lon": "3.994523"
+                    },
+                    "id": "stop_area:SNCF:87171926",
+                    "label": "Champagne-Ardenne TGV (Bezannes)",
+                    "links": [],
+                    "name": "Champagne-Ardenne TGV",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:1187-87171009-87171926",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "154830",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:1187-87171009-87171926",
+                "links": [],
+                "name": "Reims - Champagne-Ardenne TGV",
+                "opening_time": "153630",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Reims - Champagne-Ardenne TGV"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87142125",
+                "name": "Culmont - Chalindrey (Culmont)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87142125"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87142125"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.810202",
+                        "lon": "5.443219"
+                    },
+                    "id": "stop_area:SNCF:87142125",
+                    "label": "Culmont - Chalindrey (Culmont)",
+                    "links": [],
+                    "name": "Culmont - Chalindrey",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::03E1BDEA-B40B-48F0-A7B5-330EBD3C552F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::03E1BDEA-B40B-48F0-A7B5-330EBD3C552F:",
+                "links": [],
+                "name": "Reims - Dijon",
+                "opening_time": "133230",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Reims - Dijon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87171009",
+                "name": "Reims (Reims)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87171009"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87171009"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.258934",
+                        "lon": "4.021994"
+                    },
+                    "id": "stop_area:SNCF:87171009",
+                    "label": "Reims (Reims)",
+                    "links": [],
+                    "name": "Reims",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0D040A69-97D4-4F3A-841D-FD806C6FF09D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "203300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0D040A69-97D4-4F3A-841D-FD806C6FF09D:",
+                "links": [],
+                "name": "Reims - Fismes",
+                "opening_time": "060300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Reims - Fismes"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6c285671-9f9c-44db-80ac-068653b4e95a:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6c285671-9f9c-44db-80ac-068653b4e95a:",
+                "links": [],
+                "name": "Remiremont - Luxembourg et Lun\u00e9ville - Luxembourg",
+                "opening_time": "053900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Remiremont - Luxembourg et Lun\u00e9ville - Luxembourg"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87474007",
+                "name": "Brest (Brest)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87474007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87474007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.38762",
+                        "lon": "-4.480306"
+                    },
+                    "id": "stop_area:SNCF:87474007",
+                    "label": "Brest (Brest)",
+                    "links": [],
+                    "name": "Brest",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::95C8F9DA-5F13-40B1-926F-08206EF3FC04:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235300",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::95C8F9DA-5F13-40B1-926F-08206EF3FC04:",
+                "links": [],
+                "name": "Rennes - Brest",
+                "opening_time": "054100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Brest"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471003",
+                "name": "Rennes (Rennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.103517",
+                        "lon": "-1.672744"
+                    },
+                    "id": "stop_area:SNCF:87471003",
+                    "label": "Rennes (Rennes)",
+                    "links": [],
+                    "name": "Rennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::714D1126-C14B-45DD-8752-90285B45A41F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "205100",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::714D1126-C14B-45DD-8752-90285B45A41F:",
+                "links": [],
+                "name": "Rennes - Chateaubriant",
+                "opening_time": "060200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Chateaubriant"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471003",
+                "name": "Rennes (Rennes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471003"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471003"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.103517",
+                        "lon": "-1.672744"
+                    },
+                    "id": "stop_area:SNCF:87471003",
+                    "label": "Rennes (Rennes)",
+                    "links": [],
+                    "name": "Rennes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::DFA7CADE-A1AC-4D44-AF8A-1157A2A9CD11:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "175600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::DFA7CADE-A1AC-4D44-AF8A-1157A2A9CD11:",
+                "links": [],
+                "name": "Rennes - Dinan",
+                "opening_time": "070100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Dinan"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471607",
+                "name": "Foug\u00e8res (Foug\u00e8res)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471607"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471607"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.34983",
+                        "lon": "-1.195002"
+                    },
+                    "id": "stop_area:SNCF:87471607",
+                    "label": "Foug\u00e8res (Foug\u00e8res)",
+                    "links": [],
+                    "name": "Foug\u00e8res",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::DE69B177-DE02-4DC0-A615-BDA2D00A7E1C:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "204900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::DE69B177-DE02-4DC0-A615-BDA2D00A7E1C:",
+                "links": [],
+                "name": "Rennes - Foug\u00e8res",
+                "opening_time": "062200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Foug\u00e8res"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471094",
+                "name": "La Brohini\u00e8re (Montauban-de-Bretagne)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471094"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471094"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.213472",
+                        "lon": "-2.110452"
+                    },
+                    "id": "stop_area:SNCF:87471094",
+                    "label": "La Brohini\u00e8re (Montauban-de-Bretagne)",
+                    "links": [],
+                    "name": "La Brohini\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::1029C20F-5427-43F0-A17F-1663B9993B66:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "201000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::1029C20F-5427-43F0-A17F-1663B9993B66:",
+                "links": [],
+                "name": "Rennes - La Brohiniere",
+                "opening_time": "060600",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - La Brohiniere"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87471185",
+                "name": "Messac - Guipry (Guipry-Messac)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87471185"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87471185"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.82225",
+                        "lon": "-1.81822"
+                    },
+                    "id": "stop_area:SNCF:87471185",
+                    "label": "Messac - Guipry (Guipry-Messac)",
+                    "links": [],
+                    "name": "Messac - Guipry",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6480700B-AEFE-47AA-B7EC-814EA0C92E02:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6480700B-AEFE-47AA-B7EC-814EA0C92E02:",
+                "links": [],
+                "name": "Rennes - Messac-Guipry",
+                "opening_time": "063800",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Messac-Guipry"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87478032",
+                "name": "Montreuil-sur-Ille (Montreuil-sur-Ille)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87478032"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87478032"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.307292",
+                        "lon": "-1.674155"
+                    },
+                    "id": "stop_area:SNCF:87478032",
+                    "label": "Montreuil-sur-Ille (Montreuil-sur-Ille)",
+                    "links": [],
+                    "name": "Montreuil-sur-Ille",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::F3F4B867-5380-4FDE-92BC-43C5100877C0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211400",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::F3F4B867-5380-4FDE-92BC-43C5100877C0:",
+                "links": [],
+                "name": "Rennes - Montreuil-Sur-L'Ille",
+                "opening_time": "065000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Rennes - Montreuil-Sur-L'Ille"
+        }
+    ]
+}

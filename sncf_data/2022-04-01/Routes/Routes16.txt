@@ -1,0 +1,1706 @@
+{
+    "context": {
+        "current_datetime": "20220402T200644",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_areas/{stop_area.id}",
+            "rel": "stop_areas",
+            "templated": true,
+            "type": "stop_area"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/physical_modes/{physical_modes.id}",
+            "rel": "physical_modes",
+            "templated": true,
+            "type": "physical_modes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/commercial_modes/{commercial_mode.id}",
+            "rel": "commercial_modes",
+            "templated": true,
+            "type": "commercial_mode"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}",
+            "rel": "routes",
+            "templated": true,
+            "type": "routes"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/lines/{line.id}",
+            "rel": "lines",
+            "templated": true,
+            "type": "line"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/route_schedules",
+            "rel": "route_schedules",
+            "templated": true,
+            "type": "route_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/stop_schedules",
+            "rel": "stop_schedules",
+            "templated": true,
+            "type": "stop_schedules"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/arrivals",
+            "rel": "arrivals",
+            "templated": true,
+            "type": "arrivals"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/departures",
+            "rel": "departures",
+            "templated": true,
+            "type": "departures"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes/{routes.id}/places_nearby",
+            "rel": "places_nearby",
+            "templated": true,
+            "type": "places_nearby"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=15&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=17&until=20220402T000000",
+            "templated": false,
+            "type": "next"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&start_page=39&until=20220402T000000",
+            "templated": false,
+            "type": "last"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/routes?since=20220401T000000&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 25,
+        "items_per_page": 25,
+        "start_page": 16,
+        "total_result": 993
+    },
+    "routes": [
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87175778",
+                "name": "Verdun (Verdun)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87175778"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87175778"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.165441",
+                        "lon": "5.379672"
+                    },
+                    "id": "stop_area:SNCF:87175778",
+                    "label": "Verdun (Verdun)",
+                    "links": [],
+                    "name": "Verdun",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::efa0a8a6-e1fa-4b39-9185-0d792ab1196c:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::efa0a8a6-e1fa-4b39-9185-0d792ab1196c:",
+                "links": [],
+                "name": "NANCY - VERDUN",
+                "opening_time": "184900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "NANCY - VERDUN"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87713040",
+                "name": "Dijon (Dijon)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87713040"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87713040"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.323411",
+                        "lon": "5.027256"
+                    },
+                    "id": "stop_area:SNCF:87713040",
+                    "label": "Dijon (Dijon)",
+                    "links": [],
+                    "name": "Dijon",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6B7519F5-DD4B-4BCC-A46E-FD5529E6446D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6B7519F5-DD4B-4BCC-A46E-FD5529E6446D:",
+                "links": [],
+                "name": "Nancy - Dijon",
+                "opening_time": "074000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Dijon"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87194001",
+                "name": "Longwy (Longwy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87194001"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87194001"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "49.513004",
+                        "lon": "5.76956"
+                    },
+                    "id": "stop_area:SNCF:87194001",
+                    "label": "Longwy (Longwy)",
+                    "links": [],
+                    "name": "Longwy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E540AB86-7F66-45AB-8337-ADA88FFA7208:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "210000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E540AB86-7F66-45AB-8337-ADA88FFA7208:",
+                "links": [],
+                "name": "Nancy - Longwy",
+                "opening_time": "054300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Longwy"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8B910C1D-6DCC-4674-B2F7-C5274FDC64D4:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "220600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8B910C1D-6DCC-4674-B2F7-C5274FDC64D4:",
+                "links": [],
+                "name": "Nancy - Lun\u00e9ville",
+                "opening_time": "055500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Lun\u00e9ville"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141291",
+                "name": "Neufch\u00e2teau (Neufch\u00e2teau)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141291"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141291"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.358092",
+                        "lon": "5.691036"
+                    },
+                    "id": "stop_area:SNCF:87141291",
+                    "label": "Neufch\u00e2teau (Neufch\u00e2teau)",
+                    "links": [],
+                    "name": "Neufch\u00e2teau",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::9CA52441-6491-437C-8C8E-6342E00CAB42:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::9CA52441-6491-437C-8C8E-6342E00CAB42:",
+                "links": [],
+                "name": "Nancy - Neufch\u00e2teau",
+                "opening_time": "060000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Neufch\u00e2teau"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E245D232-D297-47B9-B699-A93BA3686DE1:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "211800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E245D232-D297-47B9-B699-A93BA3686DE1:",
+                "links": [],
+                "name": "Nancy - Pont St Vincent",
+                "opening_time": "055100",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    },
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Pont St Vincent"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87144451",
+                "name": "Remiremont (Remiremont)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87144451"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87144451"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.016342",
+                        "lon": "6.598879"
+                    },
+                    "id": "stop_area:SNCF:87144451",
+                    "label": "Remiremont (Remiremont)",
+                    "links": [],
+                    "name": "Remiremont",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:1187-87141002-87144451",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "141000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:1187-87141002-87144451",
+                "links": [],
+                "name": "Nancy - Remiremont",
+                "opening_time": "122000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Remiremont"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::417b778d-b82f-42c3-9a55-2dbb7a306070:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::417b778d-b82f-42c3-9a55-2dbb7a306070:",
+                "links": [],
+                "name": "Nancy - Remiremont",
+                "opening_time": "050000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    },
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Remiremont"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::5F78C151-1447-4A6B-9456-5D87E4BCA50B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::5F78C151-1447-4A6B-9456-5D87E4BCA50B:",
+                "links": [],
+                "name": "Nancy - Vezelise - Mirecourt - Damblain",
+                "opening_time": "062300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Vezelise - Mirecourt - Damblain"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87141002",
+                "name": "Nancy (Nancy)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87141002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87141002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.689857",
+                        "lon": "6.174579"
+                    },
+                    "id": "stop_area:SNCF:87141002",
+                    "label": "Nancy (Nancy)",
+                    "links": [],
+                    "name": "Nancy",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::5E1E8A00-EE09-4F92-9E83-4C809674828F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "195500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::5E1E8A00-EE09-4F92-9E83-4C809674828F:",
+                "links": [],
+                "name": "Nancy - Vittel via Autoroute",
+                "opening_time": "061200",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nancy - Vittel via Autoroute"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::C81FE736-10AE-4893-8170-5CA292F27509:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214200",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::C81FE736-10AE-4893-8170-5CA292F27509:",
+                "links": [],
+                "name": "Nantes - Ancenis",
+                "opening_time": "060500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Ancenis"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87484006",
+                "name": "Angers Saint-Laud (Angers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87484006"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87484006"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.464649",
+                        "lon": "-0.55677"
+                    },
+                    "id": "stop_area:SNCF:87484006",
+                    "label": "Angers Saint-Laud (Angers)",
+                    "links": [],
+                    "name": "Angers Saint-Laud",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::08AFFE9A-2809-4FB2-AD6C-C50161E2E96A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212800",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::08AFFE9A-2809-4FB2-AD6C-C50161E2E96A:",
+                "links": [],
+                "name": "Nantes - Angers St Laud - Le Mans",
+                "opening_time": "054400",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Angers St Laud - Le Mans"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87474007",
+                "name": "Brest (Brest)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87474007"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87474007"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "48.38762",
+                        "lon": "-4.480306"
+                    },
+                    "id": "stop_area:SNCF:87474007",
+                    "label": "Brest (Brest)",
+                    "links": [],
+                    "name": "Brest",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4B8D360E-99CF-40DA-9000-696B383E86CF:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "213000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4B8D360E-99CF-40DA-9000-696B383E86CF:",
+                "links": [],
+                "name": "Nantes - Brest",
+                "opening_time": "170000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:LongDistanceTrain",
+                        "name": "Train grande vitesse"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Brest"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::6EB40F7F-A941-42AC-A848-3BC87A0676D0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "235900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::6EB40F7F-A941-42AC-A848-3BC87A0676D0:",
+                "links": [],
+                "name": "Nantes - Challans - St-Gilles-Croix-De-Vie",
+                "opening_time": "135000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Challans - St-Gilles-Croix-De-Vie"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87359356",
+                "name": "Saint-Jean-de-Monts Esplanade (Saint-Jean-de-Monts)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87359356"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87359356"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.784847",
+                        "lon": "-2.075145"
+                    },
+                    "id": "stop_area:SNCF:87359356",
+                    "label": "Saint-Jean-de-Monts Esplanade (Saint-Jean-de-Monts)",
+                    "links": [],
+                    "name": "Saint-Jean-de-Monts Esplanade",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0BD14E68-2143-4600-9F80-9E87944DFD6F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "214700",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0BD14E68-2143-4600-9F80-9E87944DFD6F:",
+                "links": [],
+                "name": "Nantes - Challans - St-Jean-De-Monts",
+                "opening_time": "054500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Challans - St-Jean-De-Monts"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::219C4964-9D9E-43A0-90D5-6A95CC140B41:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "185000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::219C4964-9D9E-43A0-90D5-6A95CC140B41:",
+                "links": [],
+                "name": "Nantes - Cholet",
+                "opening_time": "110000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Cholet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::F29FAC20-F7C7-4BD9-9BC9-20121CEAE8C1:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "212600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::F29FAC20-F7C7-4BD9-9BC9-20121CEAE8C1:",
+                "links": [],
+                "name": "Nantes - Cholet",
+                "opening_time": "060500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Cholet"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::4C6D5712-22E7-4374-A093-FA163D37119F:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "002900",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::4C6D5712-22E7-4374-A093-FA163D37119F:",
+                "links": [],
+                "name": "Nantes - Ch\u00e2teaubriant",
+                "opening_time": "053500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Tramway",
+                        "name": "Tramway"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Ch\u00e2teaubriant"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::02D330A2-2167-400E-BE91-0B5990BA287B:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "222000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::02D330A2-2167-400E-BE91-0B5990BA287B:",
+                "links": [],
+                "name": "Nantes - Clisson",
+                "opening_time": "055300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Clisson"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::0732042B-024F-4BDC-AFC7-37B9EAFF657D:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "080500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::0732042B-024F-4BDC-AFC7-37B9EAFF657D:",
+                "links": [],
+                "name": "Nantes - La Rochelle",
+                "opening_time": "193500",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - La Rochelle"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::8CDAD95F-5C01-47A6-BC11-859D3DE040DF:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "232600",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::8CDAD95F-5C01-47A6-BC11-859D3DE040DF:",
+                "links": [],
+                "name": "Nantes - Le Croisic",
+                "opening_time": "043900",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Le Croisic"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::E2CDA413-39E6-4C97-B5A2-48F59C5504A0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "233500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::E2CDA413-39E6-4C97-B5A2-48F59C5504A0:",
+                "links": [],
+                "name": "Nantes - Les Sables D'Olonne",
+                "opening_time": "052300",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Les Sables D'Olonne"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481002",
+                "name": "Nantes (Nantes)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481002"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481002"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.217491",
+                        "lon": "-1.542077"
+                    },
+                    "id": "stop_area:SNCF:87481002",
+                    "label": "Nantes (Nantes)",
+                    "links": [],
+                    "name": "Nantes",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::30AF6125-C953-4343-96A7-A0E01616A18A:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "215500",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::30AF6125-C953-4343-96A7-A0E01616A18A:",
+                "links": [],
+                "name": "Nantes - Noirmoutier",
+                "opening_time": "054000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Noirmoutier"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87202481",
+                "name": "Poitiers Gare Routi\u00e8re (Poitiers)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87202481"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87202481"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "46.582763",
+                        "lon": "0.333978"
+                    },
+                    "id": "stop_area:SNCF:87202481",
+                    "label": "Poitiers Gare Routi\u00e8re (Poitiers)",
+                    "links": [],
+                    "name": "Poitiers Gare Routi\u00e8re",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::F6E4F9F9-5F3B-4220-B87A-843E31EE26C9:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "223000",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::F6E4F9F9-5F3B-4220-B87A-843E31EE26C9:",
+                "links": [],
+                "name": "Nantes - Poitiers",
+                "opening_time": "081000",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Coach",
+                        "name": "Autocar"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Poitiers"
+        },
+        {
+            "direction": {
+                "embedded_type": "stop_area",
+                "id": "stop_area:SNCF:87481283",
+                "name": "Pornic (Pornic)",
+                "quality": 0,
+                "stop_area": {
+                    "codes": [
+                        {
+                            "type": "source",
+                            "value": "87481283"
+                        },
+                        {
+                            "type": "uic",
+                            "value": "87481283"
+                        }
+                    ],
+                    "coord": {
+                        "lat": "47.11441",
+                        "lon": "-2.098025"
+                    },
+                    "id": "stop_area:SNCF:87481283",
+                    "label": "Pornic (Pornic)",
+                    "links": [],
+                    "name": "Pornic",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "direction_type": "forward",
+            "geojson": {
+                "coordinates": [],
+                "type": "MultiLineString"
+            },
+            "id": "route:SNCF:FR:Line::3BFEB21D-85AF-409B-9346-ED10CA3D8ED0:",
+            "is_frequence": "False",
+            "line": {
+                "closing_time": "221030",
+                "code": "",
+                "codes": [],
+                "color": "",
+                "commercial_mode": {
+                    "id": "commercial_mode:TER",
+                    "name": "TER"
+                },
+                "geojson": {
+                    "coordinates": [],
+                    "type": "MultiLineString"
+                },
+                "id": "line:SNCF:FR:Line::3BFEB21D-85AF-409B-9346-ED10CA3D8ED0:",
+                "links": [],
+                "name": "Nantes - Pornic",
+                "opening_time": "062700",
+                "physical_modes": [
+                    {
+                        "id": "physical_mode:Train",
+                        "name": "TER / Intercit\u00e9s"
+                    }
+                ],
+                "text_color": ""
+            },
+            "links": [],
+            "name": "Nantes - Pornic"
+        }
+    ]
+}
