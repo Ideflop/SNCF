@@ -5,6 +5,8 @@
 # and the create a cronjob to launch it every time the computer is turned on
 
 yesterday=$(date -d "yesterday" +"%Y-%m-%d")
+yesterday2=$(date -d "yesterday" +"%Y_%m_%d")
+
 # Path to the folder where the data will be downloaded to change for your own 
 cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet/sncf_data 
 
@@ -55,15 +57,16 @@ else
     echo "Database SNCF exists"
 fi
 
-# check if files disruption_${yesterday} exist in sncf else download data
-if [ -f "/var/lib/mysql/SNCF/disruption_${yesterday}.idb" ]; then
-    echo "File disruption_${yesterday} exists"
+# check if files disruptions_${yesterday} exist in sncf database else transfering data
+MT=$(mysql -u root -e "select count(*) from information_schema.tables where table_schema='SNCF' and table_name='disruptions_$yesterday2';" | grep -iv "count")
+if [ $MT -eq 1 ]; then
+    echo "File disruptions_${yesterday2} exists"
     echo "The data might be already in the database"
 else
-    echo "Data from ${yesterday} non in database SNCF"
+    echo "Data from ${yesterday2} not in database SNCF"
     echo "Transferring data to database SNCF"
-    cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet/background
-    python3 sql.py
+    cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet
+    python3 background/sql.py
 fi
 
 # Shutdown mysql server if it is running
@@ -71,8 +74,7 @@ UP=$(/etc/init.d/mysql status | grep running | grep -v not | wc -l);
 if [ "$UP" -eq 1 ];
 then
     echo "Shutdown MySQL.";
-    echo "Password" | sudo -S se
-    vice mysql stop
+    echo "Password" | sudo -S service mysql stop
     echo "MySQL is down.";
 else
     echo "MySQL is still running.";
