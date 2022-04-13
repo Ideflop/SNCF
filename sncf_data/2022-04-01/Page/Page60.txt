@@ -1,0 +1,2999 @@
+{
+    "context": {
+        "current_datetime": "20220402T195512",
+        "timezone": "Europe/Paris"
+    },
+    "disruptions": [
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T155100",
+                    "end": "20220401T183300"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "541003fc-9230-43d9-be54-22141cbae120",
+            "disruption_uri": "541003fc-9230-43d9-be54-22141cbae120",
+            "id": "541003fc-9230-43d9-be54-22141cbae120",
+            "impact_id": "541003fc-9230-43d9-be54-22141cbae120",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "160100",
+                            "amended_departure_time": "160100",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "155100",
+                            "base_departure_time": "155100",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.748508",
+                                    "lon": "4.825777"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87722025:LongDistanceTrain",
+                                "label": "Lyon Perrache (Lyon)",
+                                "links": [],
+                                "name": "Lyon Perrache"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "160900",
+                            "amended_departure_time": "161400",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "155900",
+                            "base_departure_time": "160400",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.760596",
+                                    "lon": "4.859409"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87723197:LongDistanceTrain",
+                                "label": "Lyon Part Dieu (Lyon)",
+                                "links": [],
+                                "name": "Lyon Part Dieu"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "170730",
+                            "amended_departure_time": "171030",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "164230",
+                            "base_departure_time": "164530",
+                            "cause": "Panne de signalisation",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.765339",
+                                    "lon": "4.49943"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87694109:LongDistanceTrain",
+                                "label": "Le Creusot-TGV (\u00c9cuisses)",
+                                "links": [],
+                                "name": "Le Creusot-TGV"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "183300",
+                            "amended_departure_time": "183300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "180800",
+                            "base_departure_time": "180800",
+                            "cause": "Panne de signalisation",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.844945",
+                                    "lon": "2.373481"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+                                "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                                "links": [],
+                                "name": "Paris Gare de Lyon Hall 1 &2"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:6624:1187:LongDistanceTrain",
+                        "name": "SNCF:2022-04-01:6624:1187:LongDistanceTrain",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:6624:1187:LongDistanceTrain",
+                            "name": "6624"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Panne de signalisation"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "541003fc-9230-43d9-be54-22141cbae120"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T165600",
+                    "end": "20220401T182000"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "0e43d9ab-3086-4774-b891-0780e2192b1b",
+            "disruption_uri": "0e43d9ab-3086-4774-b891-0780e2192b1b",
+            "id": "0e43d9ab-3086-4774-b891-0780e2192b1b",
+            "impact_id": "0e43d9ab-3086-4774-b891-0780e2192b1b",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "170100",
+                            "amended_departure_time": "170100",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "165600",
+                            "base_departure_time": "165600",
+                            "cause": "",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.809812",
+                                    "lon": "1.699483"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87597005:Train",
+                                "label": "Ch\u00e2teauroux (Ch\u00e2teauroux)",
+                                "links": [],
+                                "name": "Ch\u00e2teauroux"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "171600",
+                            "amended_departure_time": "171700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "171100",
+                            "base_departure_time": "171200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.59225",
+                                    "lon": "1.518256"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87597120:Train",
+                                "label": "Argenton-sur-Creuse (Argenton-sur-Creuse)",
+                                "links": [],
+                                "name": "Argenton-sur-Creuse"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "173200",
+                            "amended_departure_time": "174300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "172700",
+                            "base_departure_time": "172800",
+                            "cause": "Pr\u00e9sence d'un bagage abandonn\u00e9",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.38604",
+                                    "lon": "1.546572"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592493:Train",
+                                "label": "Saint-S\u00e9bastien (Saint-S\u00e9bastien)",
+                                "links": [],
+                                "name": "Saint-S\u00e9bastien"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "174330",
+                            "amended_departure_time": "174430",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "173830",
+                            "base_departure_time": "173930",
+                            "cause": "Pr\u00e9sence d'un bagage abandonn\u00e9",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.239782",
+                                    "lon": "1.492207"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592378:Train",
+                                "label": "La Souterraine (La Souterraine)",
+                                "links": [],
+                                "name": "La Souterraine"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "175800",
+                            "amended_departure_time": "175900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "175300",
+                            "base_departure_time": "175400",
+                            "cause": "Pr\u00e9sence d'un bagage abandonn\u00e9",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.046902",
+                                    "lon": "1.476261"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592345:Train",
+                                "label": "Saint-Sulpice-Lauri\u00e8re (Saint-Sulpice-Lauri\u00e8re)",
+                                "links": [],
+                                "name": "Saint-Sulpice-Lauri\u00e8re"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "180730",
+                            "amended_departure_time": "180830",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "180230",
+                            "base_departure_time": "180330",
+                            "cause": "Pr\u00e9sence d'un bagage abandonn\u00e9",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.952901",
+                                    "lon": "1.406583"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592311:Train",
+                                "label": "Ambazac (Ambazac)",
+                                "links": [],
+                                "name": "Ambazac"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "182000",
+                            "amended_departure_time": "182000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "181500",
+                            "base_departure_time": "181500",
+                            "cause": "Pr\u00e9sence d'un bagage abandonn\u00e9",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.836207",
+                                    "lon": "1.267419"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592006:Train",
+                                "label": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                                "links": [],
+                                "name": "Limoges B\u00e9n\u00e9dictins"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:869013:1187:Train",
+                        "name": "SNCF:2022-04-01:869013:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:869013:1187:Train",
+                            "name": "869013"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Pr\u00e9sence d'un bagage abandonn\u00e9"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "0e43d9ab-3086-4774-b891-0780e2192b1b"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T170500",
+                    "end": "20220401T192200"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "5a34dc23-7d6b-4cf0-9e9f-20cd074b67e6",
+            "disruption_uri": "5a34dc23-7d6b-4cf0-9e9f-20cd074b67e6",
+            "id": "5a34dc23-7d6b-4cf0-9e9f-20cd074b67e6",
+            "impact_id": "5a34dc23-7d6b-4cf0-9e9f-20cd074b67e6",
+            "impacted_objects": [
+                {
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:16773:1187:LongDistanceTrain",
+                        "name": "SNCF:2022-04-01:16773:1187:LongDistanceTrain",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:16773:1187:LongDistanceTrain",
+                            "name": "16773"
+                        }
+                    }
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "NO_SERVICE",
+                "name": "trip canceled",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "5a34dc23-7d6b-4cf0-9e9f-20cd074b67e6"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T113730",
+                    "end": "20220401T161100"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "11bc1e42-5955-4f86-9ffd-d0d1ae60b784",
+            "disruption_uri": "11bc1e42-5955-4f86-9ffd-d0d1ae60b784",
+            "id": "11bc1e42-5955-4f86-9ffd-d0d1ae60b784",
+            "impact_id": "11bc1e42-5955-4f86-9ffd-d0d1ae60b784",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "113800",
+                            "amended_departure_time": "113800",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "113800",
+                            "base_departure_time": "113800",
+                            "cause": "",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "50.636577",
+                                    "lon": "3.06987"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87286005:LongDistanceTrain",
+                                "label": "Lille Flandres (Lille)",
+                                "links": [],
+                                "name": "Lille Flandres"
+                            },
+                            "stop_time_effect": "unchanged"
+                        },
+                        {
+                            "amended_arrival_time": "124600",
+                            "amended_departure_time": "125500",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "124100",
+                            "base_departure_time": "125000",
+                            "cause": "",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.869898",
+                                    "lon": "2.782626"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87111849:LongDistanceTrain",
+                                "label": "Marne-la-Vall\u00e9e Chessy (Chessy)",
+                                "links": [],
+                                "name": "Marne-la-Vall\u00e9e Chessy"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "143900",
+                            "amended_departure_time": "144300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "143400",
+                            "base_departure_time": "143800",
+                            "cause": "",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.721109",
+                                    "lon": "5.074969"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87762906:LongDistanceTrain",
+                                "label": "Lyon Saint-Exup\u00e9ry TGV (Colombier-Saugnieu)",
+                                "links": [],
+                                "name": "Lyon Saint-Exup\u00e9ry TGV"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "153300",
+                            "amended_departure_time": "153600",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "152800",
+                            "base_departure_time": "153100",
+                            "cause": "",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.92194",
+                                    "lon": "4.786136"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87318964:LongDistanceTrain",
+                                "label": "Avignon TGV (Avignon)",
+                                "links": [],
+                                "name": "Avignon TGV"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "155530",
+                            "amended_departure_time": "155830",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "155030",
+                            "base_departure_time": "155330",
+                            "cause": "",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.455237",
+                                    "lon": "5.317534"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87319012:LongDistanceTrain",
+                                "label": "Aix-en-Provence TGV (Aix-en-Provence)",
+                                "links": [],
+                                "name": "Aix-en-Provence TGV"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "161100",
+                            "amended_departure_time": "161100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "160600",
+                            "base_departure_time": "160600",
+                            "cause": "",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.302666",
+                                    "lon": "5.380407"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751008:LongDistanceTrain",
+                                "label": "Marseille Saint-Charles (Marseille)",
+                                "links": [],
+                                "name": "Marseille Saint-Charles"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:7841:1187:LongDistanceTrain",
+                        "name": "SNCF:2022-04-01:7841:1187:LongDistanceTrain",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:7841:1187:LongDistanceTrain",
+                            "name": "7841"
+                        }
+                    }
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "11bc1e42-5955-4f86-9ffd-d0d1ae60b784"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T172700",
+                    "end": "20220401T183900"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "9a8c2e3d-152a-4351-956d-f044f7803db3",
+            "disruption_uri": "9a8c2e3d-152a-4351-956d-f044f7803db3",
+            "id": "9a8c2e3d-152a-4351-956d-f044f7803db3",
+            "impact_id": "9a8c2e3d-152a-4351-956d-f044f7803db3",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "173200",
+                            "amended_departure_time": "173200",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "172700",
+                            "base_departure_time": "172700",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "47.907891",
+                                    "lon": "1.904242"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87543009:Train",
+                                "label": "Orl\u00e9ans (Orl\u00e9ans)",
+                                "links": [],
+                                "name": "Orl\u00e9ans"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "173600",
+                            "amended_departure_time": "173900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "173100",
+                            "base_departure_time": "173400",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "47.926801",
+                                    "lon": "1.906629"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87543017:Train",
+                                "label": "Les Aubrais (Fleury-les-Aubrais)",
+                                "links": [],
+                                "name": "Les Aubrais"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "183900",
+                            "amended_departure_time": "183900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "183400",
+                            "base_departure_time": "183400",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.842285",
+                                    "lon": "2.364891"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87547000:Train",
+                                "label": "Paris Austerlitz (Paris)",
+                                "links": [],
+                                "name": "Paris Austerlitz"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:14070:1187:Train",
+                        "name": "SNCF:2022-04-01:14070:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:14070:1187:Train",
+                            "name": "14070"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Prise en charge de clients en correspondance"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "9a8c2e3d-152a-4351-956d-f044f7803db3"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T194200",
+                    "end": "20220401T220300"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "4e0d1628-e947-40c0-b2c0-9c4e304a4bda",
+            "disruption_uri": "4e0d1628-e947-40c0-b2c0-9c4e304a4bda",
+            "id": "4e0d1628-e947-40c0-b2c0-9c4e304a4bda",
+            "impact_id": "4e0d1628-e947-40c0-b2c0-9c4e304a4bda",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "194700",
+                            "amended_departure_time": "194700",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "194200",
+                            "base_departure_time": "194200",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.825873",
+                                    "lon": "-0.556697"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87581009:Train",
+                                "label": "Bordeaux Saint-Jean (Bordeaux)",
+                                "links": [],
+                                "name": "Bordeaux Saint-Jean"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "195030",
+                            "amended_departure_time": "195130",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "194530",
+                            "base_departure_time": "194630",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.856347",
+                                    "lon": "-0.533649"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87581595:Train",
+                                "label": "Cenon (Cenon)",
+                                "links": [],
+                                "name": "Cenon"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "201130",
+                            "amended_departure_time": "201230",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "200630",
+                            "base_departure_time": "200730",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.915904",
+                                    "lon": "-0.236359"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584052:Train",
+                                "label": "Libourne (Libourne)",
+                                "links": [],
+                                "name": "Libourne"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "201830",
+                            "amended_departure_time": "201930",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "201330",
+                            "base_departure_time": "201430",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.881266",
+                                    "lon": "-0.159229"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584102:Train",
+                                "label": "Saint-\u00c9milion (Saint-\u00c9milion)",
+                                "links": [],
+                                "name": "Saint-\u00c9milion"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "202600",
+                            "amended_departure_time": "202700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "202100",
+                            "base_departure_time": "202200",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.856999",
+                                    "lon": "-0.04066"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584136:Train",
+                                "label": "Castillon (Castillon-la-Bataille)",
+                                "links": [],
+                                "name": "Castillon"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "203430",
+                            "amended_departure_time": "203730",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "202930",
+                            "base_departure_time": "203230",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.852029",
+                                    "lon": "0.10351"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584177:Train",
+                                "label": "V\u00e9lines (V\u00e9lines)",
+                                "links": [],
+                                "name": "V\u00e9lines"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "204430",
+                            "amended_departure_time": "204530",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "203930",
+                            "base_departure_time": "204030",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.836848",
+                                    "lon": "0.221491"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584193:Train",
+                                "label": "Sainte-Foy-la-Grande (Sainte-Foy-la-Grande)",
+                                "links": [],
+                                "name": "Sainte-Foy-la-Grande"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "205930",
+                            "amended_departure_time": "210230",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "205430",
+                            "base_departure_time": "205730",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.857061",
+                                    "lon": "0.489174"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584268:Train",
+                                "label": "Bergerac (Bergerac)",
+                                "links": [],
+                                "name": "Bergerac"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "211830",
+                            "amended_departure_time": "211930",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "211330",
+                            "base_departure_time": "211430",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.839602",
+                                    "lon": "0.742806"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87584441:Train",
+                                "label": "Lalinde (Lalinde)",
+                                "links": [],
+                                "name": "Lalinde"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "213300",
+                            "amended_departure_time": "213400",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "212800",
+                            "base_departure_time": "212900",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.847245",
+                                    "lon": "0.90818"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87595751:Train",
+                                "label": "Le Buisson (Le Buisson-de-Cadouin)",
+                                "links": [],
+                                "name": "Le Buisson"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "214000",
+                            "amended_departure_time": "214100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "213500",
+                            "base_departure_time": "213600",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.819788",
+                                    "lon": "0.984188"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87595769:Train",
+                                "label": "Siorac-en-P\u00e9rigord (Siorac-en-P\u00e9rigord)",
+                                "links": [],
+                                "name": "Siorac-en-P\u00e9rigord"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "214700",
+                            "amended_departure_time": "214800",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "214200",
+                            "base_departure_time": "214300",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.863407",
+                                    "lon": "1.043574"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87595777:Train",
+                                "label": "Saint-Cyprien (Saint-Cyprien)",
+                                "links": [],
+                                "name": "Saint-Cyprien"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "220300",
+                            "amended_departure_time": "220300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "215800",
+                            "base_departure_time": "215800",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "44.877114",
+                                    "lon": "1.220469"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87595827:Train",
+                                "label": "Sarlat (Sarlat-la-Can\u00e9da)",
+                                "links": [],
+                                "name": "Sarlat"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:865736:1187:Train",
+                        "name": "SNCF:2022-04-01:865736:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:865736:1187:Train",
+                            "name": "865736"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "R\u00e9utilisation d'un train"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "4e0d1628-e947-40c0-b2c0-9c4e304a4bda"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T203800",
+                    "end": "20220401T224500"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "0cfbb23b-64fa-49e6-9197-e8668734f68f",
+            "disruption_uri": "0cfbb23b-64fa-49e6-9197-e8668734f68f",
+            "id": "0cfbb23b-64fa-49e6-9197-e8668734f68f",
+            "impact_id": "0cfbb23b-64fa-49e6-9197-e8668734f68f",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "204300",
+                            "amended_departure_time": "204300",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "203800",
+                            "base_departure_time": "203800",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.760596",
+                                    "lon": "4.859409"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87723197:Train",
+                                "label": "Lyon Part Dieu (Lyon)",
+                                "links": [],
+                                "name": "Lyon Part Dieu"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "210630",
+                            "amended_departure_time": "211300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "210130",
+                            "base_departure_time": "210300",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.954014",
+                                    "lon": "5.342402"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87743716:Train",
+                                "label": "Amb\u00e9rieu-en-Bugey (Amb\u00e9rieu-en-Bugey)",
+                                "links": [],
+                                "name": "Amb\u00e9rieu-en-Bugey"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "212500",
+                            "amended_departure_time": "212630",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "211500",
+                            "base_departure_time": "211630",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.92221",
+                                    "lon": "5.50161"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87743757:Train",
+                                "label": "Tenay - Hauteville (Tenay)",
+                                "links": [],
+                                "name": "Tenay - Hauteville"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "213930",
+                            "amended_departure_time": "214100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "212930",
+                            "base_departure_time": "213100",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.848323",
+                                    "lon": "5.65363"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87741504:Train",
+                                "label": "Virieu-le-Grand - Belley (Virieu-le-Grand)",
+                                "links": [],
+                                "name": "Virieu-le-Grand - Belley"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "214900",
+                            "amended_departure_time": "215030",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "213900",
+                            "base_departure_time": "214030",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.843278",
+                                    "lon": "5.778728"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87741074:Train",
+                                "label": "Culoz (Culoz)",
+                                "links": [],
+                                "name": "Culoz"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "220000",
+                            "amended_departure_time": "220100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "215000",
+                            "base_departure_time": "215100",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.963074",
+                                    "lon": "5.831503"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87745828:Train",
+                                "label": "Seyssel - Corbonod (Corbonod)",
+                                "links": [],
+                                "name": "Seyssel - Corbonod"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "221400",
+                            "amended_departure_time": "221700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "220400",
+                            "base_departure_time": "220700",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.109425",
+                                    "lon": "5.823483"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87745000:Train",
+                                "label": "Bellegarde (Valserh\u00f4ne)",
+                                "links": [],
+                                "name": "Bellegarde"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "224500",
+                            "amended_departure_time": "224500",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "223500",
+                            "base_departure_time": "223500",
+                            "cause": "Prise en charge de clients en correspondance",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "46.21022",
+                                    "lon": "6.14244"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:85010082:Train",
+                                "label": "Geneve (Gen\u00e8ve)",
+                                "links": [],
+                                "name": "Geneve"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:96530:1187:Train",
+                        "name": "SNCF:2022-04-01:96530:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:96530:1187:Train",
+                            "name": "96530"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Prise en charge de clients en correspondance"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "0cfbb23b-64fa-49e6-9197-e8668734f68f"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T173100",
+                    "end": "20220401T184700"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "e320e117-ad76-4b4f-982f-046a7b2b3b39",
+            "disruption_uri": "e320e117-ad76-4b4f-982f-046a7b2b3b39",
+            "id": "e320e117-ad76-4b4f-982f-046a7b2b3b39",
+            "impact_id": "e320e117-ad76-4b4f-982f-046a7b2b3b39",
+            "impacted_objects": [
+                {
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:844828:1187:Train",
+                        "name": "SNCF:2022-04-01:844828:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:844828:1187:Train",
+                            "name": "844828"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "D\u00e9faillance de mat\u00e9riel"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "NO_SERVICE",
+                "name": "trip canceled",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "e320e117-ad76-4b4f-982f-046a7b2b3b39"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T184500",
+                    "end": "20220401T191330"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "8ac85643-8308-409a-a267-52e2f426e316",
+            "disruption_uri": "8ac85643-8308-409a-a267-52e2f426e316",
+            "id": "8ac85643-8308-409a-a267-52e2f426e316",
+            "impact_id": "8ac85643-8308-409a-a267-52e2f426e316",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "185000",
+                            "amended_departure_time": "185000",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "184500",
+                            "base_departure_time": "184500",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.584532",
+                                    "lon": "7.734793"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87212027:Train",
+                                "label": "Strasbourg (Strasbourg)",
+                                "links": [],
+                                "name": "Strasbourg"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "185400",
+                            "amended_departure_time": "185430",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "184900",
+                            "base_departure_time": "184930",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.563303",
+                                    "lon": "7.69485"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87212191:Train",
+                                "label": "Strasbourg Roethig (Lingolsheim)",
+                                "links": [],
+                                "name": "Strasbourg Roethig"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "185630",
+                            "amended_departure_time": "185700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "185130",
+                            "base_departure_time": "185200",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.559408",
+                                    "lon": "7.678569"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214502:Train",
+                                "label": "Lingolsheim (Lingolsheim)",
+                                "links": [],
+                                "name": "Lingolsheim"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "190030",
+                            "amended_departure_time": "190100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "185530",
+                            "base_departure_time": "185600",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.54699",
+                                    "lon": "7.62794"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214528:Train",
+                                "label": "Entzheim A\u00e9roport (Entzheim)",
+                                "links": [],
+                                "name": "Entzheim A\u00e9roport"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "190400",
+                            "amended_departure_time": "190430",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "185900",
+                            "base_departure_time": "185930",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.543967",
+                                    "lon": "7.586809"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214536:Train",
+                                "label": "Duppigheim (Duppigheim)",
+                                "links": [],
+                                "name": "Duppigheim"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "190630",
+                            "amended_departure_time": "190700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "190130",
+                            "base_departure_time": "190200",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.545379",
+                                    "lon": "7.566289"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214544:Train",
+                                "label": "Duttlenheim (Dachstein)",
+                                "links": [],
+                                "name": "Duttlenheim"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "190930",
+                            "amended_departure_time": "191000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "190430",
+                            "base_departure_time": "190500",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.542855",
+                                    "lon": "7.533004"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214551:Train",
+                                "label": "Dachstein (Molsheim)",
+                                "links": [],
+                                "name": "Dachstein"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "191330",
+                            "amended_departure_time": "191330",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "190830",
+                            "base_departure_time": "190830",
+                            "cause": "R\u00e9utilisation d'un train",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.537151",
+                                    "lon": "7.500284"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87214577:Train",
+                                "label": "Molsheim (Molsheim)",
+                                "links": [],
+                                "name": "Molsheim"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:830862:1187:Train",
+                        "name": "SNCF:2022-04-01:830862:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:830862:1187:Train",
+                            "name": "830862"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "R\u00e9utilisation d'un train"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "8ac85643-8308-409a-a267-52e2f426e316"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T173200",
+                    "end": "20220401T185900"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "68648539-30fe-4a22-943c-255f5ca51e89",
+            "disruption_uri": "68648539-30fe-4a22-943c-255f5ca51e89",
+            "id": "68648539-30fe-4a22-943c-255f5ca51e89",
+            "impact_id": "68648539-30fe-4a22-943c-255f5ca51e89",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "173200",
+                            "amended_departure_time": "173200",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "173200",
+                            "base_departure_time": "173200",
+                            "cause": "",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.443366",
+                                    "lon": "4.399722"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726000:Train",
+                                "label": "Saint-\u00c9tienne Ch\u00e2teaucreux (Saint-\u00c9tienne)",
+                                "links": [],
+                                "name": "Saint-\u00c9tienne Ch\u00e2teaucreux"
+                            },
+                            "stop_time_effect": "unchanged"
+                        },
+                        {
+                            "amended_arrival_time": "180530",
+                            "amended_departure_time": "180630",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "173530",
+                            "base_departure_time": "173630",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.464868",
+                                    "lon": "4.379554"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726158:Train",
+                                "label": "Saint-\u00c9tienne La Terrasse (Saint-\u00c9tienne)",
+                                "links": [],
+                                "name": "Saint-\u00c9tienne La Terrasse"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "181130",
+                            "amended_departure_time": "181200",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "174130",
+                            "base_departure_time": "174200",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.497768",
+                                    "lon": "4.317084"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726232:Train",
+                                "label": "La Fouillouse (La Fouillouse)",
+                                "links": [],
+                                "name": "La Fouillouse"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "181730",
+                            "amended_departure_time": "181830",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "174730",
+                            "base_departure_time": "174830",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.521736",
+                                    "lon": "4.255418"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726406:Train",
+                                "label": "Andr\u00e9zieux (Andr\u00e9zieux-Bouth\u00e9on)",
+                                "links": [],
+                                "name": "Andr\u00e9zieux"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "182200",
+                            "amended_departure_time": "182300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "175200",
+                            "base_departure_time": "175300",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.522197",
+                                    "lon": "4.21625"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726414:Train",
+                                "label": "Bonson (Bonson)",
+                                "links": [],
+                                "name": "Bonson"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "183100",
+                            "amended_departure_time": "183200",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "175600",
+                            "base_departure_time": "175700",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.52912",
+                                    "lon": "4.182497"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726422:Train",
+                                "label": "Sury-le-Comtal (Sury-le-Comtal)",
+                                "links": [],
+                                "name": "Sury-le-Comtal"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "183700",
+                            "amended_departure_time": "183800",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "180200",
+                            "base_departure_time": "180300",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.554576",
+                                    "lon": "4.120989"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726430:Train",
+                                "label": "Saint-Romain-le-Puy (Saint-Romain-le-Puy)",
+                                "links": [],
+                                "name": "Saint-Romain-le-Puy"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "184500",
+                            "amended_departure_time": "184600",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "181000",
+                            "base_departure_time": "181100",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.604481",
+                                    "lon": "4.07824"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726448:Train",
+                                "label": "Montbrison (Montbrison)",
+                                "links": [],
+                                "name": "Montbrison"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "185900",
+                            "amended_departure_time": "185900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "182400",
+                            "base_departure_time": "182400",
+                            "cause": "Conditions m\u00e9t\u00e9orologiques",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.741386",
+                                    "lon": "4.005061"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87726471:Train",
+                                "label": "Bo\u00ebn (Bo\u00ebn-sur-Lignon)",
+                                "links": [],
+                                "name": "Bo\u00ebn"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:889920:1187:Train",
+                        "name": "SNCF:2022-04-01:889920:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:889920:1187:Train",
+                            "name": "889920"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Conditions m\u00e9t\u00e9orologiques"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "68648539-30fe-4a22-943c-255f5ca51e89"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T142400",
+                    "end": "20220401T164900"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "0e3c8033-629f-4989-b1a7-2df07e0450a2",
+            "disruption_uri": "0e3c8033-629f-4989-b1a7-2df07e0450a2",
+            "id": "0e3c8033-629f-4989-b1a7-2df07e0450a2",
+            "impact_id": "0e3c8033-629f-4989-b1a7-2df07e0450a2",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "142400",
+                            "amended_departure_time": "142400",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "142400",
+                            "base_departure_time": "142400",
+                            "cause": "",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.844945",
+                                    "lon": "2.373481"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87686006:LongDistanceTrain",
+                                "label": "Paris Gare de Lyon Hall 1 &2 (Paris)",
+                                "links": [],
+                                "name": "Paris Gare de Lyon Hall 1 &2"
+                            },
+                            "stop_time_effect": "unchanged"
+                        },
+                        {
+                            "amended_arrival_time": "164900",
+                            "amended_departure_time": "164900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "161900",
+                            "base_departure_time": "161900",
+                            "cause": "Panne de signalisation",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.760596",
+                                    "lon": "4.859409"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87723197:LongDistanceTrain",
+                                "label": "Lyon Part Dieu (Lyon)",
+                                "links": [],
+                                "name": "Lyon Part Dieu"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:6657:1187:LongDistanceTrain",
+                        "name": "SNCF:2022-04-01:6657:1187:LongDistanceTrain",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:6657:1187:LongDistanceTrain",
+                            "name": "6657"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Panne de signalisation"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "0e3c8033-629f-4989-b1a7-2df07e0450a2"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T215300",
+                    "end": "20220401T224300"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "d62bea65-6ee3-4178-bbff-cba7ab54b936",
+            "disruption_uri": "d62bea65-6ee3-4178-bbff-cba7ab54b936",
+            "id": "d62bea65-6ee3-4178-bbff-cba7ab54b936",
+            "impact_id": "d62bea65-6ee3-4178-bbff-cba7ab54b936",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "215800",
+                            "amended_departure_time": "215800",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "215300",
+                            "base_departure_time": "215300",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.302666",
+                                    "lon": "5.380407"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751008:Train",
+                                "label": "Marseille Saint-Charles (Marseille)",
+                                "links": [],
+                                "name": "Marseille Saint-Charles"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "220230",
+                            "amended_departure_time": "220330",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "215730",
+                            "base_departure_time": "215830",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.330999",
+                                    "lon": "5.392746"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87759290:Train",
+                                "label": "Picon Busserine (Marseille)",
+                                "links": [],
+                                "name": "Picon Busserine"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "220500",
+                            "amended_departure_time": "220600",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "220000",
+                            "base_departure_time": "220100",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.33928",
+                                    "lon": "5.390403"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751842:Train",
+                                "label": "Sainte-Marthe en Provence (Marseille)",
+                                "links": [],
+                                "name": "Sainte-Marthe en Provence"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "220900",
+                            "amended_departure_time": "221000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "220400",
+                            "base_departure_time": "220500",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.351911",
+                                    "lon": "5.377083"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87759316:Train",
+                                "label": "Saint-Joseph le Castellas (Marseille)",
+                                "links": [],
+                                "name": "Saint-Joseph le Castellas"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "221300",
+                            "amended_departure_time": "221400",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "220800",
+                            "base_departure_time": "220900",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.369599",
+                                    "lon": "5.35781"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751826:Train",
+                                "label": "Saint-Antoine (Marseille)",
+                                "links": [],
+                                "name": "Saint-Antoine"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "221930",
+                            "amended_departure_time": "222030",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "221430",
+                            "base_departure_time": "221530",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.403151",
+                                    "lon": "5.370158"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751800:Train",
+                                "label": "Sept\u00e8mes (Sept\u00e8mes-les-Vallons)",
+                                "links": [],
+                                "name": "Sept\u00e8mes"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "222930",
+                            "amended_departure_time": "223030",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "222430",
+                            "base_departure_time": "222530",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.434751",
+                                    "lon": "5.426058"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751438:Train",
+                                "label": "Simiane (Simiane-Collongue)",
+                                "links": [],
+                                "name": "Simiane"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "223430",
+                            "amended_departure_time": "223530",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "222930",
+                            "base_departure_time": "223030",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.456023",
+                                    "lon": "5.463324"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751420:Train",
+                                "label": "Gardanne (Gardanne)",
+                                "links": [],
+                                "name": "Gardanne"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "224300",
+                            "amended_departure_time": "224300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "223800",
+                            "base_departure_time": "223800",
+                            "cause": "Assistance \u00e0 un voyageur malade \u00e0 bord",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.522903",
+                                    "lon": "5.44533"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751404:Train",
+                                "label": "Aix-en-Provence (Aix-en-Provence)",
+                                "links": [],
+                                "name": "Aix-en-Provence"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:880190:1187:Train",
+                        "name": "SNCF:2022-04-01:880190:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:880190:1187:Train",
+                            "name": "880190"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "Assistance \u00e0 un voyageur malade \u00e0 bord"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "d62bea65-6ee3-4178-bbff-cba7ab54b936"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T135600",
+                    "end": "20220401T150200"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "b57bd619-f94d-4a4b-955f-87b54f30aeb5",
+            "disruption_uri": "b57bd619-f94d-4a4b-955f-87b54f30aeb5",
+            "id": "b57bd619-f94d-4a4b-955f-87b54f30aeb5",
+            "impact_id": "b57bd619-f94d-4a4b-955f-87b54f30aeb5",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "140100",
+                            "amended_departure_time": "140100",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "135600",
+                            "base_departure_time": "135600",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.128353",
+                                    "lon": "5.929404"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87755009:Train",
+                                "label": "Toulon (Toulon)",
+                                "links": [],
+                                "name": "Toulon"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "140600",
+                            "amended_departure_time": "140700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "140100",
+                            "base_departure_time": "140200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.11702",
+                                    "lon": "5.876969"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87755264:Train",
+                                "label": "La Seyne - Six Fours (La Seyne-sur-Mer)",
+                                "links": [],
+                                "name": "La Seyne - Six Fours"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "141030",
+                            "amended_departure_time": "141130",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "140530",
+                            "base_departure_time": "140630",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.122578",
+                                    "lon": "5.825015"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87755231:Train",
+                                "label": "Ollioules - Sanary-sur-Mer (Ollioules)",
+                                "links": [],
+                                "name": "Ollioules - Sanary-sur-Mer"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "141630",
+                            "amended_departure_time": "141730",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "141130",
+                            "base_departure_time": "141230",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.140385",
+                                    "lon": "5.750128"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87755223:Train",
+                                "label": "Bandol (Bandol)",
+                                "links": [],
+                                "name": "Bandol"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "142300",
+                            "amended_departure_time": "142400",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "141800",
+                            "base_departure_time": "141900",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.185506",
+                                    "lon": "5.703819"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87755215:Train",
+                                "label": "Saint-Cyr Les Lecques - La Cadi\u00e8re (Saint-Cyr-sur-Mer)",
+                                "links": [],
+                                "name": "Saint-Cyr Les Lecques - La Cadi\u00e8re"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "142830",
+                            "amended_departure_time": "142930",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "142330",
+                            "base_departure_time": "142430",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.199602",
+                                    "lon": "5.632741"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751784:Train",
+                                "label": "La Ciotat-Ceyreste (La Ciotat)",
+                                "links": [],
+                                "name": "La Ciotat-Ceyreste"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "143600",
+                            "amended_departure_time": "143700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "143100",
+                            "base_departure_time": "143200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.234079",
+                                    "lon": "5.553138"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751776:Train",
+                                "label": "Cassis (Cassis)",
+                                "links": [],
+                                "name": "Cassis"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "144330",
+                            "amended_departure_time": "144500",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "143830",
+                            "base_departure_time": "144000",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.296073",
+                                    "lon": "5.566322"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751750:Train",
+                                "label": "Aubagne (Aubagne)",
+                                "links": [],
+                                "name": "Aubagne"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "145600",
+                            "amended_departure_time": "145700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "145100",
+                            "base_departure_time": "145200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.296195",
+                                    "lon": "5.406588"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751081:Train",
+                                "label": "Marseille Blancarde (Marseille)",
+                                "links": [],
+                                "name": "Marseille Blancarde"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "150200",
+                            "amended_departure_time": "150200",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "145700",
+                            "base_departure_time": "145700",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "43.302666",
+                                    "lon": "5.380407"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87751008:Train",
+                                "label": "Marseille Saint-Charles (Marseille)",
+                                "links": [],
+                                "name": "Marseille Saint-Charles"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:881452:1187:Train",
+                        "name": "SNCF:2022-04-01:881452:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:881452:1187:Train",
+                            "name": "881452"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "R\u00e9gulation du trafic"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "b57bd619-f94d-4a4b-955f-87b54f30aeb5"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T191200",
+                    "end": "20220401T211000"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "dfc34a57-87c5-4ded-88b3-978795da7d49",
+            "disruption_uri": "dfc34a57-87c5-4ded-88b3-978795da7d49",
+            "id": "dfc34a57-87c5-4ded-88b3-978795da7d49",
+            "impact_id": "dfc34a57-87c5-4ded-88b3-978795da7d49",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "191700",
+                            "amended_departure_time": "191700",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "191200",
+                            "base_departure_time": "191200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.836207",
+                                    "lon": "1.267419"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592006:Train",
+                                "label": "Limoges B\u00e9n\u00e9dictins (Limoges)",
+                                "links": [],
+                                "name": "Limoges B\u00e9n\u00e9dictins"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "192800",
+                            "amended_departure_time": "192900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "192300",
+                            "base_departure_time": "192400",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.887148",
+                                    "lon": "1.40043"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592055:Train",
+                                "label": "Saint-Priest-Taurion (Saint-Priest-Taurion)",
+                                "links": [],
+                                "name": "Saint-Priest-Taurion"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "193300",
+                            "amended_departure_time": "193400",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "192800",
+                            "base_departure_time": "192900",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.863905",
+                                    "lon": "1.440351"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592063:Train",
+                                "label": "Brignac (Roy\u00e8res)",
+                                "links": [],
+                                "name": "Brignac"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "193900",
+                            "amended_departure_time": "194000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "193400",
+                            "base_departure_time": "193500",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.832077",
+                                    "lon": "1.481882"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592071:Train",
+                                "label": "Saint-L\u00e9onard-de-Noblat (Saint-L\u00e9onard-de-Noblat)",
+                                "links": [],
+                                "name": "Saint-L\u00e9onard-de-Noblat"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "194630",
+                            "amended_departure_time": "194730",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "194130",
+                            "base_departure_time": "194230",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.78898",
+                                    "lon": "1.55139"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592097:Train",
+                                "label": "Saint-Denis-des-Murs (Saint-Denis-des-Murs)",
+                                "links": [],
+                                "name": "Saint-Denis-des-Murs"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "195530",
+                            "amended_departure_time": "195630",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "195030",
+                            "base_departure_time": "195130",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.759357",
+                                    "lon": "1.645235"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592105:Train",
+                                "label": "Ch\u00e2teauneuf - Bujaleuf (Neuvic-Entier)",
+                                "links": [],
+                                "name": "Ch\u00e2teauneuf - Bujaleuf"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "200500",
+                            "amended_departure_time": "200600",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "200000",
+                            "base_departure_time": "200100",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.739817",
+                                    "lon": "1.741247"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592121:Train",
+                                "label": "Eymoutiers Vassivi\u00e8re (Eymoutiers)",
+                                "links": [],
+                                "name": "Eymoutiers Vassivi\u00e8re"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "201900",
+                            "amended_departure_time": "202000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "201400",
+                            "base_departure_time": "201500",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.6411",
+                                    "lon": "1.826377"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592147:Train",
+                                "label": "La Celle Corr\u00e8ze (Lacelle)",
+                                "links": [],
+                                "name": "La Celle Corr\u00e8ze"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "202830",
+                            "amended_departure_time": "202930",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "202330",
+                            "base_departure_time": "202430",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.600597",
+                                    "lon": "1.924815"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592162:Train",
+                                "label": "Bugeat (Bugeat)",
+                                "links": [],
+                                "name": "Bugeat"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "203430",
+                            "amended_departure_time": "203530",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "202930",
+                            "base_departure_time": "203030",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.584891",
+                                    "lon": "1.977764"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87592170:Train",
+                                "label": "P\u00e9rols-sur-V\u00e9z\u00e8re (P\u00e9rols-sur-V\u00e9z\u00e8re)",
+                                "links": [],
+                                "name": "P\u00e9rols-sur-V\u00e9z\u00e8re"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "204900",
+                            "amended_departure_time": "205000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "204400",
+                            "base_departure_time": "204500",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.543481",
+                                    "lon": "2.139381"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87594085:Train",
+                                "label": "Jassonneix (Meymac)",
+                                "links": [],
+                                "name": "Jassonneix"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "205300",
+                            "amended_departure_time": "205900",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "204800",
+                            "base_departure_time": "205400",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.530275",
+                                    "lon": "2.163953"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87594275:Train",
+                                "label": "Meymac (Meymac)",
+                                "links": [],
+                                "name": "Meymac"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "211000",
+                            "amended_departure_time": "211000",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "210500",
+                            "base_departure_time": "210500",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "45.557382",
+                                    "lon": "2.314403"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87594093:Train",
+                                "label": "Ussel (Ussel)",
+                                "links": [],
+                                "name": "Ussel"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:868608:1187:Train",
+                        "name": "SNCF:2022-04-01:868608:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:868608:1187:Train",
+                            "name": "868608"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "R\u00e9gulation du trafic"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "dfc34a57-87c5-4ded-88b3-978795da7d49"
+        },
+        {
+            "application_periods": [
+                {
+                    "begin": "20220401T085000",
+                    "end": "20220401T094200"
+                }
+            ],
+            "cause": "",
+            "contributor": "realtime.sncf.piv",
+            "disruption_id": "273a29ff-360f-4ded-acb0-7c2b37ad49c0",
+            "disruption_uri": "273a29ff-360f-4ded-acb0-7c2b37ad49c0",
+            "id": "273a29ff-360f-4ded-acb0-7c2b37ad49c0",
+            "impact_id": "273a29ff-360f-4ded-acb0-7c2b37ad49c0",
+            "impacted_objects": [
+                {
+                    "impacted_stops": [
+                        {
+                            "amended_arrival_time": "091000",
+                            "amended_departure_time": "091000",
+                            "arrival_status": "unchanged",
+                            "base_arrival_time": "085000",
+                            "base_departure_time": "085000",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.584532",
+                                    "lon": "7.734793"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87212027:Train",
+                                "label": "Strasbourg (Strasbourg)",
+                                "links": [],
+                                "name": "Strasbourg"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "091500",
+                            "amended_departure_time": "091600",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "085500",
+                            "base_departure_time": "085600",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.563644",
+                                    "lon": "7.752614"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:87338525:Train",
+                                "label": "Krimmeri Meinau (Strasbourg)",
+                                "links": [],
+                                "name": "Krimmeri Meinau"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "092100",
+                            "amended_departure_time": "092300",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "090100",
+                            "base_departure_time": "090300",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.5767",
+                                    "lon": "7.8063"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:80142927:Train",
+                                "label": "Kehl (Kehl)",
+                                "links": [],
+                                "name": "Kehl"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "092630",
+                            "amended_departure_time": "092700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "090630",
+                            "base_departure_time": "090700",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.5702",
+                                    "lon": "7.8744"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:80142919:Train",
+                                "label": "Kork (Kehl)",
+                                "links": [],
+                                "name": "Kork"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "093030",
+                            "amended_departure_time": "093100",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "091030",
+                            "base_departure_time": "091100",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.5585",
+                                    "lon": "7.9138"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:80142901:Train",
+                                "label": "Legelshurst (Willst\u00e4tt)",
+                                "links": [],
+                                "name": "Legelshurst"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "093500",
+                            "amended_departure_time": "093700",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "091500",
+                            "base_departure_time": "091700",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "delayed",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.5419",
+                                    "lon": "7.9735"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:80142893:Train",
+                                "label": "Appenweier (Appenweier)",
+                                "links": [],
+                                "name": "Appenweier"
+                            },
+                            "stop_time_effect": "delayed"
+                        },
+                        {
+                            "amended_arrival_time": "094200",
+                            "amended_departure_time": "094200",
+                            "arrival_status": "delayed",
+                            "base_arrival_time": "092200",
+                            "base_departure_time": "092200",
+                            "cause": "R\u00e9gulation du trafic",
+                            "departure_status": "unchanged",
+                            "is_detour": false,
+                            "stop_point": {
+                                "coord": {
+                                    "lat": "48.4765",
+                                    "lon": "7.9468"
+                                },
+                                "equipments": [],
+                                "id": "stop_point:SNCF:80143099:Train",
+                                "label": "Offenburg (Offenburg)",
+                                "links": [],
+                                "name": "Offenburg"
+                            },
+                            "stop_time_effect": "delayed"
+                        }
+                    ],
+                    "pt_object": {
+                        "embedded_type": "trip",
+                        "id": "SNCF:2022-04-01:87415:1187:Train",
+                        "name": "SNCF:2022-04-01:87415:1187:Train",
+                        "quality": 0,
+                        "trip": {
+                            "id": "SNCF:2022-04-01:87415:1187:Train",
+                            "name": "87415"
+                        }
+                    }
+                }
+            ],
+            "messages": [
+                {
+                    "channel": {
+                        "content_type": "",
+                        "id": "rt",
+                        "name": "rt",
+                        "types": [
+                            "web",
+                            "mobile"
+                        ]
+                    },
+                    "text": "R\u00e9gulation du trafic"
+                }
+            ],
+            "severity": {
+                "color": "#000000",
+                "effect": "SIGNIFICANT_DELAYS",
+                "name": "trip delayed",
+                "priority": 42
+            },
+            "status": "past",
+            "updated_at": "20220402T065332",
+            "uri": "273a29ff-360f-4ded-acb0-7c2b37ad49c0"
+        }
+    ],
+    "feed_publishers": [
+        {
+            "id": "sncf",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        },
+        {
+            "id": "SNCF:sncf-piv",
+            "license": "Private (unspecified)",
+            "name": "SNCF PIV Production",
+            "url": ""
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/stop_points/{stop_point.id}",
+            "rel": "stop_points",
+            "templated": true,
+            "type": "stop_point"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/disruptions/{disruptions.id}",
+            "rel": "disruptions",
+            "templated": true,
+            "type": "disruptions"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/trips/{trip.id}",
+            "rel": "trips",
+            "templated": true,
+            "type": "trip"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/disruptions?since=20220401T000000&start_page=59&until=20220402T000000",
+            "templated": false,
+            "type": "previous"
+        },
+        {
+            "href": "https://api.sncf.com/v1/coverage/sncf/disruptions?since=20220401T000000&start_page=59&until=20220402T000000",
+            "templated": false,
+            "type": "first"
+        }
+    ],
+    "pagination": {
+        "items_on_page": 15,
+        "items_per_page": 25,
+        "start_page": 60,
+        "total_result": 1515
+    }
+}
