@@ -6,20 +6,23 @@
 
 yesterday=$(date -d "yesterday" +"%Y-%m-%d")
 yesterday2=$(date -d "yesterday" +"%Y_%m_%d")
-
+echo "yesterday: $yesterday";
+echo "yesterday2: $yesterday2";
 # Path to the folder where the data will be downloaded to change for your own 
 cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet/sncf_data 
 
 # check if folder exists else download data
 if [ -d "$yesterday" ]; then
     echo "Folder $yesterday exists"
+    cd ..
 else
     echo "Folder $yesterday does not exist"
     echo "Downloading data"
-    python3 ../background/download.py
+    cd ..
+    python3 background/download.py
 fi
 
-cd $yesterday
+cd sncf_data/$yesterday
 
 # check if 3 folders exist else download data
 if [ -d "Page" ] && [ -d "Routes" ] && [ -d "Vehicle_journey" ]; then
@@ -30,7 +33,9 @@ else
     cd ..
     rm -rf $yesterday
     echo "Downloading data"
-    python3 ../background/download.py
+    cd ..
+    python3 background/download.py
+
 fi
 
 # setup mysql server and datbase to store data
