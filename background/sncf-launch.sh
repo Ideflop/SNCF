@@ -64,14 +64,14 @@ fi
 
 # check if files disruptions_${yesterday} exist in sncf database else transfering data
 MT=$(mysql -u root -e "select count(*) from information_schema.tables where table_schema='SNCF' and table_name='disruptions_$yesterday2';" | grep -iv "count")
-if [ $MT -eq 1 ]; then
-    echo "File disruptions_${yesterday2} exists"
-    echo "The data might be already in the database"
-else
+if [ $MT -eq 0 ]; then
     echo "Data from ${yesterday2} not in database SNCF"
     echo "Transferring data to database SNCF"
     cd /home/idefux/Dokumente/School/L1/Semestre\ 2/Bases\ de\ données\ relationnelles/Test_projet
     python3 background/sql.py
+else
+    echo "File disruptions_${yesterday2} exists"
+    echo "The data might be already in the database"
 fi
 
 # Shutdown mysql server if it is running
