@@ -20,7 +20,7 @@ class Init():
         self.mycursor = mydb.cursor()
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
-        #self.yesterday = '2022-04-07'
+        #self.yesterday = '2022-04-01'
         self.yesterday = str(self.yesterday).replace('-', '_')
         self.mycursor.execute("USE {}".format("SNCF"))
 
@@ -34,7 +34,7 @@ class Create(Init):
         except:
             pass 
         try:        
-            sql = f"CREATE TABLE impacted_object_{self.yesterday} (date DATE, begin TIME, end TIME, amended_arrival_time TIME, amended_departure_time TIME, arrival_status VARCHAR(255), base_arrival_time TIME, base_departure_time TIME, departure_status VARCHAR(255), cause VARCHAR(255), is_detour VARCHAR(255), lat FLOAT, lon FLOAT, id_impacted_stop VARCHAR(255), label_impacted_stop VARCHAR(255), name_impacted_stop VARCHAR(255), stop_time_effect VARCHAR(255))"
+            sql = f"CREATE TABLE impacted_object_{self.yesterday} (date DATE, begin TIME, end TIME, amended_arrival_time TIME, amended_departure_time TIME, arrival_status VARCHAR(255), base_arrival_time TIME, base_departure_time TIME, departure_status VARCHAR(255), cause VARCHAR(255), is_detour VARCHAR(255), lat FLOAT, lon FLOAT, id_impacted_stop VARCHAR(255), label_impacted_stop VARCHAR(255), name_impacted_stop VARCHAR(255), stop_time_effect VARCHAR(255), trip_name INT)"
             self.mycursor.execute(sql)
         except:
             pass
@@ -44,7 +44,7 @@ class Create(Init):
         except:
             pass
         try:
-            sql = f"CREATE TABLE stop_times_{self.yesterday} (date DATE, begin DATE, end DATE, arrival_time TIME, departure_time TIME, drop_off_allowed VARCHAR(255), headsign_stop VARCHAR(255), pickup_allowed VARCHAR(255), skipped_stop VARCHAR(255), lat FLOAT, lon FLOAT, id_stop_point VARCHAR(255), label_stop_point VARCHAR(255), name_stop_point VARCHAR(255), utc_arrival_time TIME, utc_departure_time TIME)"
+            sql = f"CREATE TABLE stop_times_{self.yesterday} (date DATE, begin DATE, end DATE, arrival_time TIME, departure_time TIME, drop_off_allowed VARCHAR(255), headsign_stop VARCHAR(255), pickup_allowed VARCHAR(255), skipped_stop VARCHAR(255), lat FLOAT, lon FLOAT, id_stop_point VARCHAR(255), label_stop_point VARCHAR(255), name_stop_point VARCHAR(255), utc_arrival_time TIME, utc_departure_time TIME, trip_name VARCHAR(255))"
             self.mycursor.execute(sql)
         except:
             pass
@@ -74,18 +74,17 @@ class Insert(Init):
                     val = (disruption[0], disruption[1], disruption[2], disruption[3], disruption[4], disruption[5], disruption[6], disruption[7], disruption[8], disruption[9])
                     self.mycursor.execute(sql,val)
                     
-                    sql = f"INSERT INTO impacted_object_{self.yesterday} (date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-                    val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16])
+                    sql = f"INSERT INTO impacted_object_{self.yesterday} (date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect, trip_name) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                    val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16], impacted_object[17])
                     self.mycursor.execute(sql,val)
                     
                     try:
                         f = 1
                         for w in data['disruptions'][i]['impacted_objects'][0]['impacted_stops'][f]:
                             disruption, impacted_object = extract.Sort().disruptions(z,i,f)
-                            sql = f"INSERT INTO impacted_object_{self.yesterday} (date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-                            val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16])
+                            sql = f"INSERT INTO impacted_object_{self.yesterday} (date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect, trip_name) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                            val = (impacted_object[0], impacted_object[1], impacted_object[2], impacted_object[3], impacted_object[4], impacted_object[5], impacted_object[6], impacted_object[7], impacted_object[8], impacted_object[9], impacted_object[10], impacted_object[11], impacted_object[12], impacted_object[13], impacted_object[14], impacted_object[15], impacted_object[16], impacted_object[17])
                             self.mycursor.execute(sql,val)
-                            print(data['disruptions'][1]['impacted_objects'][0]['impacted_stops'][f])
                             f += 1
                     except:
                         pass
@@ -108,16 +107,16 @@ class Insert(Init):
                 val = (vehicle_journey[0], vehicle_journey[1], vehicle_journey[2], vehicle_journey[3], vehicle_journey[4], vehicle_journey[5], vehicle_journey[6], vehicle_journey[7], vehicle_journey[8])
                 self.mycursor.execute(sql,val)
                 
-                sql = f"INSERT INTO stop_times_{self.yesterday} (date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-                val = (stop_times[0], stop_times[1], stop_times[2], stop_times[3], stop_times[4], stop_times[5], stop_times[6], stop_times[7], stop_times[8], stop_times[9], stop_times[10], stop_times[11], stop_times[12], stop_times[13], stop_times[14], stop_times[15])
+                sql = f"INSERT INTO stop_times_{self.yesterday} (date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time, trip_name) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                val = (stop_times[0], stop_times[1], stop_times[2], stop_times[3], stop_times[4], stop_times[5], stop_times[6], stop_times[7], stop_times[8], stop_times[9], stop_times[10], stop_times[11], stop_times[12], stop_times[13], stop_times[14], stop_times[15], stop_times[16])
                 self.mycursor.execute(sql,val)
                 
                 try:
                     f=1
                     vehicle_journey, stop_times = extract.Sort().vehicle_journey(z,i,f)
                     for w in data['vehicle_journeys'][i]['stop_times']:
-                        sql = f"INSERT INTO stop_times_{self.yesterday} (date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-                        val = (stop_times[0], stop_times[1], stop_times[2], stop_times[3], stop_times[4], stop_times[5], stop_times[6], stop_times[7], stop_times[8], stop_times[9], stop_times[10], stop_times[11], stop_times[12], stop_times[13], stop_times[14], stop_times[15])
+                        sql = f"INSERT INTO stop_times_{self.yesterday} (date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time, trip_name) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+                        val = (stop_times[0], stop_times[1], stop_times[2], stop_times[3], stop_times[4], stop_times[5], stop_times[6], stop_times[7], stop_times[8], stop_times[9], stop_times[10], stop_times[11], stop_times[12], stop_times[13], stop_times[14], stop_times[15], stop_times[16])
                         self.mycursor.execute(sql,val)
                         f += 1
                         vehicle_journey, stop_times = extract.Sort().vehicle_journey(z,i,f)
