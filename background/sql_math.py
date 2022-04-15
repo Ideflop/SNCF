@@ -101,28 +101,82 @@ class search:
         self.yesterday = self.today - datetime.timedelta(days = 1)
         self.yesterday = str(self.yesterday).replace('-', '_')
 
-    def how_many(self):
+    def general(self):
         result = []
-        # total disruption
-        self.mycursor.execute(f"SELECT COUNT(*) FROM disruptions_{self.yesterday}")
-        result.append(self.mycursor.fetchone()[0])
-        # total impacted object
-        self.mycursor.execute(f"SELECT COUNT(*) FROM impacted_object_{self.yesterday}")
-        result.append(self.mycursor.fetchone()[0])
         # total vehicle journey
         self.mycursor.execute(f"SELECT COUNT(*) FROM vehicle_journeys_{self.yesterday}")
         result.append(self.mycursor.fetchone()[0])
         # total stop times
         self.mycursor.execute(f"SELECT COUNT(*) FROM stop_times_{self.yesterday}")
         result.append(self.mycursor.fetchone()[0])
+        # total disruption
+        self.mycursor.execute(f"SELECT COUNT(*) FROM disruptions_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # in % of total vehicle journey
+        result.append(round(result[2] * 100 / result[0],2))
+        # total impacted object
+        self.mycursor.execute(f"SELECT COUNT(*) FROM impacted_object_{self.yesterday}")
+        result.append(self.mycursor.fetchone()[0])
+        # in % of total stop times
+        result.append(round(result[4] * 100 / result[1],2))
         # total routes
         self.mycursor.execute(f"SELECT COUNT(*) FROM routes_{self.yesterday}")
         result.append(self.mycursor.fetchone()[0])
 
         return result
- 
+        
+    def disruptions_message(self):
+        result = []
+        message = []
+        # search all message and number of time it appears
+        self.mycursor.execute(f"SELECT message FROM disruptions_{self.yesterday}")
+        for i in self.mycursor.fetchall():
+            if i[0] in message:
+                index = message.index(i[0])
+                result[index] += 1
+            else:
+                message.append(i[0])
+                result.append(1)
+        # return the 10 most common disruptions message
+        top_result = []
+        top_message = []
+        for i in range(10):
+            vmax_result = max(result)
+            imax_result = result.index(vmax_result)
+            vmax_message =  message[imax_result]
+            top_result.append(vmax_result)
+            top_message.append(vmax_message)
+            result[imax_result] = 0
+        
+        return top_message, top_result
 
+    def citi_impacted(self):
+        result = []
+        message = []
+        # search all cities and number of time it appears
+        self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday}")
+        for i in self.mycursor.fetchall():
+            if i[0] in message:
+                index = message.index(i[0])
+                result[index] += 1
+            else:
+                message.append(i[0])
+                result.append(1)
 
-clean().clean_data()
-
-#print(search().how_many())
+        if None in message:
+            index = message.index(None)
+            result.pop(index)
+            message.pop(index)
+        
+        # return the 10 most common disruptions message
+        top_result = []
+        top_message = []
+        for i in range(10):
+            vmax_result = max(result)
+            imax_result = result.index(vmax_result)
+            vmax_message =  message[imax_result]
+            top_result.append(vmax_result)
+            top_message.append(vmax_message)
+            result[imax_result] = 0
+        
+        return top_message, top_result
