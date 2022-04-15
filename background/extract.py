@@ -9,7 +9,7 @@ class Sort():
     def __init__(self): # constructor
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
-        #self.yesterday = '2022-04-07'
+        #self.yesterday = '2022-04-01'
         self.file_created = ['Page','Vehicle_journey','Routes']
         self.dir = f'scnf_data/{self.yesterday}'
         self.NULL = 'zzz'
@@ -129,7 +129,7 @@ class Sort():
             except:
                 stop_time_effect = self.NULL
             
-            return [value, date, begin, end, id, message, severity_effect, severity_name, trip_id, trip_name],[ date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect]
+            return [value, date, begin, end, id, message, severity_effect, severity_name, trip_id, trip_name],[ date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect, trip_name]
 
     def vehicle_journey(self,z,i,j):
 
@@ -220,7 +220,7 @@ class Sort():
             except:
                 utc_departure_time = self.number
                 
-            return [value, date, begin, end, headsign, id, name, trip_id, trip_name],[date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time]
+            return [value, date, begin, end, headsign, id, name, trip_id, trip_name],[date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time, trip_name]
 
 
     def routes(self,z,i):
