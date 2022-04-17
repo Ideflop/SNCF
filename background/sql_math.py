@@ -3,7 +3,7 @@
 import mysql.connector
 import datetime
 import json
-import os
+import os   # for writing to file
 
 mydb = mysql.connector.connect( # connect to database
     host="127.0.0.1",
@@ -86,8 +86,18 @@ class write: # just here os
         self.mycursor = mydb.cursor()
         if not os.path.exists(f"calculus/{self.yesterday}.txt"):
             open(f'calculus/{self.yesterday}', 'w').close()
+        self.yesterday = str(self.yesterday).replace('-', '_')
+
+    def write_data(self):
+        # create a dictionary of the data
+        data_dict = {}
+        text, result = search.general(self)
+        for i in range(len(result)):
+            data_dict.update({text[i]:result[i]})
+        print(data_dict)
 
     def write_to_file(self, data): # data must be dict
+
         with open(f'calculus/{self.yesterday}.txt', 'a') as f:
             json.dump(data, f)
         
@@ -102,6 +112,7 @@ class search:
         self.yesterday = str(self.yesterday).replace('-', '_')
 
     def general(self):
+        text = ['vehicle', 'stop_times', 'disruptions', '%_vehicle', 'impacted_stop', '%_stop_times','routes']
         result = []
         # total vehicle journey
         self.mycursor.execute(f"SELECT COUNT(*) FROM vehicle_journeys_{self.yesterday}")
@@ -123,7 +134,7 @@ class search:
         self.mycursor.execute(f"SELECT COUNT(*) FROM routes_{self.yesterday}")
         result.append(self.mycursor.fetchone()[0])
 
-        return result
+        return text,result
         
     def disruptions_message(self):
         result = []
@@ -137,6 +148,13 @@ class search:
             else:
                 message.append(i[0])
                 result.append(1)
+        
+
+        if None in message:
+            index = message.index(None)
+            result.pop(index)
+            message.pop(index)
+        
         # return the 10 most common disruptions message
         top_result = []
         top_message = []
@@ -168,7 +186,7 @@ class search:
             result.pop(index)
             message.pop(index)
         
-        # return the 10 most common disruptions message
+        # return the 10 most commen impacted city by appearance
         top_result = []
         top_message = []
         for i in range(10):
@@ -180,3 +198,77 @@ class search:
             result[imax_result] = 0
         
         return top_message, top_result
+
+    def citi_time_impacted(self):
+        station = []
+        time = []
+
+        # select base_arrival_time and base_departure_time and name_impacted_stop where departure_time is delayed
+        self.mycursor.execute(f"SELECT base_arrival_time, base_departure_time, name_impacted_stop FROM impacted_object_{self.yesterday} WHERE departure_status = 'delayed' AND base_arrival_time IS NOT NULL AND base_departure_time IS NOT NULL")
+        for i in self.mycursor.fetchall():
+            if i[2] in station:
+                index = station.index(i[2])
+                time[index] += (i[1] -i[0]).seconds
+            else:
+                station.append(i[2])
+                time.append((i[1] -i[0]).seconds)
+
+        tot_time_impacted = sum(time)
+        tot_time_impacted = datetime.timedelta(seconds = tot_time_impacted)
+        tot_time_impacted = str(tot_time_impacted)
+
+        # return the 10 most common impacted city by time
+        top_station = []
+        top_time = []
+        for i in range(10):
+            vmax_time = max(time)
+            imax_time = time.index(vmax_time)
+            vmax_station =  station[imax_time]
+            top_time.append(vmax_time)
+            top_station.append(vmax_station)
+            time[imax_time] = 0
+        
+        for i in range(len(top_station)):
+            conversion = datetime.timedelta(seconds = top_time[i])
+            top_time[i] = str(conversion)
+
+        return top_station, top_time, tot_time_impacted
+
+    def disruptions_severity_name(self):
+        message = []
+        result = []
+
+        # count all severity_name 
+        self.mycursor.execute(f"SELECT severity_name FROM disruptions_{self.yesterday}")
+        for i in self.mycursor.fetchall():
+            if i[0] in message:
+                index = message.index(i[0])
+                result[index] += 1
+            else:
+                message.append(i[0])
+                result.append(1)
+
+        sort_message = []
+        sort_result = []
+
+        # sort the result by descending order
+
+        for i in range(len(result)):
+            vmax = max(result)
+            index = result.index(vmax)
+            sort_result.append(vmax)
+            sort_message.append(message[index])
+            result.pop(index)
+            message.pop(index)
+
+        return sort_message, sort_result
+
+        
+#clean().clean_data()
+#print(search().general())
+#print(search().disruptions_message())
+#print(search().citi_impacted())
+#print(search().citi_time_impacted())
+#print(search().disruptions_severity_name())
+
+print(write().write_data())
