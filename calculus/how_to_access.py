@@ -2,7 +2,7 @@
 
 import json
 
-with open('2022-04-17.txt') as json_file:
+with open('2022-04-17.txt') as json_file: # how to access the file
     data = json.load(json_file)
     a = data["vehicle"]
     b = data["stop_times"]
