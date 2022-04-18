@@ -5,6 +5,7 @@ import datetime
 import json
 import os   # for writing to file
 
+
 mydb = mysql.connector.connect( # connect to database
     host="127.0.0.1",
     user="root",
@@ -80,13 +81,15 @@ class clean:
 
 class write: # just here os
     def __init__(self):
-        self.today = datetime.date.today()
-        self.yesterday = self.today - datetime.timedelta(days = 1)
         self.mydb = mydb
         self.mycursor = mydb.cursor()
-        if not os.path.exists(f"calculus/{self.yesterday}.txt"):
-            open(f'calculus/{self.yesterday}', 'w').close()
-        self.yesterday = str(self.yesterday).replace('-', '_')
+        self.today = datetime.date.today()
+        self.yesterday1 = self.today - datetime.timedelta(days = 1)
+        self.yesterday = str(self.yesterday1).replace('-', '_')
+        if not os.path.exists(f"calculus/{self.yesterday1}.txt"): # create file
+            open(f'calculus/{self.yesterday1}.txt', 'w').close()
+            clean().clean_data() # to have null
+        loop = [search.general(self),search.disruptions_message(self)]
 
     def write_data(self):
         # create a dictionary of the data
@@ -94,13 +97,55 @@ class write: # just here os
         text, result = search.general(self)
         for i in range(len(result)):
             data_dict.update({text[i]:result[i]})
-        print(data_dict)
+        
+        # add dictionaries to data_dict
+        dict_to_dict = {}
+        test = {}
+        message, result = search.disruptions_message(self)
+        for i in range(len(result)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            dict_to_dict.update(test)
+
+        data_dict.update({'disruptions_message':dict_to_dict})
+
+        dict_to_dict = {}
+        test = {}
+        message, result = search.citi_impacted(self)
+        for i in range(len(result)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            dict_to_dict.update(test)
+
+        data_dict.update({'citi_impacted':dict_to_dict})
+
+        dict_to_dict = {}
+        test = {}
+        message, result, tot = search.citi_time_impacted(self)
+        for i in range(len(result)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            dict_to_dict.update(test)
+
+        data_dict.update({'citi_time_impacted':dict_to_dict})
+        data_dict.update({'citi_time_impacted_tot':tot})
+        
+        dict_to_dict = {}
+        test = {}
+        message, result = search.disruptions_severity_name(self)
+        for i in range(len(result)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            dict_to_dict.update(test)
+
+        data_dict.update({'disruptions_severity_name':dict_to_dict})
+
+        self.write_to_file(data_dict)
 
     def write_to_file(self, data): # data must be dict
 
-        with open(f'calculus/{self.yesterday}.txt', 'a') as f:
+        with open(f'calculus/{self.yesterday1}.txt', 'a') as f:
             json.dump(data, f)
-        
 
 
 class search:
@@ -264,11 +309,10 @@ class search:
         return sort_message, sort_result
 
         
-#clean().clean_data()
 #print(search().general())
 #print(search().disruptions_message())
 #print(search().citi_impacted())
 #print(search().citi_time_impacted())
 #print(search().disruptions_severity_name())
 
-print(write().write_data())
+write().write_data()
