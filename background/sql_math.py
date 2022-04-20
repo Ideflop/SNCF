@@ -154,6 +154,7 @@ class search:
         self.mycursor = mydb.cursor()
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
+        self.yesterday = '2022-04-17'
         self.yesterday = str(self.yesterday).replace('-', '_')
 
     def general(self):
@@ -308,11 +309,71 @@ class search:
 
         return sort_message, sort_result
 
+    def routes(self):
+        trip_name_disruptions = []
+        routes_name = []
+        routes_disruption_count = []
+        time_trip_name = []
+
+        self.mycursor.execute(f"SELECT trip_name  FROM impacted_object_{self.yesterday}")
+        for i in self.mycursor.fetchall():
+            if i[0] not in trip_name_disruptions:
+                trip_name_disruptions.append(i[0])
         
+        self.mycursor.execute(f"SELECT routes_name FROM routes_{self.yesterday}")
+        for i in self.mycursor.fetchall():
+            if i[0] not in routes_name:
+                routes_name.append(i[0])
+                routes_disruption_count.append(0)
+
+        #for i in range(len(trip_name_disruptions)):
+        
+        for i in range(10):
+         
+            self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY date ASC LIMIT 1")
+            first = self.mycursor.fetchall()
+            first = first[0]
+            print(first)
+            self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY amended_arrival_time DESC LIMIT 1")
+            end = self.mycursor.fetchall()
+            end = end[0]
+            print(first,end,'oui')
+            self.mycursor.execute(f"SELECT amended_arrival_time FROM impacted_object_{self.yesterday} WHERE amended_arrival_time IS NOT NULL AND trip_name = '{trip_name_disruptions[i]}' ")
+            for j in self.mycursor.fetchall():
+                time_trip_name.append(j[0])
+            if time_trip_name[0] > time_trip_name[-1]:
+                self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' AND amended_arrival_time = '{time_trip_name[-1]}'")
+                end = self.mycursor.fetchall()
+        
+            normal = f"{first} - {end}"
+            reverse = f"{end} - {first}"
+
+            if normal in routes_name:
+                index = routes_name.index(normal)
+                routes_disruption_count[index] += 1
+
+            if reverse in routes_name:
+                index = routes_name.index(reverse)
+                routes_disruption_count[index] += 1
+        
+        sort_message = []
+        sort_result = []
+        # sort the result by descending order
+        for i in range(10):
+            vmax = max(routes_disruption_count)
+            index = routes_disruption_count.index(vmax)
+            sort_result.append(vmax)
+            sort_message.append(routes_name[index])
+            routes_disruption_count.pop(index)
+            routes_name.pop(index)
+
+        return sort_message, sort_result
+
+
 #print(search().general())
 #print(search().disruptions_message())
 #print(search().citi_impacted())
 #print(search().citi_time_impacted())
 #print(search().disruptions_severity_name())
-
-write().write_data()
+print(search().routes())
+#print(write().write_data())
