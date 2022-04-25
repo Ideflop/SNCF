@@ -2,7 +2,7 @@
 
 import json
 
-with open('2022-04-17.txt') as json_file: # how to access the file
+with open('2022-04-22.txt') as json_file: # how to access the file 
     data = json.load(json_file)
     a = data["vehicle"]
     b = data["stop_times"]
@@ -20,6 +20,10 @@ with open('2022-04-17.txt') as json_file: # how to access the file
     n = data["citi_time_impacted_tot"]
     o = data["disruptions_severity_name"]['data0']  # loop through the data
     p = data["disruptions_severity_name"]['value0'] # loop through the data
+    q = data["routes_max_retard"]['data0']          # loop through the data
+    r = data["routes_max_retard"]['value0']         # loop through the data
+    s = data["routes_min_retard"]['data0']          # loop through the data
+    t = data["routes_min_retard"]['value0']         # loop through the data
 
 print(a)
 print(b)
@@ -37,3 +41,7 @@ print(m)
 print(n)
 print(o)
 print(p)
+print(q)
+print(r)
+print(s)
+print(t)
