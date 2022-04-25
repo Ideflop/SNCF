@@ -89,7 +89,6 @@ class write: # just here os
         if not os.path.exists(f"calculus/{self.yesterday1}.txt"): # create file
             open(f'calculus/{self.yesterday1}.txt', 'w').close()
             clean().clean_data() # to have null
-        loop = [search.general(self),search.disruptions_message(self)]
 
     def write_data(self):
         # create a dictionary of the data
@@ -139,7 +138,26 @@ class write: # just here os
             dict_to_dict.update(test)
 
         data_dict.update({'disruptions_severity_name':dict_to_dict})
+        
+        dict_to_dict = {}
+        test = {}
+        message, result, message1, result1 = search.routes(self)
+        for i in range(len(result)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            dict_to_dict.update(test)
 
+        data_dict.update({'routes_max_retard':dict_to_dict})
+
+        dict_to_dict = {}
+        test = {}
+        for i in range(len(result1)):
+            # append at the end of dict_to_dcit the test
+            test.update({f'data{i}':message1[i], f'value{i}':result1[i]})
+            dict_to_dict.update(test)
+
+        data_dict.update({'routes_min_retard':dict_to_dict})
+        
         self.write_to_file(data_dict)
 
     def write_to_file(self, data): # data must be dict
@@ -154,7 +172,6 @@ class search:
         self.mycursor = mydb.cursor()
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
-        self.yesterday = '2022-04-17'
         self.yesterday = str(self.yesterday).replace('-', '_')
 
     def general(self):
@@ -326,28 +343,28 @@ class search:
                 routes_name.append(i[0])
                 routes_disruption_count.append(0)
 
-        #for i in range(len(trip_name_disruptions)):
-        
-        for i in range(10):
-         
+        for i in range(len(trip_name_disruptions)):
+
             self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY date ASC LIMIT 1")
             first = self.mycursor.fetchall()
-            first = first[0]
-            print(first)
+            if first == []:
+                first = 'empty'
+            first = first[0][0]
             self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY amended_arrival_time DESC LIMIT 1")
             end = self.mycursor.fetchall()
-            end = end[0]
-            print(first,end,'oui')
+            if end == []:
+                end = 'empty'
+            end = end[0][0]
             self.mycursor.execute(f"SELECT amended_arrival_time FROM impacted_object_{self.yesterday} WHERE amended_arrival_time IS NOT NULL AND trip_name = '{trip_name_disruptions[i]}' ")
             for j in self.mycursor.fetchall():
                 time_trip_name.append(j[0])
             if time_trip_name[0] > time_trip_name[-1]:
                 self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' AND amended_arrival_time = '{time_trip_name[-1]}'")
                 end = self.mycursor.fetchall()
-        
+
             normal = f"{first} - {end}"
             reverse = f"{end} - {first}"
-
+                
             if normal in routes_name:
                 index = routes_name.index(normal)
                 routes_disruption_count[index] += 1
@@ -355,7 +372,7 @@ class search:
             if reverse in routes_name:
                 index = routes_name.index(reverse)
                 routes_disruption_count[index] += 1
-        
+
         sort_message = []
         sort_result = []
         # sort the result by descending order
@@ -367,7 +384,18 @@ class search:
             routes_disruption_count.pop(index)
             routes_name.pop(index)
 
-        return sort_message, sort_result
+        sort_min_message = []
+        sort_min_result = []
+        # sort the result by descending order
+        for i in range(10):
+            vmin = min(routes_disruption_count)
+            index = routes_disruption_count.index(vmin)
+            sort_min_result.append(vmax)
+            sort_min_message.append(routes_name[index])
+            routes_disruption_count.pop(index)
+            routes_name.pop(index)
+
+        return sort_message, sort_result, sort_min_message, sort_min_result
 
 
 #print(search().general())
@@ -375,5 +403,6 @@ class search:
 #print(search().citi_impacted())
 #print(search().citi_time_impacted())
 #print(search().disruptions_severity_name())
-print(search().routes())
-#print(write().write_data())
+
+#print(search().routes())
+print(write().write_data())
