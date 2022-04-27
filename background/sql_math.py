@@ -5,7 +5,6 @@ import datetime
 import json
 import os   # for writing to file
 
-
 mydb = mysql.connector.connect( # connect to database
     host="127.0.0.1",
     user="root",
@@ -19,6 +18,7 @@ class clean:
         
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-04-26'
         self.yesterday = str(self.yesterday).replace('-', '_')
         
         self.disruption_list = ['value', 'date', 'begin', 'end', 'id', 'message', 'severity_effect', 'severity_name', 'trip_id', 'trip_name']
@@ -82,13 +82,14 @@ class clean:
 class write: # just here os
     def __init__(self):
         self.mydb = mydb
-        self.mycursor = mydb.cursor()
+        self.mycursor = mydb.cursor(buffered=True)
         self.today = datetime.date.today()
         self.yesterday1 = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-04-26'
         self.yesterday = str(self.yesterday1).replace('-', '_')
         if not os.path.exists(f"calculus/{self.yesterday1}.txt"): # create file
             open(f'calculus/{self.yesterday1}.txt', 'w').close()
-            clean().clean_data() # to have null
+        clean().clean_data() # to have null
 
     def write_data(self):
         # create a dictionary of the data
@@ -110,20 +111,20 @@ class write: # just here os
 
         dict_to_dict = {}
         test = {}
-        message, result = search.citi_impacted(self)
+        message, result, lat, lon = search.citi_impacted(self)
         for i in range(len(result)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            test.update({f'data{i}':message[i], f'value{i}':result[i], f'lat{i}':lat[i], f'lon{i}':lon[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'citi_impacted':dict_to_dict})
 
         dict_to_dict = {}
         test = {}
-        message, result, tot = search.citi_time_impacted(self)
+        message, result, lat, lon, tot = search.citi_time_impacted(self)
         for i in range(len(result)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            test.update({f'data{i}':message[i], f'value{i}':result[i], f'lat{i}':lat[i], f'lon{i}':lon[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'citi_time_impacted':dict_to_dict})
@@ -141,10 +142,10 @@ class write: # just here os
         
         dict_to_dict = {}
         test = {}
-        message, result, message1, result1 = search.routes(self)
+        message, result, lat, lon, message1, result1, lat1, lon1, percent = search.routes(self)
         for i in range(len(result)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message[i], f'value{i}':result[i]})
+            test.update({f'data{i}':message[i], f'value{i}':result[i], f'lat{i}':lat[i], f'lon{i}':lon[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'routes_max_retard':dict_to_dict})
@@ -153,11 +154,13 @@ class write: # just here os
         test = {}
         for i in range(len(result1)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message1[i], f'value{i}':result1[i]})
+            test.update({f'data{i}':message1[i], f'value{i}':result1[i], f'lat{i}':lat1[i], f'lon{i}':lon1[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'routes_min_retard':dict_to_dict})
         
+        data_dict.update({'%_routes': percent})
+
         self.write_to_file(data_dict)
 
     def write_to_file(self, data): # data must be dict
@@ -169,9 +172,11 @@ class write: # just here os
 class search:
     def __init__(self):
         self.mydb = mydb
-        self.mycursor = mydb.cursor()
+        self.mycursor = mydb.cursor(buffered=True)
+
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
+        #self.yesterday = '2022-04-25'
         self.yesterday = str(self.yesterday).replace('-', '_')
 
     def general(self):
@@ -260,7 +265,15 @@ class search:
             top_message.append(vmax_message)
             result[imax_result] = 0
         
-        return top_message, top_result
+        lon = []
+        lat = []
+
+        for i in range(len(top_message)):
+            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{top_message[i]}'")
+            lat.append(self.mycursor.fetchone()[0])
+            lon.append(self.mycursor.fetchone()[1])
+
+        return top_message, top_result, lat, lon
 
     def citi_time_impacted(self):
         station = []
@@ -295,7 +308,15 @@ class search:
             conversion = datetime.timedelta(seconds = top_time[i])
             top_time[i] = str(conversion)
 
-        return top_station, top_time, tot_time_impacted
+        lon = []
+        lat = []
+
+        for i in range(len(top_station)):
+            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{top_station[i]}'")
+            lat.append(self.mycursor.fetchone()[0])
+            lon.append(self.mycursor.fetchone()[1])
+
+        return top_station, top_time, lat, lon, tot_time_impacted
 
     def disruptions_severity_name(self):
         message = []
@@ -355,9 +376,13 @@ class search:
             if end == []:
                 end = 'empty'
             end = end[0][0]
+
+            time_trip_name = []
             self.mycursor.execute(f"SELECT amended_arrival_time FROM impacted_object_{self.yesterday} WHERE amended_arrival_time IS NOT NULL AND trip_name = '{trip_name_disruptions[i]}' ")
             for j in self.mycursor.fetchall():
                 time_trip_name.append(j[0])
+            if not time_trip_name:
+                time_trip_name.append(0)
             if time_trip_name[0] > time_trip_name[-1]:
                 self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' AND amended_arrival_time = '{time_trip_name[-1]}'")
                 end = self.mycursor.fetchall()
@@ -384,6 +409,18 @@ class search:
             routes_disruption_count.pop(index)
             routes_name.pop(index)
 
+        lon = []
+        lat = []
+
+        for i in range(len(sort_message)):
+            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{sort_message[i]}'")
+            if self.mycursor.fetchall() == []:
+                lat.append(0)
+                lon.append(0)
+            else:
+                lat.append(self.mycursor.fetchone()[0])
+                lon.append(self.mycursor.fetchone()[1])
+
         sort_min_message = []
         sort_min_result = []
         # sort the result by descending order
@@ -394,8 +431,29 @@ class search:
             sort_min_message.append(routes_name[index])
             routes_disruption_count.pop(index)
             routes_name.pop(index)
+        
+        lon1 = []
+        lat1 = []
 
-        return sort_message, sort_result, sort_min_message, sort_min_result
+        for i in range(len(sort_min_message)):
+            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{sort_min_message[i]}'")
+            if self.mycursor.fetchall() == []:
+                lat1.append(0)
+                lon1.append(0)
+            else:
+                lat1.append(self.mycursor.fetchone()[0])
+                lon1.append(self.mycursor.fetchone()[1])
+
+        zero = []
+        a = len(routes_disruption_count)
+        # count how many routes have 0 disruption
+        for i in range(a):
+            if routes_disruption_count[i] == 0:
+                zero.append(routes_name[i])
+        percent = round(100 * len(zero) / len(routes_name),2)
+
+        return sort_message, sort_result, lat, lon, sort_min_message, sort_min_result, lat1, lon1, percent
+
 
 
 #print(search().general())
@@ -403,6 +461,5 @@ class search:
 #print(search().citi_impacted())
 #print(search().citi_time_impacted())
 #print(search().disruptions_severity_name())
-
 #print(search().routes())
 print(write().write_data())
