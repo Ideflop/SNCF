@@ -8,6 +8,8 @@ import os   # for writing to file
 mydb = mysql.connector.connect( # connect to database
     host="127.0.0.1",
     user="root",
+    password="1234",
+    auth_plugin='mysql_native_password',
     database="SNCF"
 )
 
@@ -18,19 +20,19 @@ class clean:
         
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
-        #self.yesterday = '2022-04-26'
+        #self.yesterday = '2022-05-03'
         self.yesterday = str(self.yesterday).replace('-', '_')
         
-        self.disruption_list = ['value', 'date', 'begin', 'end', 'id', 'message', 'severity_effect', 'severity_name', 'trip_id', 'trip_name']
-        self.impacted_object_list = ['date', 'begin', 'end', 'amended_arrival_time', 'amended_departure_time', 'departure_status', 'base_arrival_time', 'base_departure_time', 'arrival_status', 'cause', 'is_detour', 'id_impacted_stop', 'label_impacted_stop', 'name_impacted_stop', 'stop_time_effect']
-        self.vehicle_journey_list = ['value', 'date', 'begin', 'end', 'headsign', 'id', 'name', 'trip_id', 'trip_name']
-        self.routes_list = ['date', 'embedded_type', 'id_direction', 'name_direction', 'quality', 'value', 'lat', 'lon', 'id_stop_area', 'label_stop_area', 'name_stop_area', 'direction_type', 'id', 'is_frequence', 'closing_time', 'id_commercial_mode', 'name_commercial_mode', 'id_line', 'id_name', 'opening_time', 'id_physical_modes', 'name_physical_modes', 'routes_name']
+        self.disruption_list = ['begin', 'end', 'id', 'message', 'severity_name', 'trip_id', 'trip_name']
+        #self.impacted_object_list = ['date', 'begin', 'end', 'amended_arrival_time', 'amended_departure_time', 'departure_status', 'base_arrival_time', 'base_departure_time', 'arrival_status', 'cause', 'is_detour', 'id_impacted_stop', 'label_impacted_stop', 'name_impacted_stop', 'stop_time_effect']
+        #self.vehicle_journey_list = ['value', 'date', 'begin', 'end', 'headsign', 'id', 'name', 'trip_id', 'trip_name']
+        self.routes_list = ['id_direction', 'value', 'id_stop_points', 'lat', 'lon', 'name_stop_area', 'closing_time', 'id_commercial_mode', 'name_commercial_mode', 'opening_time', 'id_physical_modes', 'name_physical_modes', 'routes_name']
         
-        self.impacted_object_list1 = ['departure_status','arrival_status', 'cause', 'is_detour', 'id_impacted_stop', 'label_impacted_stop', 'name_impacted_stop', 'stop_time_effect']
+        self.impacted_object_list1 = ['departure_status','arrival_status', 'cause', 'id_impacted_stop', 'name_impacted_stop']
         self.impacted_object_list2 = ['lat', 'lon']
         self.impacted_object_list3 = ['amended_arrival_time', 'amended_departure_time', 'base_arrival_time', 'base_departure_time']
-        self.stop_times_list = ['date', 'begin', 'end', 'arrival_time', 'departure_time', 'drop_off_allowed', 'headsign_stop', 'pickup_allowed', 'skipped_stop', 'lat', 'lon', 'id_stop_point', 'label_stop_point', 'name_stop_point', 'utc_arrival_time', 'utc_departure_time']
-        self.stop_times_list1 = ['drop_off_allowed', 'headsign_stop', 'pickup_allowed', 'skipped_stop', 'id_stop_point', 'label_stop_point', 'name_stop_point']
+
+        self.stop_times_list1 = ['headsign_stop', 'id_stop_point', 'name_stop_point']
         self.stop_times_list2 = ['lat', 'lon']
         self.stop_times_list3 = ['arrival_time', 'departure_time', 'utc_arrival_time', 'utc_departure_time']
     
@@ -85,7 +87,7 @@ class write: # just here os
         self.mycursor = mydb.cursor(buffered=True)
         self.today = datetime.date.today()
         self.yesterday1 = self.today - datetime.timedelta(days = 1)
-        #self.yesterday = '2022-04-26'
+        #self.yesterday1 = '2022-04-30'
         self.yesterday = str(self.yesterday1).replace('-', '_')
         if not os.path.exists(f"calculus/{self.yesterday1}.txt"): # create file
             open(f'calculus/{self.yesterday1}.txt', 'w').close()
@@ -142,10 +144,10 @@ class write: # just here os
         
         dict_to_dict = {}
         test = {}
-        message, result, lat, lon, message1, result1, lat1, lon1, percent = search.routes(self)
+        message, result, message1, result1, percent = search.routes(self)
         for i in range(len(result)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message[i], f'value{i}':result[i], f'lat{i}':lat[i], f'lon{i}':lon[i]})
+            test.update({f'data{i}':message[i], f'value{i}':result[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'routes_max_retard':dict_to_dict})
@@ -154,7 +156,7 @@ class write: # just here os
         test = {}
         for i in range(len(result1)):
             # append at the end of dict_to_dcit the test
-            test.update({f'data{i}':message1[i], f'value{i}':result1[i], f'lat{i}':lat1[i], f'lon{i}':lon1[i]})
+            test.update({f'data{i}':message1[i], f'value{i}':result1[i]})
             dict_to_dict.update(test)
 
         data_dict.update({'routes_min_retard':dict_to_dict})
@@ -176,7 +178,7 @@ class search:
 
         self.today = datetime.date.today()
         self.yesterday = self.today - datetime.timedelta(days = 1)
-        #self.yesterday = '2022-04-25'
+        #self.yesterday = '2022-04-27'
         self.yesterday = str(self.yesterday).replace('-', '_')
 
     def general(self):
@@ -366,7 +368,7 @@ class search:
 
         for i in range(len(trip_name_disruptions)):
 
-            self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY date ASC LIMIT 1")
+            self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name ='{trip_name_disruptions[i]}' ORDER BY Trainid ASC LIMIT 1")
             first = self.mycursor.fetchall()
             if first == []:
                 first = 'empty'
@@ -409,18 +411,6 @@ class search:
             routes_disruption_count.pop(index)
             routes_name.pop(index)
 
-        lon = []
-        lat = []
-
-        for i in range(len(sort_message)):
-            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{sort_message[i]}'")
-            if self.mycursor.fetchall() == []:
-                lat.append(0)
-                lon.append(0)
-            else:
-                lat.append(self.mycursor.fetchone()[0])
-                lon.append(self.mycursor.fetchone()[1])
-
         sort_min_message = []
         sort_min_result = []
         # sort the result by descending order
@@ -432,17 +422,6 @@ class search:
             routes_disruption_count.pop(index)
             routes_name.pop(index)
         
-        lon1 = []
-        lat1 = []
-
-        for i in range(len(sort_min_message)):
-            self.mycursor.execute(f"SELECT lat,lon FROM impacted_object_{self.yesterday} WHERE name_impacted_stop = '{sort_min_message[i]}'")
-            if self.mycursor.fetchall() == []:
-                lat1.append(0)
-                lon1.append(0)
-            else:
-                lat1.append(self.mycursor.fetchone()[0])
-                lon1.append(self.mycursor.fetchone()[1])
 
         zero = []
         a = len(routes_disruption_count)
@@ -452,9 +431,39 @@ class search:
                 zero.append(routes_name[i])
         percent = round(100 * len(zero) / len(routes_name),2)
 
-        return sort_message, sort_result, lat, lon, sort_min_message, sort_min_result, lat1, lon1, percent
+        return sort_message, sort_result, sort_min_message, sort_min_result, percent
 
+    def more(self):
 
+        # write sql code that is difficult
+
+        # important
+        self.mycursor.execute(f"SELECT trip_name  FROM impacted_object_{self.yesterday}")
+        trip_name_disruptions = []
+        for i in self.mycursor.fetchall():
+            if i[0] not in trip_name_disruptions:
+                trip_name_disruptions.append(i[0])
+
+        # important
+        self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL")
+        impacted_stop_name = []
+        for i in self.mycursor.fetchall():
+            if i[0] not in impacted_stop_name:
+                impacted_stop_name.append(i[0])
+
+        # important
+        for i in range(len(trip_name_disruptions)):
+            self.mycursor.execute(f"SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND name_impacted_stop NOT IN (SELECT name_impacted_stop FROM impacted_object_{self.yesterday} WHERE name_impacted_stop IS NOT NULL AND trip_name = '{trip_name_disruptions[i]}')")
+            impacted_stop_name_2 = []
+            for i in self.mycursor.fetchall():
+                if i[0] not in impacted_stop_name_2:
+                    impacted_stop_name_2.append(i[0])
+
+        print(trip_name_disruptions)
+        print(len(impacted_stop_name))
+        print(len(impacted_stop_name_2))
+
+        #return routes_name, impacted_stop_name, impacted_stop_name_2
 
 #print(search().general())
 #print(search().disruptions_message())
@@ -462,4 +471,6 @@ class search:
 #print(search().citi_time_impacted())
 #print(search().disruptions_severity_name())
 #print(search().routes())
+#print(search().more())
 print(write().write_data())
+#clean().clean_data()
