@@ -36,9 +36,6 @@ class Sort():
     def disruptions(self,z,i,j): 
         with open(f'Page/Page{z}.txt') as json_file:
             data = json.load(json_file)
-
-            date = self.yesterday
-            value = j
                 
             try:    
                 no, begin = str(data["disruptions"][i]['application_periods'][0]['begin']).split('T') # give just hhmmss
@@ -56,10 +53,6 @@ class Sort():
                 message = data["disruptions"][i]['messages'][0]['text'] # try
             except:
                 message = self.NULL
-            try:    
-                severity_effect = data["disruptions"][i]['severity']['effect']
-            except:
-                severity_effect = self.NULL
             try:    
                 severity_name = data["disruptions"][i]['severity']['name']
             except:
@@ -101,10 +94,6 @@ class Sort():
             except:
                 cause = self.NULL
             try:    
-                is_detour = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['is_detour']
-            except:
-                is_detour = self.NULL
-            try:    
                 lat = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['coord']['lat']
             except:
                 lat = self.number
@@ -117,10 +106,6 @@ class Sort():
             except:
                 id_impacted_stop = self.NULL
             try:    
-                label_impacted_stop = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['label']
-            except:
-                label_impacted_stop = self.NULL
-            try:    
                 name_impacted_stop = data["disruptions"][i]['impacted_objects'][0]['impacted_stops'][j]['stop_point']['name']
             except:
                 name_impacted_stop = self.NULL
@@ -129,16 +114,14 @@ class Sort():
             except:
                 stop_time_effect = self.NULL
             
-            return [value, date, begin, end, id, message, severity_effect, severity_name, trip_id, trip_name],[ date, begin, end, amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, is_detour, lat, lon, id_impacted_stop, label_impacted_stop, name_impacted_stop, stop_time_effect, trip_name]
+            return [begin, end, id, message, severity_name, trip_id, trip_name],[amended_arrival_time, amended_departure_time, departure_status, base_arrival_time, base_departure_time, arrival_status, cause, lat, lon, id_impacted_stop, name_impacted_stop, stop_time_effect, trip_name]
 
     def vehicle_journey(self,z,i,j):
 
         with open(f'Vehicle_journey/Vehicle_journey{z}.txt') as json_file:
             data2 = json.load(json_file)
             
-            date = self.yesterday
-            value = i
-                        
+
             try:    
                 begin = data2['vehicle_journeys'][i]['calendars'][0]['active_periods'][0]['begin']
             except:
@@ -156,17 +139,9 @@ class Sort():
             except:
                 id = self.NULL
             try:    
-                name = data2['vehicle_journeys'][i]['name'] # = headsign
-            except:
-                name = self.number
-            try:    
                 trip_id = data2['vehicle_journeys'][i]['trip']['id']
             except:
                 trip_id = self.NULL
-            try:    
-                trip_name = data2['vehicle_journeys'][i]['trip']['name']
-            except:
-                trip_name = self.number
             try:    
                 arrival_time = data2['vehicle_journeys'][i]['stop_times'][j]['arrival_time']
             except:
@@ -176,21 +151,9 @@ class Sort():
             except:
                 departure_time = self.number
             try:    
-                drop_off_allowed = data2['vehicle_journeys'][i]['stop_times'][j]['drop_off_allowed']
-            except:
-                drop_off_allowed = self.NULL
-            try:    
                 headsign_stop = data2['vehicle_journeys'][i]['stop_times'][j]['headsign']
             except:
                 headsign_stop = self.number
-            try:    
-                pickup_allowed = data2['vehicle_journeys'][i]['stop_times'][j]['pickup_allowed']
-            except:
-                pickup_allowed = self.NULL
-            try:    
-                skipped_stop = data2['vehicle_journeys'][i]['stop_times'][j]['skipped_stop']
-            except:
-                skipped_stop = self.NULL
             try:    
                 lat = data2['vehicle_journeys'][i]['stop_times'][j]['stop_point']['coord']['lat']
             except:
@@ -204,10 +167,6 @@ class Sort():
             except:
                 id_stop_point = self.NULL
             try:    
-                label_stop_point = data2['vehicle_journeys'][i]['stop_times'][j]['stop_point']['label']
-            except:
-                label_stop_point = self.NULL
-            try:    
                 name_stop_point = data2['vehicle_journeys'][i]['stop_times'][j]['stop_point']['name']
             except:
                 name_stop_point = self.NULL
@@ -220,7 +179,7 @@ class Sort():
             except:
                 utc_departure_time = self.number
                 
-            return [value, date, begin, end, headsign, id, name, trip_id, trip_name],[date, begin, end, arrival_time, departure_time, drop_off_allowed, headsign_stop, pickup_allowed, skipped_stop, lat, lon, id_stop_point, label_stop_point, name_stop_point, utc_arrival_time, utc_departure_time, trip_name]
+            return [begin, end, headsign, id, trip_id ],[arrival_time, departure_time, headsign_stop, lat, lon, id_stop_point, name_stop_point, utc_arrival_time, utc_departure_time,]
 
 
     def routes(self,z,i):
@@ -228,25 +187,10 @@ class Sort():
         with open(f'Routes/Routes{z}.txt') as json_file:
             data3 = json.load(json_file)
 
-                                    
-            date = self.yesterday
-
-            try:
-                embedded_type = data3['routes'][i]['direction']['embedded_type']
-            except:
-                embedded_type = self.NULL
             try:
                 id_direction = data3['routes'][i]['direction']['id']
             except:
                 id_direction = self.NULL
-            try:
-                name_direction = data3['routes'][i]['direction']['name']
-            except:
-                name_direction = self.NULL
-            try:
-                quality = data3['routes'][i]['direction']['quality']
-            except:
-                quality = self.number
             try:
                 value = data3['routes'][i]['direction']['stop_area']['codes'][0]['value'] # defois pas que int
             except:
@@ -264,25 +208,9 @@ class Sort():
             except:
                 id_stop_area = self.NULL
             try:
-                label_stop_area = data3['routes'][i]['direction']['stop_area']['label']
-            except:
-                label_stop_area = self.NULL
-            try:
                 name_stop_area = data3['routes'][i]['direction']['stop_area']['name']
             except:
                 name_stop_area = self.NULL
-            try:
-                direction_type = data3['routes'][i]['direction_type']
-            except:
-                direction_type = self.NULL
-            try:
-                id = data3['routes'][i]['id']
-            except:
-                id = self.NULL
-            try:
-                is_frequence = data3['routes'][i]['is_frequence']
-            except:
-                is_frequence = self.NULL
             try:
                 closing_time = data3['routes'][i]['line']['closing_time']
             except:
@@ -295,14 +223,6 @@ class Sort():
                 name_commercial_mode = data3['routes'][i]['line']['commercial_mode']['name']
             except:
                 name_commercial_mode = self.NULL
-            try:
-                id_line = data3['routes'][i]['line']['id']
-            except:
-                id_line = self.NULL
-            try:
-                id_name = data3['routes'][i]['line']['name']
-            except:
-                id_name = self.NULL
             try:
                 opening_time = data3['routes'][i]['line']['opening_time']
             except:
@@ -320,7 +240,7 @@ class Sort():
             except:
                 routes_name = self.NULL
         
-            return [date, embedded_type, id_direction, name_direction, quality, value, lat, lon, id_stop_area, label_stop_area, name_stop_area, direction_type, id, is_frequence, closing_time, id_commercial_mode, name_commercial_mode, id_line, id_name, opening_time, id_physical_modes, name_physical_modes, routes_name]
+            return [id_direction, value, id_stop_area, lat, lon, name_stop_area, closing_time, id_commercial_mode, name_commercial_mode, opening_time, id_physical_modes, name_physical_modes, routes_name]
 
         
 #print(Sort().disruptions())
